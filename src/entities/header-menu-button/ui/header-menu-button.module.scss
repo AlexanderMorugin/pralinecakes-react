@@ -1,0 +1,52 @@
+.headerMenuButton {
+  position: relative;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+
+  &__span {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: var(--light-secondary);
+    transition: all 0.3s ease 0s;
+
+    &_active {
+      display: none;
+    }
+  }
+}
+
+.headerMenuButton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: var(--light-secondary);
+  transition: all 0.3s ease 0s;
+}
+
+.headerMenuButton:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: var(--light-secondary);
+  transition: all 0.3s ease 0s;
+}
+
+.headerMenuButton_active:before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.headerMenuButton_active:after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}

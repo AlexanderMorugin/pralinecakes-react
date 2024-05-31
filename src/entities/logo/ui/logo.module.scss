@@ -1,0 +1,46 @@
+@use '../../../shared/styles/mixins' as media;
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  text-decoration: none;
+
+  @include media.respond-to('middle') {
+    gap: 10px;
+  }
+
+  &__icon {
+    width: 44px;
+    transition: 0.5s;
+
+    @include media.respond-to('middle') {
+      width: 34px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: var(--font-l-bold);
+    color: var(--light-secondary);
+    transition: 0.3s;
+
+    @include media.respond-to('middle') {
+      font: var(--font-m-bold);
+    }
+  }
+
+  &__span {
+    font: var(--font-xs-bold);
+  }
+
+  &:hover &__icon {
+    transform: scale(1.2);
+  }
+  &:hover &__text {
+    color: var(--light-primary);
+  }
+}

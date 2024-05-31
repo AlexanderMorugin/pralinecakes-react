@@ -1,0 +1,14 @@
+.rootPage {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--width-xl);
+    margin: 0 auto;
+  }
+}
