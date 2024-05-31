@@ -1,9 +1,18 @@
-import { FC } from 'react'
+import { FC } from 'react';
+
+import { Breadcrumbs, PageHeading } from '../../widgets';
+import { PAGE_TITLE_MAIN } from '../../shared/constants/constants';
+import { MainContentWrapper } from '../../components';
+
+const breadcrumbs = [{ heading: 'Главная', route: '' }];
 
 const MainPage: FC = () => {
   return (
-    <h1>MainPage</h1>
-  )
-}
+    <MainContentWrapper>
+      <Breadcrumbs links={breadcrumbs} />
+      <PageHeading title={PAGE_TITLE_MAIN} />
+    </MainContentWrapper>
+  );
+};
 
-export default MainPage
+export default MainPage;

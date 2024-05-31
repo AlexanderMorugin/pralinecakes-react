@@ -1,17 +1,29 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import { headerConnectData } from '../../../mockData/header-connect-data';
+import styles from './header-connect.module.scss';
 
-import styles from './header-connect.module.scss'
+type TData = {
+  title: string;
+  icon: string;
+  link: string;
+};
 
-const HeaderConnect: FC = () => {
+interface IHeaderConnect {
+  data: TData[];
+}
+
+const HeaderConnect: FC<IHeaderConnect> = ({ data }) => {
   return (
     <ul className={styles.headerConnect}>
-      {headerConnectData.map((item, index) => (
+      {data.map((item, index) => (
         <li key={index}>
           <Link to={item.link}>
-            <img src={item.icon} alt={item.title} className={styles.headerConnect__icon}/>
+            <img
+              src={item.icon}
+              alt={item.title}
+              className={styles.headerConnect__icon}
+            />
           </Link>
         </li>
       ))}

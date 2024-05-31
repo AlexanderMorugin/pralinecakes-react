@@ -1,15 +1,22 @@
-import { FC } from 'react'
-import { Link } from 'react-router-dom'
+import { FC } from 'react';
 
-import Routes from '../../shared/config/routes/routes'
+import { Breadcrumbs, PageHeading } from '../../widgets';
+import { PAGE_TITLE_ABOUT } from '../../shared/constants/constants';
+import { MainContentWrapper } from '../../components';
+import Routes from '../../shared/config/routes/routes';
+
+const breadcrumbs = [
+  { heading: 'Главная', route: Routes.HOME },
+  { heading: PAGE_TITLE_ABOUT, route: '' }
+]
 
 const AboutPage: FC = () => {
   return (
-    <>
-    <h1>Здесь будет страница О нас</h1>
-    <Link to={Routes.HOME}>на главную</Link>
-  </>
-  )
-}
+    <MainContentWrapper>
+      <Breadcrumbs links={breadcrumbs} />
+      <PageHeading title={PAGE_TITLE_ABOUT} />
+    </MainContentWrapper>
+  );
+};
 
-export default AboutPage
+export default AboutPage;

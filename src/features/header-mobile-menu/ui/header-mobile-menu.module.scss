@@ -47,6 +47,13 @@
   &__linkTitle {
     font: var(--font-m-medium);
     color: var(--light-secondary);
-    
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--grey-primary);
+    padding-top: 20px;
   }
 }

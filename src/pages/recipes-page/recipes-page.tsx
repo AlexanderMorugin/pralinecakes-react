@@ -1,14 +1,21 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
 
+import { Breadcrumbs, PageHeading } from '../../widgets';
+import { PAGE_TITLE_RECIPES } from '../../shared/constants/constants';
+import { MainContentWrapper } from '../../components';
 import Routes from '../../shared/config/routes/routes';
+
+const breadcrumbs = [
+  { heading: 'Главная', route: Routes.HOME },
+  { heading: PAGE_TITLE_RECIPES, route: '' },
+];
 
 const RecipesPage: FC = () => {
   return (
-    <>
-      <h1>Здесь будет страница Рецептов</h1>
-      <Link to={Routes.HOME}>на главную</Link>
-    </>
+    <MainContentWrapper>
+      <Breadcrumbs links={breadcrumbs} />
+      <PageHeading title={PAGE_TITLE_RECIPES} />
+    </MainContentWrapper>
   );
 };
 

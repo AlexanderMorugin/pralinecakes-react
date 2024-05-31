@@ -1,0 +1,21 @@
+.breadcrumbs {
+  display: flex;
+  width: 100%;
+  font: var(--font-xxs-regular);
+  color: var(--text-secondary);
+  text-transform: lowercase;
+
+  &__link {
+    color: var(--link-primary);
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--link-secondary);
+    }
+  }
+
+  &__span {
+    font-size: 16px;
+  }
+}

@@ -1,8 +1,10 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './header-mobile-menu.module.scss';
 import { navBarData } from '../../../mockData/nav-bar-data';
+import { ADDRESS, COMPANY_NAME } from '../../../shared/constants/constants';
+
+import styles from './header-mobile-menu.module.scss';
 
 interface IHeaderMobileMenu {
   active: boolean;
@@ -23,17 +25,27 @@ const HeaderMobileMenu: FC<IHeaderMobileMenu> = ({ active, setActive }) => {
           <ul>
             {navBarData.map((item, index) => (
               <li key={index}>
-                <Link to={item.route} onClick={() => setActive(false)} className={styles.headerMobileMenu__link}>
+                <Link
+                  to={item.route}
+                  onClick={() => setActive(false)}
+                  className={styles.headerMobileMenu__link}
+                >
                   <img
                     src={item.icon}
                     alt={item.title}
                     className={styles.headerMobileMenu__linkIcon}
                   />
-                  <span className={styles.headerMobileMenu__linkTitle}>{item.title}</span>
+                  <span className={styles.headerMobileMenu__linkTitle}>
+                    {item.title}
+                  </span>
                 </Link>
               </li>
             ))}
           </ul>
+          <address className={styles.headerMobileMenu__address}>
+            <span>{COMPANY_NAME}</span>
+            <span>{ADDRESS}</span>
+          </address>
         </div>
       </div>
     </div>
