@@ -1,11 +1,19 @@
+@use './mixins' as media;
+
 body {
   margin: 0 auto;
   max-width: 100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--light-secondary);
-  font: var(--font-xxs-regular);
+  // background: var(--bg-secondary);
+  background: var(--bg-primary);
+
+  font: var(--font-s-regular);
   color: var(--text-primary);
+
+  @include media.respond-to('middle') {
+    background: var(--bg-secondary);
+  }
 
   * {
     margin: 0;

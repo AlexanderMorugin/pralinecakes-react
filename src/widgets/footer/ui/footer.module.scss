@@ -1,3 +1,5 @@
+@use '../../../shared/styles/mixins' as media;
+
 .footer {
   display: flex;
   justify-content: center;
@@ -12,5 +14,9 @@
     padding: 20px 25px;
 
     border: 1px solid red;
+
+    @include media.respond-to('middle') {
+      padding: 10px 15px;
+    }
   }
 }

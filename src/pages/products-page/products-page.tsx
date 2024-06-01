@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import { Breadcrumbs, PageHeading } from '../../widgets';
 import { PAGE_TITLE_PRODUCTS } from '../../shared/constants/constants';
-import { MainContentWrapper } from '../../components';
+import { PageWrapper } from '../../components';
 import Routes from '../../shared/config/routes/routes';
 
 const breadcrumbs = [
@@ -12,10 +12,10 @@ const breadcrumbs = [
 
 const ProductsPage: FC = () => {
   return (
-    <MainContentWrapper>
+    <PageWrapper>
       <Breadcrumbs links={breadcrumbs} />
       <PageHeading title={PAGE_TITLE_PRODUCTS} />
-    </MainContentWrapper>
+    </PageWrapper>
   );
 };
 

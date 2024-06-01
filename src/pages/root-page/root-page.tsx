@@ -9,7 +9,9 @@ const RootPage: FC = () => {
   return (
     <div className={styles.rootPage}>
       <Header />
-      <main className={styles.rootPage__main}>
+      <main 
+      className={styles.rootPage__main}
+      >
         <Outlet />
       </main>
       <Footer />

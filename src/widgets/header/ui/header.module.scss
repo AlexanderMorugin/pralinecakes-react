@@ -1,6 +1,9 @@
+@use '../../../shared/styles/mixins' as media;
+
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
   background: var(--brown-thirdary);
 
   &__container {
@@ -10,9 +13,19 @@
     gap: 20px;
     width: 100%;
     max-width: var(--width-xl);
-    padding: 20px 25px;
+    padding-top: var(--padding-vertical-desktop);
+    padding-bottom: var(--padding-vertical-desktop);
+    padding-left: var(--padding-horizontal-desktop);
+    padding-right: var(--padding-horizontal-desktop);
 
     border: 1px solid red;
+
+    @include media.respond-to('middle') {
+      padding-top: var(--padding-vertical-mobile);
+      padding-bottom: var(--padding-vertical-mobile);
+      padding-left: var(--padding-horizontal-mobile);
+      padding-right: var(--padding-horizontal-mobile);
+    }
   }
 
   &__nav {

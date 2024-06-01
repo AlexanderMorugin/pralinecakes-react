@@ -18,7 +18,7 @@ const HeaderConnect: FC<IHeaderConnect> = ({ data }) => {
     <ul className={styles.headerConnect}>
       {data.map((item, index) => (
         <li key={index}>
-          <Link to={item.link}>
+          <Link to={item.link} className={styles.headerConnect__link}>
             <img
               src={item.icon}
               alt={item.title}

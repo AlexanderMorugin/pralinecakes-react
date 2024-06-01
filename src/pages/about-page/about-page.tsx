@@ -1,21 +1,24 @@
 import { FC } from 'react';
 
-import { Breadcrumbs, PageHeading } from '../../widgets';
+import { AboutUs, Breadcrumbs, PageHeading } from '../../widgets';
 import { PAGE_TITLE_ABOUT } from '../../shared/constants/constants';
-import { MainContentWrapper } from '../../components';
+import { MainWrapper, PageWrapper } from '../../components';
 import Routes from '../../shared/config/routes/routes';
 
 const breadcrumbs = [
   { heading: 'Главная', route: Routes.HOME },
-  { heading: PAGE_TITLE_ABOUT, route: '' }
-]
+  { heading: PAGE_TITLE_ABOUT, route: '' },
+];
 
 const AboutPage: FC = () => {
   return (
-    <MainContentWrapper>
+    <PageWrapper>
       <Breadcrumbs links={breadcrumbs} />
-      <PageHeading title={PAGE_TITLE_ABOUT} />
-    </MainContentWrapper>
+      <MainWrapper>
+        <PageHeading title={PAGE_TITLE_ABOUT} />
+        <AboutUs />
+      </MainWrapper>
+    </PageWrapper>
   );
 };
 

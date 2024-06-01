@@ -40,8 +40,8 @@
     var(--font-line-xs) var(--font-family-main);
 
   // font s (h5, p1)
-  --font-size-s: 16px;
-  --font-line-s: 24px;
+  --font-size-s: 18px;
+  --font-line-s: 26px;
   --font-s-bold: var(--font-weigth-bold) var(--font-size-s) / var(--font-line-s)
     var(--font-family-main);
   --font-s-medium: var(--font-weigth-medium) var(--font-size-s) /
@@ -50,8 +50,8 @@
     var(--font-line-s) var(--font-family-main);
 
   // font m (h3 small, h4)
-  --font-size-m: 20px;
-  --font-line-m: 24px;
+  --font-size-m: 22px;
+  --font-line-m: 26px;
   --font-m-bold: var(--font-weigth-bold) var(--font-size-m) / var(--font-line-m)
     var(--font-family-main);
   --font-m-medium: var(--font-weigth-medium) var(--font-size-m) /
@@ -113,7 +113,7 @@
   --light-secondary: #fbfbfb;
   // --light-thirdary: #fdefbb;
 
-  --grey-primary: #DFDFDF;
+  --grey-primary: #dfdfdf;
   // --grey-secondary: #CECECE;
   // --grey-thirdary: #969AB0;
 
@@ -121,8 +121,9 @@
   --dark-secondary: #18181a;
   // --dark-thirdary: #222224;
 
-  --text-primary: #343434;
-  --text-secondary: #969AB0;
+  // --text-primary: #343434;
+  --text-primary: #333;
+  --text-secondary: #969ab0;
 
   --link-primary: #8bb4dd;
   --link-secondary: #4791ff;
@@ -139,8 +140,20 @@
   --border-primary: #e2c9b9;
   --border-secondary: #b88065;
 
+  --bg-primary: #f7f7f7;
+  --bg-secondary: #fff;
+
+  // ширина экрана
   --width-xl: 1400px;
   --width-l: 1024px;
   --width-m: 768px;
   --width-s: 360px;
+
+  // верхний и нижний падинги
+  --padding-vertical-desktop: 20px;
+  --padding-vertical-mobile: 10px;
+
+  // боковые падинги
+  --padding-horizontal-desktop: 20px;
+  --padding-horizontal-mobile: 10px;
 }

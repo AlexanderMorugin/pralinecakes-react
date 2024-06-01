@@ -1,3 +1,5 @@
-import MainContentWrapper from './main-content-wrapper/main-content-wrapper';
+import ArticleWrapper from './article-wrapper/article-wrapper';
+import MainWrapper from './main-wrapper/main-wrapper';
+import PageWrapper from './page-wrapper/page-wrapper';
 
-export { MainContentWrapper };
+export { PageWrapper, MainWrapper, ArticleWrapper };

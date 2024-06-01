@@ -1,12 +1,12 @@
 .headerMenuButton {
   position: relative;
   width: 24px;
-  height: 20px;
+  height: 16px;
   cursor: pointer;
 
   &__span {
     position: absolute;
-    top: 9px;
+    top: 7px;
     left: 0;
     width: 24px;
     height: 2px;
@@ -43,10 +43,10 @@
 
 .headerMenuButton_active:before {
   transform: rotate(45deg);
-  top: 9px;
+  top: 7px;
 }
 
 .headerMenuButton_active:after {
   transform: rotate(-45deg);
-  bottom: 9px;
+  bottom: 7px;
 }

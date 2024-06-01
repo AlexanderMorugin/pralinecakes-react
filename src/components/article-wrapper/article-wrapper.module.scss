@@ -1,13 +1,15 @@
-@use '../../../shared/styles/mixins' as media;
+@use '../../shared/styles/mixins' as media;
 
-.breadcrumbs {
+.articleWrapper {
   display: flex;
-  width: 100%;
-  font: var(--font-xxs-regular);
-  color: var(--text-secondary);
-  text-transform: lowercase;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 15px;
+  background: var(--bg-secondary);
   max-width: var(--width-xl);
-  // margin: 0 auto;
+  margin: 0 auto;
+  // margin-left: 10px;
+  // margin-right: 10px;
   padding-top: var(--padding-vertical-mobile);
   padding-bottom: var(--padding-vertical-mobile);
   padding-left: var(--padding-horizontal-desktop);
@@ -16,21 +18,9 @@
   border: 1px solid red;
 
   @include media.respond-to('middle') {
+    margin-left: var(--padding-horizontal-mobile);
+    margin-right: var(--padding-horizontal-mobile);
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
-  }
-
-  &__link {
-    color: var(--link-primary);
-    text-decoration: none;
-    transition: color 0.3s;
-
-    &:hover {
-      color: var(--link-secondary);
-    }
-  }
-
-  &__span {
-    font-size: 16px;
   }
 }
