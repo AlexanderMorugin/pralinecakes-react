@@ -3,20 +3,93 @@
 .footer {
   display: flex;
   justify-content: center;
-  height: 200px;
   background: var(--dark-secondary);
 
   &__container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 'logoBox information catalog cooperation address';
+    gap: 20px;
     width: 100%;
     max-width: var(--width-xl);
-    padding: 20px 25px;
+    padding-top: var(--padding-vertical-desktop);
+    padding-bottom: var(--padding-vertical-desktop);
+    padding-left: var(--padding-horizontal-desktop);
+    padding-right: var(--padding-horizontal-desktop);
 
-    border: 1px solid red;
+    @include media.respond-to('large') {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: 'logoBox information address';
+    }
 
     @include media.respond-to('middle') {
-      padding: 10px 15px;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'information' 'address' 'logoBox';
+      padding-top: var(--padding-vertical-mobile);
+      padding-bottom: var(--padding-vertical-mobile);
+      padding-left: var(--padding-horizontal-mobile);
+      padding-right: var(--padding-horizontal-mobile);
     }
+  }
+
+  &__logoBox {
+    grid-area: logoBox;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font: var(--font-xs-regular);
+    color: var(--light-secondary);
+    opacity: 0.8;
+
+    @include media.respond-to('middle') {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+  &__information {
+    grid-area: information;
+  }
+
+  &__catalog {
+    grid-area: catalog;
+
+    @include media.respond-to('large') {
+      display: none;
+    }
+  }
+
+  &__cooperation {
+    grid-area: cooperation;
+
+    @include media.respond-to('large') {
+      display: none;
+    }
+  }
+
+  &__address {
+    grid-area: address;
+  }
+
+  &__link {
+    display: flex;
+    gap: 15px;
+    font: var(--font-xs-regular);
+    color: var(--light-secondary);
+    text-decoration: none;
+    padding: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__navIcon {
+    width: 20px;
   }
 }

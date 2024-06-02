@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
 import { navBarData } from '../../../mockData/nav-bar-data';
-import { ADDRESS, COMPANY_NAME } from '../../../shared/constants/constants';
+import { ADDRESS, COMPANY_NAME, PHONE_NUMBER } from '../../../shared/constants/constants';
 
 import styles from './header-mobile-menu.module.scss';
 
@@ -45,6 +45,7 @@ const HeaderMobileMenu: FC<IHeaderMobileMenu> = ({ active, setActive }) => {
           <address className={styles.headerMobileMenu__address}>
             <span>{COMPANY_NAME}</span>
             <span>{ADDRESS}</span>
+            <span>{PHONE_NUMBER}</span>
           </address>
         </div>
       </div>

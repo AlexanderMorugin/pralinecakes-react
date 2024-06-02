@@ -5,6 +5,17 @@ import ProductsPage from './products-page/products-page';
 import RecipesPage from './recipes-page/recipes-page';
 import DeliveryPage from './delivery-page/delivery-page';
 import ContactPage from './contact-page/contact-page';
+import CooperationPage from './cooperation-page/cooperation-page';
+import NewsPage from './news-page/news-page';
 
-
-export { MainPage, RootPage, AboutPage, ProductsPage, RecipesPage, DeliveryPage, ContactPage };
+export {
+  MainPage,
+  RootPage,
+  AboutPage,
+  ProductsPage,
+  RecipesPage,
+  DeliveryPage,
+  ContactPage,
+  CooperationPage,
+  NewsPage,
+};

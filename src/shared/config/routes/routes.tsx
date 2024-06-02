@@ -5,6 +5,8 @@ enum Routes {
   DELIVERY = '/delivery',
   CONTACTS = '/contacts',
   RECIPES = '/recipes',
+  COOPERATION = '/cooperation',
+  NEWS = '/news',
 }
 
 export default Routes;

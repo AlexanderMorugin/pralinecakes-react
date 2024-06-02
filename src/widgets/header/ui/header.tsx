@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 
 import {
-  HeaderAddress,
+  AddressBlock,
   HeaderConnect,
   HeaderMenuButton,
   HeaderNavBar,
@@ -30,10 +30,10 @@ const Header: FC = () => {
             menuActive={menuActive}
           />
         )}
-        <Logo />
+        <Logo footer={false} />
         {isScreenMd ? (
           <div className={styles.header__nav}>
-            <HeaderAddress />
+            <AddressBlock footer={false} />
             <HeaderNavBar />
           </div>
         ) : (

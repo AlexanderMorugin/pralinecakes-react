@@ -6,13 +6,35 @@ import Routes from '../../../shared/config/routes/routes';
 
 import styles from './logo.module.scss';
 
-const Logo: FC = () => {
+interface ILogo {
+  footer: boolean;
+}
+
+const Logo: FC<ILogo> = ({ footer }) => {
   return (
     <Link to={Routes.HOME} className={styles.logo}>
-      <img src={IconCake} alt='Logo' className={styles.logo__icon} />
-      <p className={styles.logo__text}>
+      <img
+        src={IconCake}
+        alt='Logo'
+        className={
+          footer ? `${styles.logo__iconFooter}` : `${styles.logo__icon}`
+        }
+      />
+      <p
+        className={
+          footer
+            ? `${styles.logo__text} ${styles.logo__text_footer}`
+            : `${styles.logo__text}`
+        }
+      >
         <span>Пралине</span>
-        <span className={styles.logo__span}>кондитерская</span>
+        <span
+          className={
+            footer ? `${styles.logo__spanFooter}` : `${styles.logo__span}`
+          }
+        >
+          кондитерская
+        </span>
       </p>
     </Link>
   );

@@ -6,10 +6,6 @@
   align-items: center;
   width: 100%;
 
-  // margin: 0 auto;
-
-  border: 1px solid red;
-
   @include media.respond-to('middle') {
     background: var(--bg-secondary);
   }

@@ -6,20 +6,17 @@
   gap: 20px;
   border-radius: 15px;
   background: var(--bg-secondary);
-  max-width: var(--width-xl);
+  width: 100%;
+  max-width: (--width-xl);
   margin: 0 auto;
-  // margin-left: 10px;
-  // margin-right: 10px;
   padding-top: var(--padding-vertical-mobile);
   padding-bottom: var(--padding-vertical-mobile);
   padding-left: var(--padding-horizontal-desktop);
   padding-right: var(--padding-horizontal-desktop);
 
-  border: 1px solid red;
-
   @include media.respond-to('middle') {
-    margin-left: var(--padding-horizontal-mobile);
-    margin-right: var(--padding-horizontal-mobile);
+    // margin-left: var(--padding-horizontal-mobile);
+    // margin-right: var(--padding-horizontal-mobile);
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
   }

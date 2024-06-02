@@ -1,7 +1,17 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import Routes from '../routes/routes';
-import { ProductsPage, DeliveryPage, MainPage, RootPage, AboutPage, RecipesPage, ContactPage } from '../../../pages';
+import {
+  ProductsPage,
+  DeliveryPage,
+  MainPage,
+  RootPage,
+  AboutPage,
+  RecipesPage,
+  ContactPage,
+  CooperationPage,
+  NewsPage,
+} from '../../../pages';
 
 const AppRouter = createBrowserRouter([
   {
@@ -32,6 +42,14 @@ const AppRouter = createBrowserRouter([
       {
         path: Routes.CONTACTS,
         element: <ContactPage />,
+      },
+      {
+        path: Routes.COOPERATION,
+        element: <CooperationPage />,
+      },
+      {
+        path: Routes.NEWS,
+        element: <NewsPage />,
       },
     ],
   },

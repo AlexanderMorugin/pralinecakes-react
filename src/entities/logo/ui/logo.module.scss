@@ -7,7 +7,7 @@
   width: fit-content;
   text-decoration: none;
 
-  @include media.respond-to('middle') {
+  @include media.respond-to('large') {
     gap: 10px;
   }
 
@@ -15,8 +15,17 @@
     width: 44px;
     transition: 0.5s;
 
-    @include media.respond-to('middle') {
+    @include media.respond-to('large') {
       width: 34px;
+    }
+  }
+
+  &__iconFooter {
+    width: 34px;
+    transition: 0.5s;
+
+    @include media.respond-to('middle') {
+      width: 24px;
     }
   }
 
@@ -28,13 +37,26 @@
     color: var(--light-secondary);
     transition: 0.3s;
 
-    @include media.respond-to('middle') {
+    @include media.respond-to('large') {
       font: var(--font-m-bold);
     }
+
+    &_footer {
+      font: var(--font-xs-bold);
+
+      @include media.respond-to('large') {
+        font: var(--font-xxs-bold);
+      }
+    }
+
   }
 
   &__span {
-    font: var(--font-xs-bold);
+    font: var(--font-xs-medium);
+  }
+
+  &__spanFooter {
+    font: var(--font-xs-regular); 
   }
 
   &:hover &__icon {
