@@ -1,4 +1,5 @@
 enum Routes {
+  BASE_URL = 'https://pralinecakes.ru',
   HOME = '/',
   ABOUT = '/about',
   PRODUCTS = '/products',

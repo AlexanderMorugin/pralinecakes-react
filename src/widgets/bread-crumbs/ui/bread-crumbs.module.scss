@@ -7,12 +7,14 @@
   color: var(--text-secondary);
   text-transform: lowercase;
   max-width: var(--width-xl);
-  padding-top: var(--padding-vertical-mobile);
-  padding-bottom: var(--padding-vertical-mobile);
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: var(--padding-horizontal-desktop);
   padding-right: var(--padding-horizontal-desktop);
 
   @include media.respond-to('middle') {
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
   }
