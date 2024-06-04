@@ -11,6 +11,8 @@ import {
   ContactPage,
   CooperationPage,
   NewsPage,
+  AllPastryPage,
+  AllCakesPage,
 } from '../../../pages';
 
 const AppRouter = createBrowserRouter([
@@ -31,6 +33,15 @@ const AppRouter = createBrowserRouter([
         path: Routes.PRODUCTS,
         element: <ProductsPage />,
       },
+      {
+        path: Routes.CAKES,
+        element: <AllCakesPage />,
+      },
+      {
+        path: Routes.PASTRY,
+        element: <AllPastryPage />,
+      },
+
       {
         path: Routes.RECIPES,
         element: <RecipesPage />,

@@ -25,35 +25,70 @@ export const TELEGRAM_LINK = `//t.me/${79771388264}`;
 export const PHONE_LINK = `tel:${PHONE_NUMBER}`;
 export const EMAIL_LINK = EMAIL;
 
-// заголовки страниц
-export const PAGE_TITLE_MAIN = 'Кондитерская Пралине';
-export const PAGE_TITLE_ABOUT = 'О нас';
-export const PAGE_TITLE_CONTACTS = 'Контакты';
-export const PAGE_TITLE_PRODUCTS = 'Продукция';
-export const PAGE_TITLE_DELIVERY = 'Доставка';
-export const PAGE_TITLE_RECIPES = 'Рецепты';
-export const PAGE_TITLE_COOPERATION = 'Сотрудничество';
-export const PAGE_TITLE_NEWS = 'Новости';
+// заголовки и мета теги страниц
+export const PAGE_MAIN_TITLE = 'Кондитерская Пралине';
+export const META_MAIN_TITLE = 'Московская кондитерская Пралине. Готовим вкусные десерты, торты и пирожные. Быстрая доставка или самовывоз.';
+export const META_MAIN_DESCRIPTION = 'Дессерты, торты и пирожные для кафе, баров, ресторанов, кофеен, пекарен и магазинов.';
 
-// мета теги заголовков страниц
-export const META_TITLE_MAIN = 'Московская кондитерская Пралине. Готовим вкусные десерты, торты и пирожные. Быстрая доставка или самовывоз.';
-export const META_TITLE_ABOUT = 'Описание кондитерской Пралине';
-export const META_TITLE_CONTACTS = 'Контакты кондитерской Пралине';
-export const META_TITLE_PRODUCTS = 'Продукция кондитерской Пралине';
-export const META_TITLE_DELIVERY = 'Доставка от кондитерской Пралине';
-export const META_TITLE_RECIPES = 'Рецепты от кондитерской Пралине';
-export const META_TITLE_COOPERATION = 'Сотрудничество с кондитерской Пралине';
-export const META_TITLE_NEWS = 'Новости кондитерской Пралине';
+export const PAGE_ABOUT_TITLE = 'О нас';
+export const META_ABOUT_TITLE = 'Описание кондитерской Пралине';
+export const META_ABOUT_DESCRIPTION = 'Описание нашей кондитерской. Сколько нам лет нашей компании.';
+
+export const PAGE_CONTACTS_TITLE = 'Контакты';
+export const META_CONTACTS_TITLE = 'Контакты кондитерской Пралине';
+export const META_CONTACTS_DESCRIPTION = 'Как до нас добраться, позвонить и написать письмо.';
+
+export const PAGE_COOPERATION_TITLE = 'Сотрудничество';
+export const META_COOPERATION_TITLE = 'Сотрудничество с кондитерской Пралине';
+export const META_COOPERATION_DESCRIPTION = 'Мы надежный и ответственный поставщик. С нами легко работать.';
+
+export const PAGE_DELIVERY_TITLE = 'Доставка';
+export const META_DELIVERY_TITLE = 'Доставка от кондитерской Пралине';
+export const META_DELIVERY_DESCRIPTION = 'Доставка нашим транспортом или самовывоз.';
+
+export const PAGE_NEWS_TITLE = 'Новости';
+export const META_NEWS_TITLE = 'Новости кондитерской Пралине';
+export const META_NEWS_DESCRIPTION = 'Что новенького в нашем ассортименте. Акции и предложения';
+
+export const PAGE_PRODUCTS_TITLE = 'Продукция';
+export const META_PRODUCTS_TITLE = 'Продукция кондитерской Пралине';
+export const META_PRODUCTS_DESCRIPTION = 'Готовим вкусные торты, пирожные, десерты.';
+
+export const PAGE_RECIPES_TITLE = 'Рецепты';
+export const META_RECIPES_TITLE = 'Рецепты от кондитерской Пралине';
+export const META_RECIPES_DESCRIPTION = 'Сладкие рецепты десертов от нашего шеф повара.';
+
+export const PAGE_CAKES_TITLE = 'Торты';
+export const META_CAKES_TITLE = 'Торты кондитерской Пралине';
+export const META_CAKES_DESCRIPTION = 'Вкусные торты приготовленные руками для наших покупателей.';
+
+export const PAGE_PASTRY_TITLE = 'Пирожные';
+export const META_PASTRY_TITLE = 'Пирожные кондитерской Пралине';
+export const META_PASTRY_DESCRIPTION = 'Вкусные пирожные приготовленные руками для наших покупателей.';
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // мета теги описания страниц
-export const META_DESCRIPTION_MAIN = 'Дессерты, торты и пирожные для кафе, баров, ресторанов, кофеен, пекарен и магазинов.';
-export const META_DESCRIPTION_ABOUT = 'Описание нашей кондитерской. Сколько нам лет нашей компании.';
-export const META_DESCRIPTION_CONTACTS = 'Как до нас добраться, позвонить и написать письмо.';
-export const META_DESCRIPTION_PRODUCTS = 'Готовим вкусные торты, пирожные, десерты.';
-export const META_DESCRIPTION_DELIVERY = 'Доставка нашим транспортом или самовывоз.';
-export const META_DESCRIPTION_RECIPES = 'Сладкие рецепты десертов от нашего шеф повара.';
-export const META_DESCRIPTION_COOPERATION = 'Мы надежный и ответственный поставщик. С нами легко работать.';
-export const META_DESCRIPTION_NEWS = 'Что новенького в нашем ассортименте. Акции и предложения';
+
+
+
+
+
+
+
+
+
 
 // подзаголовок для всех страниц
 export const PAGE_SUBTITLE = 'десерты для ресторанов, кафе, баров, пекарен, магазинов';

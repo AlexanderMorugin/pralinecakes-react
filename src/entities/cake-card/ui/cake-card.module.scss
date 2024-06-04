@@ -1,0 +1,51 @@
+.cakeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  &__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0 20px 10px 20px;
+  }
+
+  &__title {
+    font: var(--font-m-bold);
+    text-align: center;
+  }
+
+  &__description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: hidden;
+  }
+
+  &__price {
+    font: var(--font-s-bold);
+    text-align: right;
+    transition: 0.5s;
+  }
+}

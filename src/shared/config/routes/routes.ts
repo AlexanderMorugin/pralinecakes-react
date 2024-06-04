@@ -2,12 +2,21 @@ enum Routes {
   BASE_URL = 'https://pralinecakes.ru',
   HOME = '/',
   ABOUT = '/about',
-  PRODUCTS = '/products',
-  DELIVERY = '/delivery',
   CONTACTS = '/contacts',
-  RECIPES = '/recipes',
   COOPERATION = '/cooperation',
+  DELIVERY = '/delivery',
   NEWS = '/news',
+  PRODUCTS = '/products',
+  RECIPES = '/recipes',
+  
+  CAKES = '/products/cakes',
+  PASTRY = '/products/pastry',
+
+
+
+
+
+
 }
 
 export default Routes;

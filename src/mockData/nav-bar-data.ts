@@ -8,49 +8,49 @@ import ContactIcon from '../assets/icons/icon-contact.svg';
 
 import Routes from '../shared/config/routes/routes';
 import {
-  PAGE_TITLE_ABOUT,
-  PAGE_TITLE_CONTACTS,
-  PAGE_TITLE_COOPERATION,
-  PAGE_TITLE_DELIVERY,
-  PAGE_TITLE_NEWS,
-  PAGE_TITLE_PRODUCTS,
-  PAGE_TITLE_RECIPES,
+  PAGE_ABOUT_TITLE,
+  PAGE_CONTACTS_TITLE,
+  PAGE_COOPERATION_TITLE,
+  PAGE_DELIVERY_TITLE,
+  PAGE_NEWS_TITLE,
+  PAGE_PRODUCTS_TITLE,
+  PAGE_RECIPES_TITLE,
 } from '../shared/constants/constants';
 
 export const navBarData = [
   {
     icon: CookerIcon,
-    title: PAGE_TITLE_ABOUT,
+    title: PAGE_ABOUT_TITLE,
     route: Routes.ABOUT,
   },
   {
     icon: NewsIcon,
-    title: PAGE_TITLE_NEWS,
+    title: PAGE_NEWS_TITLE,
     route: Routes.NEWS,
   },
   {
     icon: ProductIcon,
-    title: PAGE_TITLE_PRODUCTS,
+    title: PAGE_PRODUCTS_TITLE,
     route: Routes.PRODUCTS,
   },
   {
     icon: RecipesIcon,
-    title: PAGE_TITLE_RECIPES,
+    title: PAGE_RECIPES_TITLE,
     route: Routes.RECIPES,
   },
   {
     icon: DeliveryIcon,
-    title: PAGE_TITLE_DELIVERY,
+    title: PAGE_DELIVERY_TITLE,
     route: Routes.DELIVERY,
   },
   {
     icon: ContactIcon,
-    title: PAGE_TITLE_CONTACTS,
+    title: PAGE_CONTACTS_TITLE,
     route: Routes.CONTACTS,
   },
   {
     icon: CooperationIcon,
-    title: PAGE_TITLE_COOPERATION,
+    title: PAGE_COOPERATION_TITLE,
     route: Routes.COOPERATION,
   },
 ];

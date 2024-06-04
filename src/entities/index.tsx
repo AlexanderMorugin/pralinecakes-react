@@ -3,5 +3,6 @@ import HeaderNavBar from './header-nav-bar';
 import HeaderMenuButton from './header-menu-button';
 import HeaderConnect from './header-connect';
 import AddressBlock from './address-block';
+import CakeCard from './cake-card';
 
-export { Logo, HeaderNavBar, HeaderMenuButton, HeaderConnect, AddressBlock };
+export { Logo, HeaderNavBar, HeaderMenuButton, HeaderConnect, AddressBlock, CakeCard };

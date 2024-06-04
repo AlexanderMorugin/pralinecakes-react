@@ -16,7 +16,11 @@ import styles from './header.module.scss';
 const Header: FC = () => {
   const [menuActive, setMenuActive] = useState(false);
   const { isScreenMd } = useResize();
+  const headerConnectData = connectData.filter((items) =>
+    items.category.includes('header')
+  );
 
+  // свайп бокового меню
   useEffect(() => {
     let startTouchX = 0;
     let endTouchX = 0;
@@ -47,10 +51,6 @@ const Header: FC = () => {
         setMenuActive(false);
     });
   }, []);
-
-  const headerConnectData = connectData.filter((items) =>
-    items.category.includes('header')
-  );
 
   return (
     <header className={styles.header}>

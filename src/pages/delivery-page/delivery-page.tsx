@@ -2,16 +2,16 @@ import { FC } from 'react';
 
 import { Breadcrumbs, PageHeading } from '../../widgets';
 import {
-  META_DESCRIPTION_DELIVERY,
-  META_TITLE_DELIVERY,
-  PAGE_TITLE_DELIVERY,
+  META_DELIVERY_DESCRIPTION,
+  META_DELIVERY_TITLE,
+  PAGE_DELIVERY_TITLE,
 } from '../../shared/constants/constants';
 import { HelmetMeta, MainWrapper, PageWrapper } from '../../components';
 import Routes from '../../shared/config/routes/routes';
 
 const breadcrumbs = [
   { heading: 'Главная', route: Routes.HOME },
-  { heading: PAGE_TITLE_DELIVERY, route: '' },
+  { heading: PAGE_DELIVERY_TITLE, route: '' },
 ];
 
 const DeliveryPage: FC = () => {
@@ -20,14 +20,14 @@ const DeliveryPage: FC = () => {
       <PageWrapper>
         <Breadcrumbs links={breadcrumbs} />
         <MainWrapper>
-          <PageHeading title={PAGE_TITLE_DELIVERY} />
+          <PageHeading title={PAGE_DELIVERY_TITLE} />
         </MainWrapper>
       </PageWrapper>
 
       <HelmetMeta
-        title={META_TITLE_DELIVERY}
-        description={META_DESCRIPTION_DELIVERY}
-        route='https://pralinecakes.ru/delivery/'
+        title={META_DELIVERY_TITLE}
+        description={META_DELIVERY_DESCRIPTION}
+        route={`${Routes.BASE_URL}${Routes.DELIVERY}`}
       />
     </>
   );
