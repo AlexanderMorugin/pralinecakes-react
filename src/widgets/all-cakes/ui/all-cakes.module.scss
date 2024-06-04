@@ -7,6 +7,11 @@
   padding-left: var(--padding-horizontal-desktop);
   padding-right: var(--padding-horizontal-desktop);
 
+  @include media.respond-to('middle') {
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -18,9 +23,8 @@
     }
 
     @include media.respond-to('middle') {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
     }
   }
 }

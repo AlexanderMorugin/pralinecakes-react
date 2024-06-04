@@ -12,6 +12,10 @@ const AllCakes: FC = () => {
       <CakeCard />
       <CakeCard />
       <CakeCard />
+      <CakeCard />
+      <CakeCard />
+      <CakeCard />
+      <CakeCard />
       </div>
     </section>
   );

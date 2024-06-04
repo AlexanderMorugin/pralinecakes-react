@@ -9,7 +9,7 @@ const CakeCard: FC = () => {
     <div className={styles.cakeCard}>
       <img src={image} alt='image' className={styles.cakeCard__image} />
       <article className={styles.cakeCard__info}>
-        <h3 className={styles.cakeCard__title}>Торт Наполеон</h3>
+        <h3 className={styles.cakeCard__title}>Наполеон</h3>
         <p className={styles.cakeCard__description}>
           Торт представляет собой довольно необычный десерт, состоящий из
           воздушного и мягкого бисквита красного цвета. Оригинальность данному
