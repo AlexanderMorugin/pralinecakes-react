@@ -7,10 +7,10 @@ import Routes from '../../../shared/config/routes/routes';
 import styles from './logo.module.scss';
 
 interface ILogo {
-  footer: boolean;
+  footer?: boolean;
 }
 
-const Logo: FC<ILogo> = ({ footer }) => {
+const Logo: FC<ILogo> = ({ footer = false }) => {
   return (
     <Link to={Routes.HOME} className={styles.logo}>
       <img

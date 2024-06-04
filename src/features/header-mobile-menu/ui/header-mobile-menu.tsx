@@ -2,7 +2,11 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
 import { navBarData } from '../../../mockData/nav-bar-data';
-import { ADDRESS, COMPANY_NAME, PHONE_NUMBER } from '../../../shared/constants/constants';
+import {
+  ADDRESS,
+  COMPANY_NAME,
+  PHONE_NUMBER,
+} from '../../../shared/constants/constants';
 
 import styles from './header-mobile-menu.module.scss';
 

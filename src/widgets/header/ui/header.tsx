@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 import {
   AddressBlock,
@@ -17,6 +17,37 @@ const Header: FC = () => {
   const [menuActive, setMenuActive] = useState(false);
   const { isScreenMd } = useResize();
 
+  useEffect(() => {
+    let startTouchX = 0;
+    let endTouchX = 0;
+    let startTouchY = 0;
+    let endTouchY = 0;
+
+    document.addEventListener('touchstart', (e) => {
+      startTouchX = e.changedTouches[0].pageX;
+      startTouchY = e.changedTouches[0].pageY;
+    });
+
+    document.addEventListener('touchend', (e) => {
+      endTouchX = e.changedTouches[0].pageX;
+      endTouchY = e.changedTouches[0].pageY;
+
+      if (
+        startTouchX < 100 &&
+        Math.abs(endTouchY - startTouchY) < 40 &&
+        endTouchX > startTouchX
+      )
+        setMenuActive(true);
+
+      if (
+        startTouchX < 440 &&
+        Math.abs(endTouchY - startTouchY) < 40 &&
+        endTouchX < startTouchX
+      )
+        setMenuActive(false);
+    });
+  }, []);
+
   const headerConnectData = connectData.filter((items) =>
     items.category.includes('header')
   );
@@ -28,19 +59,25 @@ const Header: FC = () => {
           <HeaderMenuButton
             setMenuActive={setMenuActive}
             menuActive={menuActive}
+            onBlur={() => setMenuActive(false)}
           />
         )}
-        <Logo footer={false} />
+
+        {!isScreenMd && (
+          <HeaderMobileMenu active={menuActive} setActive={setMenuActive} />
+        )}
+
+        <Logo />
+
         {isScreenMd ? (
           <div className={styles.header__nav}>
-            <AddressBlock footer={false} />
+            <AddressBlock />
             <HeaderNavBar />
           </div>
         ) : (
           <HeaderConnect data={headerConnectData} />
         )}
       </div>
-      <HeaderMobileMenu active={menuActive} setActive={setMenuActive} />
     </header>
   );
 };

@@ -5,11 +5,13 @@ import styles from './header-menu-button.module.scss';
 interface IHeaderMenuButton {
   setMenuActive: (menuActive: boolean) => void;
   menuActive: boolean;
+  onBlur?: () => void
 }
 
 const HeaderMenuButton: FC<IHeaderMenuButton> = ({
   setMenuActive,
   menuActive,
+  onBlur
 }) => {
   return (
     <button
@@ -19,6 +21,7 @@ const HeaderMenuButton: FC<IHeaderMenuButton> = ({
           : `${styles.headerMenuButton}`
       }
       onClick={() => setMenuActive(!menuActive)}
+      onBlur={onBlur}
     >
       <span
         className={

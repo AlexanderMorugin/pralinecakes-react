@@ -10,11 +10,11 @@ import {
 import styles from './address-block.module.scss';
 
 interface IAddressBlock {
-  footer: boolean;
+  footer?: boolean;
   className?: string;
 }
 
-const AddressBlock: FC<IAddressBlock> = ({ footer, className }) => {
+const AddressBlock: FC<IAddressBlock> = ({ footer = false, className }) => {
   return (
     <address
       className={
