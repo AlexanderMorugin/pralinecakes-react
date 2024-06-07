@@ -13,7 +13,9 @@ import {
   NewsPage,
   AllPastryPage,
   AllCakesPage,
+  CakePage,
 } from '../../../pages';
+import { cakesData } from '../../../mockData/cakes-data';
 
 const AppRouter = createBrowserRouter([
   {
@@ -61,6 +63,10 @@ const AppRouter = createBrowserRouter([
       {
         path: Routes.NEWS,
         element: <NewsPage />,
+      },
+      {
+        path: Routes.CAKE,
+        element: <CakePage data={cakesData} />,
       },
     ],
   },

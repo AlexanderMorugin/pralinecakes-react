@@ -66,6 +66,9 @@ export const PAGE_PASTRY_TITLE = 'Пирожные';
 export const META_PASTRY_TITLE = 'Пирожные кондитерской Пралине';
 export const META_PASTRY_DESCRIPTION = 'Вкусные пирожные приготовленные руками для наших покупателей.';
 
+// упаковка
+export const CAKE_PACK = 'Цветная картонная коробка с окошком';
+
 
 
 

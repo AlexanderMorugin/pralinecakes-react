@@ -5,5 +5,6 @@ import Breadcrumbs from './bread-crumbs';
 import AboutUs from './about-us';
 import Products from './products';
 import AllCakes from './all-cakes';
+import Product from './product';
 
-export { Header, Footer, PageHeading, Breadcrumbs, AboutUs, Products, AllCakes };
+export { Header, Footer, PageHeading, Breadcrumbs, AboutUs, Products, AllCakes, Product };

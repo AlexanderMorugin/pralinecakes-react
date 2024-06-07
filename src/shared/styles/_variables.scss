@@ -10,17 +10,17 @@
   --font-weigth-regular: 400;
 
   // font xxxs
-  --font-size-xxxs: 12px;
-  --font-line-xxxs: 16px;
-  --font-xxxs-bold: var(--font-weigth-bold) var(--font-size-xxxs) /
-    var(--font-line-xxxs) var(--font-family-main);
-  --font-xxxs-medium: var(--font-weigth-medium) var(--font-size-xxxs) /
-    var(--font-line-xxxs) var(--font-family-main);
-  --font-xxxs-regular: var(--font-weigth-regular) var(--font-size-xxxs) /
-    var(--font-line-xxxs) var(--font-family-main);
+  // --font-size-xxxs: 12px;
+  // --font-line-xxxs: 16px;
+  // --font-xxxs-bold: var(--font-weigth-bold) var(--font-size-xxxs) /
+  //   var(--font-line-xxxs) var(--font-family-main);
+  // --font-xxxs-medium: var(--font-weigth-medium) var(--font-size-xxxs) /
+  //   var(--font-line-xxxs) var(--font-family-main);
+  // --font-xxxs-regular: var(--font-weigth-regular) var(--font-size-xxxs) /
+  //   var(--font-line-xxxs) var(--font-family-main);
 
   // font xxs
-  --font-size-xxs: 14px;
+  --font-size-xxs: 12px;
   --font-line-xxs: 16px;
   --font-xxs-bold: var(--font-weigth-bold) var(--font-size-xxs) /
     var(--font-line-xxs) var(--font-family-main);
@@ -125,6 +125,8 @@
   --text-primary: #333;
   --text-secondary: #969ab0;
   --text-thirdary: #666;
+
+  --accent-primary: #fc5230;
 
   --link-primary: #8bb4dd;
   --link-secondary: #4791ff;

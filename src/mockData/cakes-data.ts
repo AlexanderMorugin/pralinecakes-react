@@ -16,10 +16,10 @@ import LimonniyLarge from '../assets/images/cakes/cake-limonniy-large.jpg';
 export const cakesData = [
   {
     id: 0,
-    // image_small: EmailIcon,
+    route: 'bavarskiy-muss',
     image_normal: BavarskiyMussNormal,
     image_large: BavarskiyMussLarge,
-    title: 'Торт Баварский мусс',
+    title: 'Баварский мусс',
     description:
       'Воздушный мусс из сливок и ванили, с малиной во фруктовом желе',
     ingredients:
@@ -34,12 +34,12 @@ export const cakesData = [
   },
   {
     id: 1,
-    // image_small: EmailIcon,
+    route: 'krasniy-barkhat',
     image_normal: KrasnyiBarhatNormal,
     image_large: KrasnyiBarhatLarge,
-    title: 'Торт Бархатный красный',
+    title: 'Бархатный красный',
     description:
-      'Торт представляет собой довольно необычный десерт, состоящий из воздушного и мягкого бисквита красного цвета. Оригинальность данному изделию придает и белоснежный сливочный крем. Упакован в цветную картонную коробку с окошком',
+      'Торт представляет собой довольно необычный десерт, состоящий из воздушного и мягкого бисквита красного цвета. Оригинальность данному изделию придает и белоснежный сливочный крем.',
     ingredients:
       'сыр сливочный, сахар, мука, сливки молочные 33%, масло растительное, сахар, яйцо куриное, малина с/м, кефир, гель нейтральный, какао, соль, разрыхлитель',
     protein: 2.9,
@@ -52,10 +52,10 @@ export const cakesData = [
   },
   {
     id: 2,
-    // image_small: EmailIcon,
+    route: 'vozdushno-orekhoviy',
     image_normal: VozdushnoOrehovyiNormal,
     image_large: VozdushnoOrehovyiLarge,
-    title: 'Торт воздушно-ореховый',
+    title: 'Воздушно-ореховый',
     description:
       'Слоенное тесто на основе сгущенного молока, пропитан кремом из сливочного сыра. Упакован в цветную картонную коробку с окошком',
     ingredients:
@@ -70,10 +70,10 @@ export const cakesData = [
   },
   {
     id: 3,
-    // image_small: EmailIcon,
+    route: 'karamelno-orekhoviy',
     image_normal: KaramelnoOrekhoviyNormal,
     image_large: KaramelnoOrekhoviyLarge,
-    title: 'Торт Карамельно-Ореховый',
+    title: 'Карамельно-Ореховый',
     description:
       'Бисквит с добавлением мелко резанных конфет Сникерс, крем из сгущенного молока и сливок',
     ingredients:
@@ -88,10 +88,10 @@ export const cakesData = [
   },
   {
     id: 4,
-    // image_small: EmailIcon,
+    route: 'kievskiy',
     image_normal: KievskiyNormal,
     image_large: KievskiyLarge,
-    title: 'Торт Киевский',
+    title: 'Киевский',
     description:
       'Торт из нежных коржей, выпеченных из миндаля, фундука, грецких орехов со сгущенным молоком и сливками. Упакован в цветную картонную коробку с окошком',
     ingredients:
@@ -106,10 +106,10 @@ export const cakesData = [
   },
   {
     id: 5,
-    // image_small: EmailIcon,
+    route: 'kokosoviy',
     image_normal: KokosoviyNormal,
     image_large: KokosoviyLarge,
-    title: 'Торт Кокосовый',
+    title: 'Кокосовый',
     description:
       'Нежный сливочный десерт на прослойке из кокосового безе. Упакован в цветную картонную коробку с окошком',
     ingredients:
@@ -124,10 +124,10 @@ export const cakesData = [
   },
   {
     id: 6,
-    // image_small: EmailIcon,
+    route: 'limonniy',
     image_normal: LimonniyNormal,
     image_large: LimonniyLarge,
-    title: 'Торт Лимонный',
+    title: 'Лимонный',
     description:
       'Бисквит с лимонной пропиткой и воздушным кремом. Легкий десерт с приятной кислинкой. Упакован в цветную картонную коробку с окошком',
     ingredients:

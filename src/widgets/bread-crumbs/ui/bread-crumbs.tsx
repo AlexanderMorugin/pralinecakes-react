@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from './bread-crumbs.module.scss';
 
 type TLinks = {
-  heading: string;
+  heading: string | string[];
   route: string;
 };
 
