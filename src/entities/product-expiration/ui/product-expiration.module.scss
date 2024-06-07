@@ -1,0 +1,32 @@
+@use '../../../shared/styles/mixins' as media;
+
+.productExpiration {
+  padding-top: var(--padding-vertical-desktop);
+  
+  // padding-left: var(--padding-horizontal-desktop);
+  // padding-right: var(--padding-horizontal-desktop);
+
+  @include media.respond-to('middle') {
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    font: var(--font-xs-regular);
+    color: var(--text-thirdary);
+    border-bottom: 1px solid var(--border-primary);
+    padding-bottom: 10px;
+  }
+
+  &__span {
+    font: var(--font-xs-medium);
+    color: var(--brown-thirdary);
+    letter-spacing: 0.8px;
+  }
+
+  &__accent {
+    color: var(--accent-primary);
+  }
+}

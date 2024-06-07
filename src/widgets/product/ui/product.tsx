@@ -4,6 +4,7 @@ import PageHeading from '../../page-heading';
 import { ArticleWrapper, HelmetMeta } from '../../../components';
 import {
   ProductDescribe,
+  ProductExpiration,
   ProductNutritions,
   ProductPrice,
 } from '../../../entities';
@@ -56,6 +57,8 @@ const Product: FC<IProduct> = ({ ...item }) => {
           <ProductPrice weight={item.weight} price={item.price} />
         </ArticleWrapper>
       </div>
+
+      <ProductExpiration />
 
       <HelmetMeta
         title={`${item.title} торт от кондитерской Пралине`}

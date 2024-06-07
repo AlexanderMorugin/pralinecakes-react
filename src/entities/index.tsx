@@ -7,6 +7,7 @@ import ProductCard from './product-card';
 import ProductDescribe from './product-describe';
 import ProductNutritions from './product-nutritions';
 import ProductPrice from './product-price';
+import ProductExpiration from './product-expiration';
 
 export {
   Logo,
@@ -18,4 +19,5 @@ export {
   ProductDescribe,
   ProductNutritions,
   ProductPrice,
+  ProductExpiration,
 };

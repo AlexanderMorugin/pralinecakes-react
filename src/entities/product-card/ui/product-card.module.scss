@@ -48,11 +48,12 @@
 
   &__title {
     font: var(--font-s-bold);
-    // text-align: center;
-
-    // @include media.respond-to('middle') {
-    //   text-align: left;
-    // }
+    color: var(--text-primary);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: hidden;
   }
 
   &__description {
@@ -71,6 +72,7 @@
 
   &__price {
     font: var(--font-s-bold);
+    color: var(--accent-primary);
     text-align: right;
 
     @include media.respond-to('middle') {

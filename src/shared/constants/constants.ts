@@ -69,6 +69,10 @@ export const META_PASTRY_DESCRIPTION = 'Вкусные пирожные приг
 // упаковка
 export const CAKE_PACK = 'Цветная картонная коробка с окошком';
 
+// сроки годности
+// export const PRODUCT_EXPIRATION_FROZEN = 'Срок хранения замороженного продукта при -18°С - 6 месяцев';
+// export const PRODUCT_EXPIRATION_FROZEN = 'Срок хранения замороженного продукта при -18°С - 6 месяцев';
+
 
 
 
