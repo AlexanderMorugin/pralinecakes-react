@@ -6,24 +6,14 @@
   gap: 10px;
   border-radius: 10px;
   background: var(--dark-thirdary);
-  // width: 100%;
-  // max-width: 340px;
   padding: 12px;
-
-  // border: 1px solid red;
-
-  // @include media.respond-to('middle') {
-  //   margin-left: var(--padding-horizontal-mobile);
-  //   margin-right: var(--padding-horizontal-mobile);
-  //   padding-left: var(--padding-horizontal-mobile);
-  //   padding-right: var(--padding-horizontal-mobile);
-  // }
 
   &__title {
     font: var(--font-xs-medium);
     color: var(--light-secondary);
     text-transform: uppercase;
     letter-spacing: 1.1px;
+    padding-left: 45px;
     opacity: 0.8;
   }
 }

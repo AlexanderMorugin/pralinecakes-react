@@ -15,8 +15,8 @@ interface IBreadCrumbs {
 const Breadcrumbs: FC<IBreadCrumbs> = ({ links }) => {
   return (
     <ul className={styles.breadcrumbs}>
-      {links.map((link, index) => {
-        return (
+      {links.map(
+        (link, index) =>
           (index !== links.length - 1 && (
             <li key={link.route}>
               <Link to={link.route} className={styles.breadcrumbs__link}>
@@ -26,9 +26,12 @@ const Breadcrumbs: FC<IBreadCrumbs> = ({ links }) => {
                 &nbsp;&#8250;&nbsp;
               </span>
             </li>
-          )) || <li key={link.route}>{link.heading}</li>
-        );
-      })}
+          )) || (
+            <li key={link.route} className={styles.breadcrumbs__span}>
+              {link.heading}
+            </li>
+          )
+      )}
     </ul>
   );
 };

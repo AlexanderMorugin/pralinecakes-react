@@ -2,13 +2,12 @@
 
 .breadcrumbs {
   display: flex;
+  align-items: center;
   width: 100%;
   font: var(--font-xxs-regular);
   color: var(--text-secondary);
   text-transform: lowercase;
   max-width: var(--width-xl);
-  padding-top: 10px;
-  padding-bottom: 10px;
   padding-left: var(--padding-horizontal-desktop);
   padding-right: var(--padding-horizontal-desktop);
 
@@ -20,8 +19,8 @@
   }
 
   &__link {
+    font: var(--font-xxs-regular);
     color: var(--link-primary);
-    text-decoration: none;
     transition: color 0.3s;
 
     &:hover {
@@ -30,6 +29,6 @@
   }
 
   &__span {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
