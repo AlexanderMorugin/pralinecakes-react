@@ -6,7 +6,7 @@ import {
   SCREEN_XL,
 } from '../constants/constants';
 
-export const useResize = () => {
+const useResize = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -27,3 +27,5 @@ export const useResize = () => {
     isScreenXl: width >= SCREEN_XL,
   };
 };
+
+export default useResize;

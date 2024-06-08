@@ -8,6 +8,7 @@ import ProductDescribe from './product-describe';
 import ProductNutritions from './product-nutritions';
 import ProductPrice from './product-price';
 import ProductExpiration from './product-expiration';
+import PriorityCard from './priority-card';
 
 export {
   Logo,
@@ -20,4 +21,5 @@ export {
   ProductNutritions,
   ProductPrice,
   ProductExpiration,
+  PriorityCard,
 };

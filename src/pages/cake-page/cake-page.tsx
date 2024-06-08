@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { useParams } from 'react-router';
 
 import { MainWrapper, PageWrapper } from '../../components';
-import { Breadcrumbs, Product } from '../../widgets';
+import { Breadcrumbs, PriorityBlock, Product } from '../../widgets';
 import Routes from '../../shared/config/routes/routes';
 import {
   PAGE_CAKES_TITLE,
@@ -27,16 +27,16 @@ const CakePage: FC<ICakePage> = ({ data }) => {
   ];
 
   return (
-    <>
-      <PageWrapper>
-        <Breadcrumbs links={breadcrumbs} />
-        <MainWrapper>
-          {cake.map((item) => (
-            <Product key={item.id} {...item} />
-          ))}
-        </MainWrapper>
-      </PageWrapper>
-    </>
+    <PageWrapper>
+      <Breadcrumbs links={breadcrumbs} />
+      <MainWrapper>
+        {cake.map((item) => (
+          <Product key={item.id} {...item} />
+        ))}
+
+        <PriorityBlock />
+      </MainWrapper>
+    </PageWrapper>
   );
 };
 

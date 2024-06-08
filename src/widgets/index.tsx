@@ -6,5 +6,16 @@ import AboutUs from './about-us';
 import Products from './products';
 import AllCakes from './all-cakes';
 import Product from './product';
+import PriorityBlock from './priority-block';
 
-export { Header, Footer, PageHeading, Breadcrumbs, AboutUs, Products, AllCakes, Product };
+export {
+  Header,
+  Footer,
+  PageHeading,
+  Breadcrumbs,
+  AboutUs,
+  Products,
+  AllCakes,
+  Product,
+  PriorityBlock,
+};

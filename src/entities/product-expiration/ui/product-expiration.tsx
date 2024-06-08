@@ -6,7 +6,7 @@ const ProductExpiration: FC = () => {
   return (
     <section className={styles.productExpiration}>
       <article className={styles.productExpiration__article}>
-        <span className={styles.productExpiration__span}>Срок годности</span>
+        <h3 className={styles.productExpiration__title}>Срок годности</h3>
         <div className={styles.productExpiration__text}>
         <p>Замороженного продукта при t&deg; -18°С - 6 месяцев</p>
         <p>Охлажденного продукта при t&deg; +2..+4°С - 72 часа</p>

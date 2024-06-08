@@ -14,9 +14,14 @@
     gap: 5px;
     font: var(--font-xs-regular);
     color: var(--text-thirdary);
+
+    @include media.respond-to('middle') {
+      padding-bottom: var(--padding-vertical-desktop);
+      // border-bottom: 1px solid var(--border-primary);
+    }
   }
 
-  &__span {
+  &__title {
     font: var(--font-s-medium);
     padding-left: 10px;
   }
@@ -27,6 +32,10 @@
 
   &__text {
     border-left: 1px solid var(--border-primary);
-    padding-left: 10px;
+    padding-left: var(--padding-horizontal-mobile);
+
+    @include media.respond-to('middle') {
+      border-left: 0;
+    }
   }
 }
