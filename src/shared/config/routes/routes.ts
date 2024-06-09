@@ -13,6 +13,7 @@ enum Routes {
   PASTRY = '/products/pastry',
 
   CAKE = '/products/cakes/:route',
+  ONE_PASTRY = '/products/pastry/:route',
 
 
 

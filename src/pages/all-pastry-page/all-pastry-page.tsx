@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { AboutUs, Breadcrumbs, PageHeading } from '../../widgets';
+import { AllPastry, Breadcrumbs, PageHeading } from '../../widgets';
 import {
 
   PAGE_PRODUCTS_TITLE,
@@ -24,7 +24,7 @@ const AllPastryPage: FC = () => {
         <Breadcrumbs links={breadcrumbs} />
         <MainWrapper>
           <PageHeading title={PAGE_PASTRY_TITLE} />
-          <AboutUs />
+          <AllPastry />
         </MainWrapper>
       </PageWrapper>
 

@@ -7,8 +7,9 @@ import {
   ProductExpiration,
   ProductNutritions,
   ProductPrice,
+  ProductPrices,
 } from '../../../entities';
-import { CAKE_PACK } from '../../../shared/constants/constants';
+import { CAKE_PACK, PASTRY_PACK } from '../../../shared/constants/constants';
 
 import styles from './product.module.scss';
 import Routes from '../../../shared/config/routes/routes';
@@ -25,47 +26,95 @@ export interface IProduct {
   fat: number;
   carbohydrates: number;
   calories: number;
+  quantity: number;
+  quantity_b: number;
   weight: number;
+  weight_b: number;
   price: number;
+  price_b: number;
   category: string;
+
+  cake?: boolean;
+  pastry?: boolean;
 }
 
-const Product: FC<IProduct> = ({ ...item }) => {
+const Product: FC<IProduct> = ({
+  cake,
+  pastry,
+  route,
+  title,
+  image_normal,
+  image_large,
+  description,
+  ingredients,
+  protein,
+  fat,
+  carbohydrates,
+  calories,
+  quantity,
+  quantity_b,
+  weight,
+  weight_b,
+  price,
+  price_b,
+}) => {
   return (
     <section className={styles.product}>
-      <PageHeading title={`${item.title} торт`} />
+      {cake && <PageHeading title={`Торт "${title}"`} />}
+      {pastry && <PageHeading title={`Пирожное ${title}`} />}
       <div className={styles.product__container}>
-        <img
-          src={item.image_large}
-          alt={item.title}
-          className={styles.product__image}
-        />
+        <img src={image_large} alt={title} className={styles.product__image} />
         <ArticleWrapper>
           <div className={styles.product__description}>
             <span className={styles.product__span}>Описание</span>
-            <p>{item.description}</p>
+            <p>{description}</p>
           </div>
 
-          <ProductDescribe title='Упаковка' text={CAKE_PACK} />
-          <ProductDescribe title='Состав' text={item.ingredients} />
-          <ProductNutritions
-            protein={item.protein}
-            fat={item.fat}
-            carbohydrates={item.carbohydrates}
-            calories={item.calories}
+          <ProductDescribe
+            title='Упаковка'
+            text={cake ? CAKE_PACK : PASTRY_PACK}
           />
-          <ProductPrice weight={item.weight} price={item.price} />
+          <ProductDescribe title='Состав' text={ingredients} />
+          <ProductNutritions
+            protein={protein}
+            fat={fat}
+            carbohydrates={carbohydrates}
+            calories={calories}
+          />
+          {quantity > 1 ? (
+            <ProductPrices
+              quantity={quantity}
+              quantity_b={quantity_b}
+              weight={weight}
+              weight_b={weight_b}
+              price={price}
+              price_b={price_b}
+            />
+          ) : (
+            <ProductPrice weight={weight} price={price} />
+          )}
         </ArticleWrapper>
       </div>
 
       <ProductExpiration />
 
-      <HelmetMeta
-        title={`${item.title} торт от кондитерской Пралине`}
-        description={item.description}
-        image={item.image_normal}
-        route={`${Routes.BASE_URL}${Routes.CAKES}/${item.route}`}
-      />
+      {cake && (
+        <HelmetMeta
+          title={`${title} торт от кондитерской Пралине`}
+          description={description}
+          image={image_normal}
+          route={`${Routes.BASE_URL}${Routes.CAKES}/${route}`}
+        />
+      )}
+
+      {pastry && (
+        <HelmetMeta
+          title={`${title} пирожное от кондитерской Пралине`}
+          description={description}
+          image={image_normal}
+          route={`${Routes.BASE_URL}${Routes.PASTRY}/${route}`}
+        />
+      )}
     </section>
   );
 };

@@ -12,12 +12,12 @@ const ProductPrice: FC<IProductPrice> = ({ weight, price }) => {
     <div className={styles.productPrice}>
       <div className={styles.productPrice__weight}>
         <span className={styles.productPrice__span}>Вес: </span>
-        <span>{weight}гр</span>
+        <span>{weight} гр</span>
       </div>
 
       <div className={styles.productPrice__price}>
         <span className={styles.productPrice__span}>Цена: </span>
-        <span>{price}р</span>
+        <span>{price} р</span>
       </div>
     </div>
   );

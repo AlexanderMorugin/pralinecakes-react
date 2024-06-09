@@ -10,6 +10,7 @@ import NewsPage from './news-page/news-page';
 import AllPastryPage from './all-pastry-page/all-pastry-page';
 import AllCakesPage from './all-cakes-page/all-cakes-page';
 import CakePage from './cake-page/cake-page';
+import PastryPage from './pastry-page/pastry-page';
 
 export {
   MainPage,
@@ -24,4 +25,5 @@ export {
   AllCakesPage,
   AllPastryPage,
   CakePage,
+  PastryPage,
 };

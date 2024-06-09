@@ -17,6 +17,7 @@
   border: 1px solid var(--border-primary);
   border-radius: 15px;
   transition: 0.3s;
+  user-select: none;
 
   @include media.respond-to('middle') {
     width: 260px;

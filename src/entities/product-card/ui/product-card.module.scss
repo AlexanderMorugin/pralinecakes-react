@@ -1,13 +1,16 @@
 @use '../../../shared/styles/mixins' as media;
 
 .productCard {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  min-height: 100%;
   background: var(--bg-secondary);
   border: 1px solid var(--border-primary);
   border-radius: 15px;
+  padding-bottom: 15px;
   overflow: hidden;
   cursor: pointer;
   transition: 0.3s;
@@ -28,7 +31,7 @@
     object-fit: cover;
 
     @include media.respond-to('middle') {
-      height: 130px;
+      height: 140px;
     }
   }
 
@@ -48,10 +51,10 @@
 
   &__title {
     font: var(--font-s-bold);
-    color: var(--text-primary);
+    color: var(--border-secondary);
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-overflow: hidden;
   }
@@ -71,6 +74,9 @@
   }
 
   &__price {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
     font: var(--font-s-bold);
     color: var(--accent-primary);
     text-align: right;

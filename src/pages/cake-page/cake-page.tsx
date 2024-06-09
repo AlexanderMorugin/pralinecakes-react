@@ -31,7 +31,7 @@ const CakePage: FC<ICakePage> = ({ data }) => {
       <Breadcrumbs links={breadcrumbs} />
       <MainWrapper>
         {cake.map((item) => (
-          <Product key={item.id} {...item} />
+          <Product key={item.id} {...item} cake={true}/>
         ))}
 
         <PriorityBlock />

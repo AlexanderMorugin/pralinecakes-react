@@ -1,24 +1,17 @@
 @use '../../../shared/styles/mixins' as media;
 
 .productExpiration {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font: var(--font-xs-regular);
+  color: var(--text-thirdary);
   padding-top: var(--padding-vertical-desktop);
 
   @include media.respond-to('middle') {
+    padding-bottom: var(--padding-vertical-desktop);
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
-  }
-
-  &__article {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font: var(--font-xs-regular);
-    color: var(--text-thirdary);
-
-    @include media.respond-to('middle') {
-      padding-bottom: var(--padding-vertical-desktop);
-      // border-bottom: 1px solid var(--border-primary);
-    }
   }
 
   &__title {
@@ -31,11 +24,17 @@
   }
 
   &__text {
-    border-left: 1px solid var(--border-primary);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    // row-gap: 0;
+    // border-left: 1px solid var(--border-primary);
     padding-left: var(--padding-horizontal-mobile);
 
     @include media.respond-to('middle') {
-      border-left: 0;
+      flex-direction: column;
+      gap: 0;
+      // border-left: 0;
     }
   }
 }

@@ -14,8 +14,10 @@ import {
   AllPastryPage,
   AllCakesPage,
   CakePage,
+  PastryPage,
 } from '../../../pages';
 import { cakesData } from '../../../mockData/cakes-data';
+import { pastryData } from '../../../mockData/pastry-data';
 
 const AppRouter = createBrowserRouter([
   {
@@ -67,6 +69,10 @@ const AppRouter = createBrowserRouter([
       {
         path: Routes.CAKE,
         element: <CakePage data={cakesData} />,
+      },
+      {
+        path: Routes.ONE_PASTRY,
+        element: <PastryPage data={pastryData} />,
       },
     ],
   },

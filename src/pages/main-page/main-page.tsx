@@ -1,12 +1,12 @@
 import { FC } from 'react';
 
-import { Breadcrumbs, PageHeading } from '../../widgets';
+import { Breadcrumbs, PageHeading, PriorityBlock } from '../../widgets';
 import {
   META_MAIN_DESCRIPTION,
   META_MAIN_TITLE,
   PAGE_MAIN_TITLE,
 } from '../../shared/constants/constants';
-import { HelmetMeta, PageWrapper } from '../../components';
+import { HelmetMeta, MainWrapper, PageWrapper } from '../../components';
 import Routes from '../../shared/config/routes/routes';
 
 const breadcrumbs = [{ heading: 'Главная', route: '' }];
@@ -16,7 +16,10 @@ const MainPage: FC = () => {
     <>
       <PageWrapper>
         <Breadcrumbs links={breadcrumbs} />
-        <PageHeading title={PAGE_MAIN_TITLE} />
+        <MainWrapper>
+          <PageHeading title={PAGE_MAIN_TITLE} />
+          <PriorityBlock />
+        </MainWrapper>
       </PageWrapper>
 
       <HelmetMeta

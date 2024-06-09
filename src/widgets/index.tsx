@@ -7,6 +7,7 @@ import Products from './products';
 import AllCakes from './all-cakes';
 import Product from './product';
 import PriorityBlock from './priority-block';
+import AllPastry from './all-pastry';
 
 export {
   Header,
@@ -16,6 +17,7 @@ export {
   AboutUs,
   Products,
   AllCakes,
+  AllPastry,
   Product,
   PriorityBlock,
 };

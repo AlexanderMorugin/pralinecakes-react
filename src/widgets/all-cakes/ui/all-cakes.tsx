@@ -13,7 +13,7 @@ const AllCakes: FC = () => {
           <li key={cake.id}>
             <ProductCard
               route={cake.route}
-              image={cake.image_normal}
+              image={cake.image_small}
               title={cake.title}
               description={cake.description}
               price={cake.price}

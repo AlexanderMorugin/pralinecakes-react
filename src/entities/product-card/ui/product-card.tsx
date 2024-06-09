@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './product-card.module.scss'
+import styles from './product-card.module.scss';
 
-interface IProductCard{
+interface IProductCard {
   route?: string;
   image?: string;
   title?: string;
@@ -24,8 +24,8 @@ const ProductCard: FC<IProductCard> = ({
       <article className={styles.productCard__info}>
         <h3 className={styles.productCard__title}>{title}</h3>
         <p className={styles.productCard__description}>{description}</p>
-        <p className={styles.productCard__price}>{price}р</p>
       </article>
+      <p className={styles.productCard__price}>{price} р</p>
     </Link>
   );
 };
