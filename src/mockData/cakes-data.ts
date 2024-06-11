@@ -1,56 +1,78 @@
-import BavarskiyS from '../assets/images/cakes/cake-bavarskiy-s.jpg';
-import BavarskiyM from '../assets/images/cakes/cake-bavarskiy-m.jpg';
-import BavarskiyL from '../assets/images/cakes/cake-bavarskiy-l.jpg';
-import KievskiyS from '../assets/images/cakes/cake-kievskiy-s.jpg';
-import KievskiyM from '../assets/images/cakes/cake-kievskiy-m.jpg';
-import KievskiyL from '../assets/images/cakes/cake-kievskiy-l.jpg';
-import PragaS from '../assets/images/cakes/cake-praga-s.jpg';
-import PragaM from '../assets/images/cakes/cake-praga-m.jpg';
-import PragaL from '../assets/images/cakes/cake-praga-l.jpg';
-import MedoviyS from '../assets/images/cakes/cake-medoviy-s.jpg';
-import MedoviyM from '../assets/images/cakes/cake-medoviy-m.jpg';
-import MedoviyL from '../assets/images/cakes/cake-medoviy-l.jpg';
-import TrufelniyS from '../assets/images/cakes/cake-trufelniy-s.jpg';
-import TrufelniyM from '../assets/images/cakes/cake-trufelniy-m.jpg';
-import TrufelniyL from '../assets/images/cakes/cake-trufelniy-l.jpg';
-import PtichieS from '../assets/images/cakes/cake-ptichie-moloko-s.jpg';
-import PtichieM from '../assets/images/cakes/cake-ptichie-moloko-m.jpg';
-import PtichieL from '../assets/images/cakes/cake-ptichie-moloko-l.jpg';
-import EsterhaziS from '../assets/images/cakes/cake-esterhazi-s.jpg';
-import EsterhaziM from '../assets/images/cakes/cake-esterhazi-m.jpg';
-import EsterhaziL from '../assets/images/cakes/cake-esterhazi-l.jpg';
-import CheesecakeS from '../assets/images/cakes/cake-cheescake-s.jpg';
-import CheesecakeM from '../assets/images/cakes/cake-cheescake-m.jpg';
-import CheesecakeL from '../assets/images/cakes/cake-cheescake-l.jpg';
-import TiramisuS from '../assets/images/cakes/cake-tiramisu-s.jpg';
-import TiramisuM from '../assets/images/cakes/cake-tiramisu-m.jpg';
-import TiramisuL from '../assets/images/cakes/cake-tiramisu-l.jpg';
-import MorkovniyS from '../assets/images/cakes/cake-morkovniy-s.jpg';
-import MorkovniyM from '../assets/images/cakes/cake-morkovniy-m.jpg';
-import MorkovniyL from '../assets/images/cakes/cake-morkovniy-l.jpg';
-import NapoleonS from '../assets/images/cakes/cake-napoleon-s.jpg';
-import NapoleonM from '../assets/images/cakes/cake-napoleon-m.jpg';
-import NapoleonL from '../assets/images/cakes/cake-napoleon-l.jpg';
-import ChernichniyS from '../assets/images/cakes/cake-chernichniy-s.jpg';
-import ChernichniyM from '../assets/images/cakes/cake-chernichniy-m.jpg';
-import ChernichniyL from '../assets/images/cakes/cake-chernichniy-l.jpg';
-
-
-
-// import BarkhatS from '../assets/images/cakes/cake-barkhat-s.jpg';
-// import BarkhatM from '../assets/images/cakes/cake-barkhat-m.jpg';
-// import BarkhatL from '../assets/images/cakes/cake-barkhat-l.jpg';
-// import VozdushnoS from '../assets/images/cakes/cake-vozdushno-s.jpg';
-// import VozdushnoM from '../assets/images/cakes/cake-vozdushno-m.jpg';
-// import VozdushnoL from '../assets/images/cakes/cake-vozdushno-l.jpg';
-
-// import KaramelnoOrekhoviyNormal from '../assets/images/cakes/cake-karamelno-orekhoviy-normal.jpg';
-// import KaramelnoOrekhoviyLarge from '../assets/images/cakes/cake-karamelno-orekhoviy-large.jpg';
-
-// import KokosoviyNormal from '../assets/images/cakes/cake-kokosoviy-normal.jpg';
-// import KokosoviyLarge from '../assets/images/cakes/cake-kokosoviy-large.jpg';
-// import LimonniyNormal from '../assets/images/cakes/cake-limonniy-normal.jpg';
-// import LimonniyLarge from '../assets/images/cakes/cake-limonniy-large.jpg';
+import BavarskiyS from '../assets/images/cakes/cake-bavarskiy-s-new.jpeg';
+import BavarskiyM from '../assets/images/cakes/cake-bavarskiy-m-new.jpeg';
+import BavarskiyL from '../assets/images/cakes/cake-bavarskiy-l-new.jpeg';
+import KievskiyS from '../assets/images/cakes/cake-kievskiy-s-new.jpeg';
+import KievskiyM from '../assets/images/cakes/cake-kievskiy-m-new.jpeg';
+import KievskiyL from '../assets/images/cakes/cake-kievskiy-l-new.jpeg';
+import PragaS from '../assets/images/cakes/cake-praga-s-new.jpeg';
+import PragaM from '../assets/images/cakes/cake-praga-m-new.jpeg';
+import PragaL from '../assets/images/cakes/cake-praga-l-new.jpeg';
+import MedoviyS from '../assets/images/cakes/cake-medoviy-s-new.jpeg';
+import MedoviyM from '../assets/images/cakes/cake-medoviy-m-new.jpeg';
+import MedoviyL from '../assets/images/cakes/cake-medoviy-l-new.jpeg';
+import TrufelniyS from '../assets/images/cakes/cake-trufelniy-s-new.jpeg';
+import TrufelniyM from '../assets/images/cakes/cake-trufelniy-m-new.jpeg';
+import TrufelniyL from '../assets/images/cakes/cake-trufelniy-l-new.jpeg';
+import PtichieS from '../assets/images/cakes/cake-ptichie-moloko-s-new.jpeg';
+import PtichieM from '../assets/images/cakes/cake-ptichie-moloko-m-new.jpeg';
+import PtichieL from '../assets/images/cakes/cake-ptichie-moloko-l-new.jpeg';
+import EsterhaziS from '../assets/images/cakes/cake-esterhazi-s-new.jpeg';
+import EsterhaziM from '../assets/images/cakes/cake-esterhazi-m-new.jpeg';
+import EsterhaziL from '../assets/images/cakes/cake-esterhazi-l-new.jpeg';
+import CheesecakeS from '../assets/images/cakes/cake-cheescake-s-new.jpeg';
+import CheesecakeM from '../assets/images/cakes/cake-cheescake-m-new.jpeg';
+import CheesecakeL from '../assets/images/cakes/cake-cheescake-l-new.jpeg';
+import TiramisuS from '../assets/images/cakes/cake-tiramisu-s-new.jpeg';
+import TiramisuM from '../assets/images/cakes/cake-tiramisu-m-new.jpeg';
+import TiramisuL from '../assets/images/cakes/cake-tiramisu-l-new.jpeg';
+import MorkovniyS from '../assets/images/cakes/cake-morkovniy-s-new.jpeg';
+import MorkovniyM from '../assets/images/cakes/cake-morkovniy-m-new.jpeg';
+import MorkovniyL from '../assets/images/cakes/cake-morkovniy-l-new.jpeg';
+import NapoleonS from '../assets/images/cakes/cake-napoleon-s-new.jpeg';
+import NapoleonM from '../assets/images/cakes/cake-napoleon-m-new.jpeg';
+import NapoleonL from '../assets/images/cakes/cake-napoleon-l-new.jpeg';
+import ChernichniyS from '../assets/images/cakes/cake-chernichniy-s-new.jpeg';
+import ChernichniyM from '../assets/images/cakes/cake-chernichniy-m-new.jpeg';
+import ChernichniyL from '../assets/images/cakes/cake-chernichniy-l-new.jpeg';
+import MakoviyS from '../assets/images/cakes/cake-makoviy-s-new.jpeg';
+import MakoviyM from '../assets/images/cakes/cake-makoviy-m-new.jpeg';
+import MakoviyL from '../assets/images/cakes/cake-makoviy-l-new.jpeg';
+import FrenchAppleS from '../assets/images/cakes/cake-yablochniy-s-new.jpeg';
+import FrenchAppleM from '../assets/images/cakes/cake-yablochniy-m-new.jpeg';
+import FrenchAppleL from '../assets/images/cakes/cake-yablochniy-l-new.jpeg';
+import KaramelnoOrekhoviyS from '../assets/images/cakes/cake-orekhoviy-s-new.jpeg';
+import KaramelnoOrekhoviyM from '../assets/images/cakes/cake-orekhoviy-m-new.jpeg';
+import KaramelnoOrekhoviyL from '../assets/images/cakes/cake-orekhoviy-l-new.jpeg';
+import BarkhatS from '../assets/images/cakes/cake-barkhat-s-new.jpeg';
+import BarkhatM from '../assets/images/cakes/cake-barkhat-m-new.jpeg';
+import BarkhatL from '../assets/images/cakes/cake-barkhat-l-new.jpeg';
+import MedMolokoS from '../assets/images/cakes/cake-med-moloko-s-new.jpeg';
+import MedMolokoM from '../assets/images/cakes/cake-med-moloko-m-new.jpeg';
+import MedMolokoL from '../assets/images/cakes/cake-med-moloko-l-new.jpeg';
+import TriChokoladaS from '../assets/images/cakes/cake-tri-chokolada-s-new.jpeg';
+import TriChokoladaM from '../assets/images/cakes/cake-tri-chokolada-m-new.jpeg';
+import TriChokoladaL from '../assets/images/cakes/cake-tri-chokolada-l-new.jpeg';
+import SmetannikS from '../assets/images/cakes/cake-smetannik-s-new.jpeg';
+import SmetannikM from '../assets/images/cakes/cake-smetannik-m-new.jpeg';
+import SmetannikL from '../assets/images/cakes/cake-smetannik-l-new.jpeg';
+import CheesecakeLimeS from '../assets/images/cakes/cake-lime-s-new.jpeg';
+import CheesecakeLimeM from '../assets/images/cakes/cake-lime-m-new.jpeg';
+import CheesecakeLimeL from '../assets/images/cakes/cake-lime-l-new.jpeg';
+import VozdushnoS from '../assets/images/cakes/cake-vozdushno-s-new.jpeg';
+import VozdushnoM from '../assets/images/cakes/cake-vozdushno-m-new.jpeg';
+import VozdushnoL from '../assets/images/cakes/cake-vozdushno-l-new.jpeg';
+import BananoviyS from '../assets/images/cakes/cake-banana-s-new.jpeg';
+import BananoviyM from '../assets/images/cakes/cake-banana-m-new.jpeg';
+import BananoviyL from '../assets/images/cakes/cake-banana-l-new.jpeg';
+import LimonniyS from '../assets/images/cakes/cake-lemon-s-new.jpeg';
+import LimonniyM from '../assets/images/cakes/cake-lemon-m-new.jpeg';
+import LimonniyL from '../assets/images/cakes/cake-lemon-l-new.jpeg';
+import KokosoviyS from '../assets/images/cakes/cake-cocos-s-new.jpeg';
+import KokosoviyM from '../assets/images/cakes/cake-cocos-m-new.jpeg';
+import KokosoviyL from '../assets/images/cakes/cake-cocos-l-new.jpeg';
+import MindalChernoslivS from '../assets/images/cakes/cake-mindal-s-new.jpeg';
+import MindalChernoslivM from '../assets/images/cakes/cake-mindal-m-new.jpeg';
+import MindalChernoslivL from '../assets/images/cakes/cake-mindal-l-new.jpeg';
 
 export const cakesData = [
   {
@@ -61,7 +83,7 @@ export const cakesData = [
     image_large: BavarskiyL,
     title: 'Баварский мусс',
     description:
-      'Нежнейший торт из воздушного сливочного мусса с добавлением ванили и малины во фруктовом желе. Нежнейший торт из воздушного сливочного мусса с добавлением ванили и малины во фруктовом желе. Нежнейший торт из воздушного сливочного мусса с добавлением ванили и малины во фруктовом желе.',
+      'Нежнейший торт из воздушного сливочного мусса с добавлением ванили и малины во фруктовом желе',
     ingredients:
       'Сливки 33%, молоко, сахар, яйцо куриное, мука пшеничная, малина с/м, гель кондитерский нейтральный, желатин',
     protein: 2.9,
@@ -160,8 +182,7 @@ export const cakesData = [
     image_normal: PtichieM,
     image_large: PtichieL,
     title: 'Птичье молоко',
-    description:
-      'Воздушное суфле, нежный корж под слоем горького шоколада',
+    description: 'Воздушное суфле, нежный корж под слоем горького шоколада',
     ingredients:
       'Масло сливочное, сгущенное молоко, сахар, шоколад, мука пшеничная, яйцо куриное, масло растительное, агар-агар, лимонная кислота',
     protein: 8.3,
@@ -180,8 +201,7 @@ export const cakesData = [
     image_normal: EsterhaziM,
     image_large: EsterhaziL,
     title: 'Эстерхази',
-    description:
-      'Воздушные коржи с нежным ореховым кремом Пралине',
+    description: 'Воздушные коржи с нежным ореховым кремом Пралине',
     ingredients:
       'Фундук, арахис, миндаль, сахар, масло сливочное, яйцо куриное, масло растительное, шоколад белый, шоколад темный, паста пралине, джем абрикосовый',
     protein: 9.1,
@@ -280,8 +300,7 @@ export const cakesData = [
     image_normal: ChernichniyM,
     image_large: ChernichniyL,
     title: 'Черничный',
-    description:
-      'Черника, белый шоколад и сливки, на тонком медовом корже',
+    description: 'Черника, белый шоколад и сливки, на тонком медовом корже',
     ingredients:
       'Сыр сливочный, черника с/м, сахарная пудра, сметана 20%, мука пшеничная, сливки молочные 33%, масло сливочное, миндальная мука, яйца куриные, желатин',
     protein: 6.5,
@@ -293,104 +312,264 @@ export const cakesData = [
     price: 1170,
     category: 'cakes',
   },
-
-  // {
-  //   id: 1,
-  //   route: 'krasniy-barkhat',
-  //   image_small: BarkhatS,
-  //   image_normal: BarkhatM,
-  //   image_large: BarkhatL,
-  //   title: 'Бархатный красный',
-  //   description:
-  //     'Торт представляет собой довольно необычный десерт, состоящий из воздушного и мягкого бисквита красного цвета. Оригинальность данному изделию придает и белоснежный сливочный крем.',
-  //   ingredients:
-  //     'сыр сливочный, сахар, мука, сливки молочные 33%, масло растительное, сахар, яйцо куриное, малина с/м, кефир, гель нейтральный, какао, соль, разрыхлитель',
-  //   protein: 2.9,
-  //   fat: 20.9,
-  //   carbohydrates: 40.7,
-  //   calories: 229,
-  //   quantity: 1,
-  //   weight: 1200,
-  //   price: 1520,
-  //   category: 'cakes',
-  // },
-  // {
-  //   id: 2,
-  //   route: 'vozdushno-orekhoviy',
-  //   image_small: VozdushnoS,
-  //   image_normal: VozdushnoM,
-  //   image_large: VozdushnoL,
-  //   title: 'Воздушно-ореховый',
-  //   description:
-  //     'Слоенное тесто на основе сгущенного молока, пропитан кремом из сливочного сыра. Упакован в цветную картонную коробку с окошком',
-  //   ingredients:
-  //     'мука, сливки молочные 33%, сгущенное молоко, сахар, шоколад молочный, яйцо куриное, сыр творожный, фундук, сахарная пудра',
-  //   protein: 2.9,
-  //   fat: 20.9,
-  //   carbohydrates: 40.7,
-  //   calories: 229,
-  //   quantity: 1,
-  //   weight: 1100,
-  //   price: 1580,
-  //   category: 'cakes',
-  // },
-  // {
-  //   id: 3,
-  //   route: 'karamelno-orekhoviy',
-  //   image_small: VozdushnoS,
-  //   image_normal: KaramelnoOrekhoviyNormal,
-  //   image_large: KaramelnoOrekhoviyLarge,
-  //   title: 'Карамельно-Ореховый',
-  //   description:
-  //     'Бисквит с добавлением мелко резанных конфет Сникерс, крем из сгущенного молока и сливок',
-  //   ingredients:
-  //     'сгущенное молоко, вода, сахар, сливки молочные 33%, конфета сникерс, мед, масло сливочное, яйцо куриное, мука, сода, какао порошок',
-  //   protein: 2.9,
-  //   fat: 20.9,
-  //   carbohydrates: 40.7,
-  //   calories: 229,
-  //   quantity: 1,
-  //   weight: 800,
-  //   price: 1340,
-  //   category: 'cakes',
-  // },
-
-  // {
-  //   id: 5,
-  //   route: 'kokosoviy',
-  //   image_normal: KokosoviyNormal,
-  //   image_large: KokosoviyLarge,
-  //   title: 'Кокосовый',
-  //   description:
-  //     'Нежный сливочный десерт на прослойке из кокосового безе. Упакован в цветную картонную коробку с окошком',
-  //   ingredients:
-  //     'сливки молочные 33%, сахар, молоко 3,2%, стружка кокосовая, яйцо куриное, крем заварной патисьер, сахарная пудра, мука фундучная, сметана 20%, желатин, гель кондитерский зеркальный, миндаль, глазурь',
-  //   protein: 2.9,
-  //   fat: 20.9,
-  //   carbohydrates: 40.7,
-  //   calories: 229,
-  //   quantity: 1,
-  //   weight: 1200,
-  //   price: 1500,
-  //   category: 'cakes',
-  // },
-  // {
-  //   id: 6,
-  //   route: 'limonniy',
-  //   image_normal: LimonniyNormal,
-  //   image_large: LimonniyLarge,
-  //   title: 'Лимонный',
-  //   description:
-  //     'Бисквит с лимонной пропиткой и воздушным кремом. Легкий десерт с приятной кислинкой. Упакован в цветную картонную коробку с окошком',
-  //   ingredients:
-  //     'сыр маскарпоне, масло сливочное 82%, мука, сахар, лимон, яйцо куриное, кефир, йогурт, масло растительное, гель кондитерский нейтральный',
-  //   protein: 2.9,
-  //   fat: 20.9,
-  //   carbohydrates: 40.7,
-  //   calories: 229,
-  //   quantity: 1,
-  //   weight: 1400,
-  //   price: 1570,
-  //   category: 'cakes',
-  // },
+  {
+    id: 12,
+    route: 'makoviy',
+    image_small: MakoviyS,
+    image_normal: MakoviyM,
+    image_large: MakoviyL,
+    title: 'Маковый',
+    description:
+      'Легкий, необычный на вкус, с восхитительным сливочным кремом. Покрыт шоколадным гляссажем',
+    ingredients:
+      'Сливки молочные 33%, мак, сахар, яйцо куриное, шоколад темный 53%, масло сливочное, мука пшеничная, гель кондитерский нейтральный',
+    protein: 5.7,
+    fat: 26.1,
+    carbohydrates: 36.6,
+    calories: 404,
+    quantity: 1,
+    weight: 1400,
+    price: 1200,
+    category: 'cakes',
+  },
+  {
+    id: 13,
+    route: 'french-apple-pie',
+    image_small: FrenchAppleS,
+    image_normal: FrenchAppleM,
+    image_large: FrenchAppleL,
+    title: 'Французский яблочный пирог',
+    description:
+      'Нежный бисквит на основе фундука, с начинкой из запеченных яблок',
+    ingredients:
+      'Фундучная мука, яблоко, сахар,масло сливочное, гель кондитерский нейтральный',
+    protein: 3.2,
+    fat: 16.9,
+    carbohydrates: 54.4,
+    calories: 382,
+    quantity: 1,
+    weight: 1400,
+    price: 1245,
+    category: 'cakes',
+  },
+  {
+    id: 14,
+    route: 'karamelno-orekhoviy',
+    image_small: KaramelnoOrekhoviyS,
+    image_normal: KaramelnoOrekhoviyM,
+    image_large: KaramelnoOrekhoviyL,
+    title: 'Карамельно-Ореховый',
+    description:
+      'Бисквит с добавлением мелко резанных конфет Сникерс, крем из сгущенного молока и сливок',
+    ingredients:
+      'Сгущенное молоко, вода, сахар, сливки молочные 33%, конфета сникерс, мед, масло сливочное, яйцо куриное, мука пшеничная, сода, какао порошок',
+    protein: 7,
+    fat: 22,
+    carbohydrates: 45.8,
+    calories: 414,
+    quantity: 1,
+    weight: 800,
+    price: 880,
+    category: 'cakes',
+  },
+  {
+    id: 15,
+    route: 'krasniy-barkhat',
+    image_small: BarkhatS,
+    image_normal: BarkhatM,
+    image_large: BarkhatL,
+    title: 'Бархатный красный',
+    description:
+      'Торт представляет собой довольно необычный десерт, состоящий из воздушного и мягкого бисквита красного цвета. Оригинальность данному изделию придает и белоснежный сливочный крем',
+    ingredients:
+      'Сыр сливочный, сахар, мука, сливки молочные 33%, масло растительное, сахар, яйцо куриное, малина с/м, кефир, гель нейтральный, какао, соль, разрыхлитель',
+    protein: 4.4,
+    fat: 17,
+    carbohydrates: 28.5,
+    calories: 297,
+    quantity: 1,
+    weight: 1200,
+    price: 1100,
+    category: 'cakes',
+  },
+  {
+    id: 16,
+    route: 'med-moloko',
+    image_small: MedMolokoS,
+    image_normal: MedMolokoM,
+    image_large: MedMolokoL,
+    title: 'Мед и молоко',
+    description:
+      'Медовые коржи и прослойка из сливочного сыра, сливок и молока',
+    ingredients:
+      'Мед, масло сливочное, сахар, вода, яйцо куриное, мука пшеничная, сода, какао порошок, сыр сливочный, сахарная пудра, сливки',
+    protein: 3.2,
+    fat: 16.9,
+    carbohydrates: 54.4,
+    calories: 382,
+    quantity: 1,
+    weight: 800,
+    price: 890,
+    category: 'cakes',
+  },
+  {
+    id: 17,
+    route: 'tri-chokolada',
+    image_small: TriChokoladaS,
+    image_normal: TriChokoladaM,
+    image_large: TriChokoladaL,
+    title: 'Три шоколада',
+    description:
+      'Элегантное трио белого, молочного и черного шоколада в сочетании нежнейшего шоколадного бисквита',
+    ingredients:
+      'Шоколад белый 34%, шоколад темный 53%, сахар, сливки молочные 33%, яйцо куриное, мука пшеничная, какао, желатин',
+    protein: 3.1,
+    fat: 19,
+    carbohydrates: 43.7,
+    calories: 302,
+    quantity: 1,
+    weight: 700,
+    price: 1060,
+    category: 'cakes',
+  },
+  {
+    id: 18,
+    route: 'smetannik',
+    image_small: SmetannikS,
+    image_normal: SmetannikM,
+    image_large: SmetannikL,
+    title: 'Сметанник',
+    description:
+      'Классический рецепт бисквитного слоеного торта, где сметана добавляется в коржи и крем. Коржи на сметанной основе хорошо пропитываются и торт получается очень сочным, с насыщенным молочным вкусом',
+    ingredients:
+      'Сметана 20%, мука пшеничная, сливки молочные 33%, масло сливочное, мед, сахар, яйцо куриное, грецкий орех, сода, ваниль',
+    protein: 5.1,
+    fat: 12.5,
+    carbohydrates: 39.7,
+    calories: 297,
+    quantity: 1,
+    weight: 1200,
+    price: 1120,
+    category: 'cakes',
+  },
+  {
+    id: 19,
+    route: 'cheesecake-lime',
+    image_small: CheesecakeLimeS,
+    image_normal: CheesecakeLimeM,
+    image_large: CheesecakeLimeL,
+    title: 'Чизкейк лайм',
+    description:
+      'Нежный десерт, который гарантированно понравится всем любителям чизкейков. Яркое, возбуждающее аппетитное вкусовое сочетание',
+    ingredients:
+      'Сыр маскарпоне, сыр творожный, сливки молочные 33%, сахарная пудра, мука, мед, масло сливочное 82%, сметана 20%, лайм, желатин гранулированный, гель кондитерский нейтральный',
+    protein: 7.5,
+    fat: 15,
+    carbohydrates: 30.2,
+    calories: 305,
+    quantity: 1,
+    weight: 1400,
+    price: 1200,
+    category: 'cakes',
+  },
+  {
+    id: 20,
+    route: 'vozdushno-orekhoviy',
+    image_small: VozdushnoS,
+    image_normal: VozdushnoM,
+    image_large: VozdushnoL,
+    title: 'Воздушно-ореховый',
+    description:
+      'Слоенное тесто на основе сгущенного молока, пропитан кремом из сливочного сыра. Упакован в цветную картонную коробку с окошком',
+    ingredients:
+      'Мука пшеничная, сливки молочные 33%, сгущенное молоко, сахар, шоколад молочный, яйцо куриное, сыр творожный, фундук, сахарная пудра',
+    protein: 5.1,
+    fat: 20.2,
+    carbohydrates: 41.1,
+    calories: 364,
+    quantity: 1,
+    weight: 1100,
+    price: 1110,
+    category: 'cakes',
+  },
+  {
+    id: 21,
+    route: 'bananoviy',
+    image_small: BananoviyS,
+    image_normal: BananoviyM,
+    image_large: BananoviyL,
+    title: 'Банановый',
+    description:
+      'Бисквитный торт из свежих бананов, сметаны и молочных сливок',
+    ingredients:
+      'Мука пшеничная, сметана 20%, яйцо куриное, сахар, сливки молочные 33%, бананы, сахарная пудра, гель кондитерский нейтральный, крахмал кукурузный, какао порошок, масло сливочное 82%, глазурь белая',
+    protein: 6.4,
+    fat: 23.1,
+    carbohydrates: 34.6,
+    calories: 331,
+    quantity: 1,
+    weight: 1400,
+    price: 1170,
+    category: 'cakes',
+  },
+    {
+    id: 22,
+    route: 'limonniy',
+    image_small: LimonniyS,
+    image_normal: LimonniyM,
+    image_large: LimonniyL,
+    title: 'Лимонный',
+    description:
+      'Бисквит с лимонной пропиткой и воздушным кремом. Легкий десерт с приятной кислинкой. Упакован в цветную картонную коробку с окошком',
+    ingredients:
+      'Сыр маскарпоне, масло сливочное 82%, мука, сахар, лимон, яйцо куриное, кефир, йогурт, масло растительное, гель кондитерский нейтральный',
+    protein: 6.6,
+    fat: 19.7,
+    carbohydrates: 31.3,
+    calories: 329,
+    quantity: 1,
+    weight: 1400,
+    price: 1100,
+    category: 'cakes',
+  },
+  {
+    id: 23,
+    route: 'kokosoviy',
+    image_small: KokosoviyS,
+    image_normal: KokosoviyM,
+    image_large: KokosoviyL,
+    title: 'Кокосовый',
+    description:
+      'Нежный сливочный десерт на прослойке из кокосового безе. Упакован в цветную картонную коробку с окошком',
+    ingredients:
+      'Сливки молочные 33%, сахар, молоко 3,2%, стружка кокосовая, яйцо куриное, крем заварной патисьер, сахарная пудра, мука фундучная, сметана 20%, желатин, гель кондитерский зеркальный, миндаль, глазурь',
+    protein: 5.8,
+    fat: 20.9,
+    carbohydrates: 36.9,
+    calories: 331,
+    quantity: 1,
+    weight: 1200,
+    price: 1080,
+    category: 'cakes',
+  },
+  {
+    id: 24,
+    route: 'mindal-chernosliv',
+    image_small: MindalChernoslivS,
+    image_normal: MindalChernoslivM,
+    image_large: MindalChernoslivL,
+    title: 'Миндаль чернослив',
+    description:
+      'Необычное сочетание миндаля с черносливом и грецким орехом совместно с нежным сливочным кремом придает незабываемый вкус',
+    ingredients:
+      'Сметана 20%, мука, сливки молочные 33%, масло сливочное, мед, сахар, яйцо куриное, грецкий орех, сода, ваниль',
+    protein: 5.5,
+    fat: 26.1,
+    carbohydrates: 36.4,
+    calories: 408,
+    quantity: 1,
+    weight: 1200,
+    price: 1120,
+    category: 'cakes',
+  },
 ];

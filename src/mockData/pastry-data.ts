@@ -1,6 +1,6 @@
-import BavarskiyS from '../assets/images/cakes/cake-barkhat-s.jpg';
-import BavarskiyM from '../assets/images/cakes/cake-barkhat-m.jpg';
-import BavarskiyL from '../assets/images/cakes/cake-bavarskiy-l.jpg';
+import BavarskiyS from '../assets/images/cakes/cake-barkhat-s-new.jpeg';
+import BavarskiyM from '../assets/images/cakes/cake-barkhat-m-new.jpeg';
+import BavarskiyL from '../assets/images/cakes/cake-barkhat-l-new.jpeg';
 
 export const pastryData = [
   {
