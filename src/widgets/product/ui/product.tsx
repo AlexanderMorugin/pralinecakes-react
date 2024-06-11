@@ -44,7 +44,7 @@ const Product: FC<IProduct> = ({
   route,
   title,
   image_normal,
-  image_large,
+  // image_large,
   description,
   ingredients,
   protein,
@@ -61,9 +61,9 @@ const Product: FC<IProduct> = ({
   return (
     <section className={styles.product}>
       {cake && <PageHeading title={`Торт "${title}"`} />}
-      {pastry && <PageHeading title={`Пирожное ${title}`} />}
+      {pastry && <PageHeading title={`Пирожное "${title}"`} />}
       <div className={styles.product__container}>
-        <img src={image_large} alt={title} className={styles.product__image} />
+        <img src={image_normal} alt={title} className={styles.product__image} />
         <ArticleWrapper>
           <div className={styles.product__description}>
             <span className={styles.product__span}>Описание</span>

@@ -9,6 +9,7 @@ interface IProductCard {
   title?: string;
   description?: string;
   price?: number;
+  quantity?: number;
 }
 
 const ProductCard: FC<IProductCard> = ({
@@ -17,6 +18,7 @@ const ProductCard: FC<IProductCard> = ({
   title,
   description,
   price,
+  quantity,
 }) => {
   return (
     <Link to={route || '#'} className={styles.productCard}>
@@ -25,7 +27,12 @@ const ProductCard: FC<IProductCard> = ({
         <h3 className={styles.productCard__title}>{title}</h3>
         <p className={styles.productCard__description}>{description}</p>
       </article>
-      <p className={styles.productCard__price}>{price} р</p>
+      <p className={styles.productCard__price}>
+        {quantity && (
+          <span className={styles.productCard__span}>от </span>
+        )}
+        {price} р
+      </p>
     </Link>
   );
 };

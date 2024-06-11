@@ -87,4 +87,9 @@
       font: var(--font-xs-bold);
     }
   }
+
+  &__span {
+    font: var(--font-xxs-regular);
+    color: var(--text-thirdary);
+  }
 }

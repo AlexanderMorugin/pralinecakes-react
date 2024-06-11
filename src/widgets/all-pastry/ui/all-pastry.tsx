@@ -16,6 +16,7 @@ const AllPastry: FC = () => {
               title={cake.title}
               description={cake.description}
               price={cake.price}
+              quantity={cake.quantity_b}
             />
           </li>
         ))}

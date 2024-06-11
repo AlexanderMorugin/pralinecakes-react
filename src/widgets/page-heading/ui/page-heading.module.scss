@@ -9,6 +9,7 @@
 
   &__title {
     font: var(--font-xxl-bold);
+    text-align: center;
 
     @include media.respond-to('middle') {
       font: var(--font-xl-bold);
