@@ -58,9 +58,56 @@ import MaraquyaL from '../assets/images/pastry/pastry-maraquya-l.jpeg';
 import TriShokoladaS from '../assets/images/pastry/pastry-tri-shokolada-s.jpeg';
 import TriShokoladaM from '../assets/images/pastry/pastry-tri-shokolada-m.jpeg';
 import TriShokoladaL from '../assets/images/pastry/pastry-tri-shokolada-l.jpeg';
+import YogurtovoeS from '../assets/images/pastry/pastry-yogurtovoe-s.jpeg';
+import YogurtovoeM from '../assets/images/pastry/pastry-yogurtovoe-m.jpeg';
+import YogurtovoeL from '../assets/images/pastry/pastry-yogurtovoe-l.jpeg';
+import MuraveinikS from '../assets/images/pastry/pastry-muraveinik-s.jpeg';
+import MuraveinikM from '../assets/images/pastry/pastry-muraveinik-m.jpeg';
+import MuraveinikL from '../assets/images/pastry/pastry-muraveinik-l.jpeg';
+import CheesecakeS from '../assets/images/pastry/pastry-cheesecake-s.jpeg';
+import CheesecakeM from '../assets/images/pastry/pastry-cheesecake-m.jpeg';
+import CheesecakeL from '../assets/images/pastry/pastry-cheesecake-l.jpeg';
+import CheesecakeChokoS from '../assets/images/pastry/pastry-cheesecake-choko-s.jpeg';
+import CheesecakeChokoM from '../assets/images/pastry/pastry-cheesecake-choko-m.jpeg';
+import CheesecakeChokoL from '../assets/images/pastry/pastry-cheesecake-choko-l.jpeg';
+import CheesecakeLimeS from '../assets/images/pastry/pastry-cheesecake-lime-s.jpeg';
+import CheesecakeLimeM from '../assets/images/pastry/pastry-cheesecake-lime-m.jpeg';
+import CheesecakeLimeL from '../assets/images/pastry/pastry-cheesecake-lime-l.jpeg';
+import CheesecakeStrawberryS from '../assets/images/pastry/pastry-cheesecake-klubnika-s.jpeg';
+import CheesecakeStrawberryM from '../assets/images/pastry/pastry-cheesecake-klubnika-m.jpeg';
+import CheesecakeStrawberryL from '../assets/images/pastry/pastry-cheesecake-klubnika-l.jpeg';
+import ShokoladnoeSufleS from '../assets/images/pastry/pastry-cheesecake-yogurt-choko-s.jpeg';
+import ShokoladnoeSufleM from '../assets/images/pastry/pastry-cheesecake-yogurt-choko-m.jpeg';
+import ShokoladnoeSufleL from '../assets/images/pastry/pastry-cheesecake-yogurt-choko-l.jpeg';
+import MorkovnoeS from '../assets/images/pastry/pastry-morkovnoe-s.jpeg';
+import MorkovnoeM from '../assets/images/pastry/pastry-morkovnoe-m.jpeg';
+import MorkovnoeL from '../assets/images/pastry/pastry-morkovnoe-l.jpeg';
+import ApplePieS from '../assets/images/pastry/pastry-yablochnoe-s.jpeg';
+import ApplePieM from '../assets/images/pastry/pastry-yablochnoe-m.jpeg';
+import ApplePieL from '../assets/images/pastry/pastry-yablochnoe-l.jpeg';
+import LemonS from '../assets/images/pastry/pastry-limonnoe-s.jpeg';
+import LemonM from '../assets/images/pastry/pastry-limonnoe-m.jpeg';
+import LemonL from '../assets/images/pastry/pastry-limonnoe-l.jpeg';
+import NutPieS from '../assets/images/pastry/pastry-orehovoe-s.jpeg';
+import NutPieM from '../assets/images/pastry/pastry-orehovoe-m.jpeg';
+import NutPieL from '../assets/images/pastry/pastry-orehovoe-l.jpeg';
+import PragaS from '../assets/images/pastry/pastry-praga-s.jpeg';
+import PragaM from '../assets/images/pastry/pastry-praga-m.jpeg';
+import PragaL from '../assets/images/pastry/pastry-praga-l.jpeg';
+import TrufelnoeS from '../assets/images/pastry/pastry-trufelnoe-s.jpeg';
+import TrufelnoeM from '../assets/images/pastry/pastry-trufelnoe-m.jpeg';
+import TrufelnoeL from '../assets/images/pastry/pastry-trufelnoe-l.jpeg';
+import KrasniyBarhatS from '../assets/images/pastry/pastry-barhat-s.jpeg';
+import KrasniyBarhatM from '../assets/images/pastry/pastry-barhat-m.jpeg';
+import KrasniyBarhatL from '../assets/images/pastry/pastry-barhat-l.jpeg';
+import MakovoeS from '../assets/images/pastry/pastry-makovoe-s.jpeg';
+import MakovoeM from '../assets/images/pastry/pastry-makovoe-m.jpeg';
+import MakovoeL from '../assets/images/pastry/pastry-makovoe-l.jpeg';
 
 
-TriShokoladaS
+
+PragaS
+TriShokoladaS;
 export const pastryData = [
   {
     id: 0,
@@ -161,8 +208,7 @@ export const pastryData = [
     image_normal: WildBerriesBasketM,
     image_large: WildBerriesBasketL,
     title: 'Тарталетка с лесными ягодами',
-    description:
-      'Песочное тесто с заварным кремом и свежими ягодами',
+    description: 'Песочное тесто с заварным кремом и свежими ягодами',
     ingredients:
       'Мука пшеничная, масло сливочное, сахар, яйцо, крем заварной, сливки 33%, молоко, голубика, малина, разрыхлитель',
     protein: 3.1,
@@ -253,8 +299,7 @@ export const pastryData = [
     image_normal: EklerM,
     image_large: EklerL,
     title: 'Эклер',
-    description:
-      'Шоколадный, фисташковый или ванильный',
+    description: 'Шоколадный, фисташковый или ванильный',
     ingredients:
       'Молоко, мука пшеничная, масло сливочное 82%, молоко сгущенное гост, сахар ванильный, масло растительное, крем заварной',
     protein: 5.2,
@@ -299,8 +344,7 @@ export const pastryData = [
     image_normal: CheesecakeBlueberryM,
     image_large: CheesecakeBlueberryL,
     title: 'Чизкейк с голубикой',
-    description:
-      'Легкое сырное суфле со свежей голубикой на тонком бисквите',
+    description: 'Легкое сырное суфле со свежей голубикой на тонком бисквите',
     ingredients:
       'Сыр творожный, яйцо куриное, мука пшеничная, сахар, сметана, йогурт, сахарная пудра, желатин, сливки 33%, голубика, гель нейтральный',
     protein: 6.5,
@@ -322,8 +366,7 @@ export const pastryData = [
     image_normal: FantasiaM,
     image_large: FantasiaL,
     title: 'Фантазия',
-    description:
-      'Легкий мусс со вкусом малины, манго и маракуйи',
+    description: 'Легкий мусс со вкусом малины, манго и маракуйи',
     ingredients:
       'Сливки 33%, сахар, малина с/м, манго пюре, маракуйя пюре, яйцо куриное, мука пшеничная, гель нейтральный',
     protein: 4.4,
@@ -368,8 +411,7 @@ export const pastryData = [
     image_normal: MilfeyDjanduaM,
     image_large: MilfeyDjanduaL,
     title: 'Милфей джандуйя',
-    description:
-      'Медовые коржи с ореховым кремом джандуйя',
+    description: 'Медовые коржи с ореховым кремом джандуйя',
     ingredients:
       'Мука пшеничная, сахар, сливки 33%, масло сливочное 82%, сметана 20%, яйцо куриное, крем джандуйя, сгущенное молоко гост, мед, сода, уксус',
     protein: 5.7,
@@ -522,4 +564,339 @@ export const pastryData = [
     price_b: 103,
     category: 'pastry',
   },
+  {
+    id: 20,
+    route: 'yogurtovoe',
+    image_small: YogurtovoeS,
+    image_normal: YogurtovoeM,
+    image_large: YogurtovoeL,
+    title: 'Йогуртовое',
+    description:
+      'Легкий йогуртовый мусс со сливками, кусочками свежих персиков и ежевики, с сыром Маскарпоне на воздушном бисквите',
+    ingredients:
+      'Сыр маскарпоне, сливки 33%, йогурт натуральный, персик консерв., сахар, мука пшеничная, яйцо куриное, желатин',
+    protein: 17.3,
+    fat: 6.2,
+    carbohydrates: 26,
+    calories: 175,
+    quantity: 10,
+    quantity_b: 15,
+    weight: 100,
+    weight_b: 145,
+    price: 83,
+    price_b: 102,
+    category: 'pastry',
+  },
+  {
+    id: 21,
+    route: 'muraveinik',
+    image_small: MuraveinikS,
+    image_normal: MuraveinikM,
+    image_large: MuraveinikL,
+    title: 'Муравейник',
+    description: 'Песочное тесто с кремом из вареного сгущенного молока',
+    ingredients:
+      'Масло сливочное 82%, яйцо куриное, молоко 3,2%, сахар, сода, мука пшеничная, молоко сгущенное',
+    protein: 4.6,
+    fat: 29,
+    carbohydrates: 44.3,
+    calories: 432,
+    quantity: 16,
+    quantity_b: null,
+    weight: 100,
+    weight_b: null,
+    price: 64,
+    price_b: null,
+    category: 'pastry',
+  },
+  {
+    id: 22,
+    route: 'cheesecake',
+    image_small: CheesecakeS,
+    image_normal: CheesecakeM,
+    image_large: CheesecakeL,
+    title: 'Чизкейк',
+    description:
+      'Испеченный из нежного творожного сыра, на тонком слое бисквита',
+    ingredients:
+      'Сыр творожный, яйцо куриное, сахар, сметана 20%, мука пшеничная, сливки молочные 33%, гель кондитерский нейтральный',
+    protein: 3.4,
+    fat: 24.7,
+    carbohydrates: 34.7,
+    calories: 331,
+    quantity: 14,
+    quantity_b: 20,
+    weight: 100,
+    weight_b: 120,
+    price: 84,
+    price_b: 98,
+    category: 'pastry',
+  },
+  {
+    id: 23,
+    route: 'cheesecake-chokolate',
+    image_small: CheesecakeChokoS,
+    image_normal: CheesecakeChokoM,
+    image_large: CheesecakeChokoL,
+    title: 'Чизкейк шоколадный',
+    description:
+      'Сырный торт испеченный из двух слоев, классического и шоколадного, на воздушном шоколадном бисквите',
+    ingredients:
+      'Творожный сыр, яйцо куриное, сахар, шоколад темный 52%, сметана 20%, сливки молочные 33%, мука пшеничная, гель кондитерский',
+    protein: 4.2,
+    fat: 26.8,
+    carbohydrates: 44.5,
+    calories: 390,
+    quantity: 20,
+    quantity_b: null,
+    weight: 125,
+    weight_b: null,
+    price: 104,
+    price_b: null,
+    category: 'pastry',
+  },
+  {
+    id: 24,
+    route: 'cheesecake-lime',
+    image_small: CheesecakeLimeS,
+    image_normal: CheesecakeLimeM,
+    image_large: CheesecakeLimeL,
+    title: 'Чизкейк лайм',
+    description: 'Испеченный сырный торт с добавлением лайма',
+    ingredients:
+      'Сыр маскарпоне, сыр творожный, сливки молочные 33%, сахарная пудра, мука, мед, масло сливочное 82%, сметана 20%, лайм, желатин гранулированный, гель кондитерский нейтральный',
+    protein: 7.5,
+    fat: 15,
+    carbohydrates: 30.2,
+    calories: 305,
+    quantity: 20,
+    quantity_b: null,
+    weight: 120,
+    weight_b: null,
+    price: 99,
+    price_b: null,
+    category: 'pastry',
+  },
+  {
+    id: 25,
+    route: 'cheesecake-strawberry',
+    image_small: CheesecakeStrawberryS,
+    image_normal: CheesecakeStrawberryM,
+    image_large: CheesecakeStrawberryL,
+    title: 'Чизкейк клубничный',
+    description: 'Чизкейк холодного способа приготовления состоит из сливочного сыра, клубники, сливок, йогурта. Украшен сливочным кремом',
+    ingredients:
+      'Творожный сыр, сливки молочные 33%, йогурт натуральный, клубника с/м, яйцо куриное, сахар, мука пшеничная, желатин гранулированный',
+    protein: 13.2,
+    fat: 9.8,
+    carbohydrates: 24.7,
+    calories: 217,
+    quantity: 16,
+    quantity_b: null,
+    weight: 100,
+    weight_b: null,
+    price: 90,
+    price_b: null,
+    category: 'pastry',
+  },
+  {
+    id: 26,
+    route: 'shokoladnoe-sufle',
+    image_small: ShokoladnoeSufleS,
+    image_normal: ShokoladnoeSufleM,
+    image_large: ShokoladnoeSufleL,
+    title: 'Шоколадное суфле',
+    description: 'Чизкейк холодного способа приготовления состоит из сливочного сыра, шоколада, сливок, йогурта. Сверху украшен макарони',
+    ingredients:
+      'Творожный сыр, сливки молочные 33%, йогурт натуральный, шоколад 53%, яйцо куриное, сахар, мука пшеничная, мука миндальная, желатин гранулированный',
+    protein: 16.2,
+    fat: 14.4,
+    carbohydrates: 31.4,
+    calories: 321,
+    quantity: 16,
+    quantity_b: null,
+    weight: 100,
+    weight_b: null,
+    price: 94,
+    price_b: null,
+    category: 'pastry',
+  },
+  {
+    id: 27,
+    route: 'morkovnoe',
+    image_small: MorkovnoeS,
+    image_normal: MorkovnoeM,
+    image_large: MorkovnoeL,
+    title: 'Морковное',
+    description: 'Торт с еле уловимым вкусом моркови, с добавлением грецкого ореха, изюма, творожного сыра и корицы. Украшен оранжевым гелем',
+    ingredients:
+      'Сыр сливочный, сливки молочные 33%, морковь, яйцо куриное, сахар масло сливочное, грецкий орех, изюм белый, мука, сода, корица, сахарная пудра',
+    protein: 2.9,
+    fat: 16.6,
+    carbohydrates: 53,
+    calories: 373,
+    quantity: 14,
+    quantity_b: 20,
+    weight: 100,
+    weight_b: 120,
+    price: 78,
+    price_b: 98,
+    category: 'pastry',
+  },
+  {
+    id: 28,
+    route: 'apple-pie',
+    image_small: ApplePieS,
+    image_normal: ApplePieM,
+    image_large: ApplePieL,
+    title: 'Яблочный пирог',
+    description: 'Нежный бисквит на основе фундука, с начинкой из запеченных яблок, украшенный орехами',
+    ingredients:
+      'Фундучная мука, яблоко, сахар,масло сливочное, гель кондитерский нейтральный',
+    protein: 3.2,
+    fat: 16.9,
+    carbohydrates: 54.4,
+    calories: 382,
+    quantity: 15,
+    quantity_b: null,
+    weight: 130,
+    weight_b: null,
+    price: 110,
+    price_b: null,
+    category: 'pastry',
+  },
+  {
+    id: 29,
+    route: 'lemon',
+    image_small: LemonS,
+    image_normal: LemonM,
+    image_large: LemonL,
+    title: 'Лимонное',
+    description: 'Бисквитный торт, с кремом из маскарпоне и творожного сыра , в сочетании с ярким вкусом лимонного сока',
+    ingredients:
+      'Сыр маскарпоне, масло сливочное 82%, мука, сахар, лимон, яйцо куриное, кефир, йогурт, масло растительное, гель кондитерский нейтральный',
+    protein: 6.6,
+    fat: 19.7,
+    carbohydrates: 31.3,
+    calories: 329,
+    quantity: 20,
+    quantity_b: null,
+    weight: 110,
+    weight_b: null,
+    price: 98,
+    price_b: null,
+    category: 'pastry',
+  },
+  {
+    id: 30,
+    route: 'nut-pie',
+    image_small: NutPieS,
+    image_normal: NutPieM,
+    image_large: NutPieL,
+    title: 'Ореховый пирог',
+    description: 'Нежное песочное тесто с грецкими орехами, черным шоколадом, кленовым сиропом и коньяком',
+    ingredients:
+      'Мука пшеничная, яйцо куриное, сахар, масло сливочное, орех грецкий, шоколад горький 72%, сироп кленовый, коньяк',
+    protein: 7.5,
+    fat: 26.8,
+    carbohydrates: 42,
+    calories: 433,
+    quantity: 14,
+    quantity_b: 20,
+    weight: 80,
+    weight_b: 120,
+    price: 78,
+    price_b: 98,
+    category: 'pastry',
+  },
+  {
+    id: 31,
+    route: 'praga',
+    image_small: PragaS,
+    image_normal: PragaM,
+    image_large: PragaL,
+    title: 'Прага',
+    description: 'Классический рецепт, шоколадно-масленный бисквит, сливочный крем с добавлением какао',
+    ingredients:
+      'Мука пшеничная, сахар, масло сливочное, сгущенное молоко, джем абрикосовый, шоколад, сливки молочные 33%',
+    protein: 4.9,
+    fat: 28.7,
+    carbohydrates: 40.4,
+    calories: 439,
+    quantity: 14,
+    quantity_b: 20,
+    weight: 80,
+    weight_b: 105,
+    price: 82,
+    price_b: 98,
+    category: 'pastry',
+  },
+  {
+    id: 32,
+    route: 'trufelnoe',
+    image_small: TrufelnoeS,
+    image_normal: TrufelnoeM,
+    image_large: TrufelnoeL,
+    title: 'Трюфельное',
+    description: 'Сливочный мусс на основе темного шоколада, дополненный шоколадным бисквитом',
+    ingredients:
+      'Шоколад темный, сливки молочные 33%, сахар, яйцо куриное, масло сливочное, какао, мука пшеничная, гель нейтральный, рис воздушный',
+    protein: 3.8,
+    fat: 18.5,
+    carbohydrates: 44.5,
+    calories: 313,
+    quantity: 12,
+    quantity_b: 20,
+    weight: 70,
+    weight_b: 105,
+    price: 82,
+    price_b: 104,
+    category: 'pastry',
+  },
+  {
+    id: 33,
+    route: 'krasniy-barhat',
+    image_small: KrasniyBarhatS,
+    image_normal: KrasniyBarhatM,
+    image_large: KrasniyBarhatL,
+    title: 'Красный бархат',
+    description: 'Представляет собой довольно необычный десерт, состоящий из воздушного и мягкого бисквита красного цвета. Оригинальность данному изделию придает и белоснежный сливочный крем',
+    ingredients:
+      'Сыр сливочный, сахар, мука, сливки молочные 33%, масло растительное, сахар, яйцо куриное, малина с/м, кефир, гель нейтральный, какао, соль, разрыхлитель',
+    protein: 4.4,
+    fat: 17,
+    carbohydrates: 28.5,
+    calories: 297,
+    quantity: 12,
+    quantity_b: 20,
+    weight: 70,
+    weight_b: 100,
+    price: 77,
+    price_b: 98,
+    category: 'pastry',
+  },
+  {
+    id: 34,
+    route: 'makovoe',
+    image_small: MakovoeS,
+    image_normal: MakovoeM,
+    image_large: MakovoeL,
+    title: 'Маковое',
+    description: 'Легкий, необычный на вкус, с восхитительным сливочным кремом маковый торт, придется Вам по вкусу',
+    ingredients:
+      'Сливки молочные 33%, мак, сахар, яйцо куриное, шоколад темный 53%, масло сливочное, мука пшеничная, гель кондитерский нейтральный',
+    protein: 5.7,
+    fat: 26.1,
+    carbohydrates: 36.6,
+    calories: 404,
+    quantity: 14,
+    quantity_b: 20,
+    weight: 100,
+    weight_b: 120,
+    price: 84,
+    price_b: 103,
+    category: 'pastry',
+  },
+
+
 ];
