@@ -21,33 +21,45 @@ const ProductPrices: FC<IProductPrices> = ({
 }) => {
   return (
     <div className={styles.productPrices}>
-      <p className={styles.productPrices__title}>Пирожное продается комплектом</p>
+      <p className={styles.productPrices__title}>
+        Пирожное продается комплектом
+      </p>
       <div className={styles.productPrices__container}>
-      <div className={styles.productPrices__box}>
-        <span>Вес / 1шт</span>
-        <span className={styles.productPrices__text}>{weight} гр</span>
-        <span className={styles.productPrices__text}>{weight_b} гр</span>
-      </div>
+        <div className={styles.productPrices__box}>
+          <span>Вес / 1шт</span>
+          <span className={styles.productPrices__text}>{weight} гр</span>
+          {weight_b && (
+            <span className={styles.productPrices__text}>{weight_b} гр</span>
+          )}
+        </div>
 
-      <div className={styles.productPrices__box}>
-        <span>Цена / 1шт</span>
-        <span className={styles.productPrices__price}>{price} р</span>
-        <span className={styles.productPrices__price}>{price_b} р</span>
-      </div>
+        <div className={styles.productPrices__box}>
+          <span>Цена / 1шт</span>
+          <span className={styles.productPrices__price}>{price} р</span>
+          {price_b && (
+            <span className={styles.productPrices__price}>{price_b} р</span>
+          )}
+        </div>
 
-      <div className={styles.productPrices__box}>
-        <span>Кол-во</span>
-        <span className={styles.productPrices__text}>{quantity} шт</span>
-        <span className={styles.productPrices__text}>{quantity_b} шт</span>
-      </div>
+        <div className={styles.productPrices__box}>
+          <span>Кол-во</span>
+          <span className={styles.productPrices__text}>{quantity} шт</span>
+          {quantity_b && (
+            <span className={styles.productPrices__text}>{quantity_b} шт</span>
+          )}
+        </div>
 
-      <div className={styles.productPrices__box}>
-        <span>Сумма</span>
-        <span className={styles.productPrices__price}>{price * quantity} р</span>
-        <span className={styles.productPrices__price}>
-          {price_b * quantity_b} р
-        </span>
-      </div>
+        <div className={styles.productPrices__box}>
+          <span>Сумма</span>
+          <span className={styles.productPrices__price}>
+            {price * quantity} р
+          </span>
+          {price_b && (
+            <span className={styles.productPrices__price}>
+              {price_b * quantity_b} р
+            </span>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -93,6 +93,7 @@ export const cakesData = [
     quantity: 1,
     weight: 600,
     price: 740,
+    rating: 4,
     category: 'cakes',
   },
   {
@@ -113,6 +114,7 @@ export const cakesData = [
     quantity: 1,
     weight: 800,
     price: 925,
+    rating: 7,
     category: 'cakes',
   },
   {
@@ -133,6 +135,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1300,
     price: 1040,
+    rating: 6,
     category: 'cakes',
   },
   {
@@ -153,6 +156,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1400,
     price: 990,
+    rating: 10,
     category: 'cakes',
   },
   {
@@ -173,6 +177,7 @@ export const cakesData = [
     quantity: 1,
     weight: 900,
     price: 1030,
+    rating: 7,
     category: 'cakes',
   },
   {
@@ -192,6 +197,7 @@ export const cakesData = [
     quantity: 1,
     weight: 800,
     price: 830,
+    rating: 4,
     category: 'cakes',
   },
   {
@@ -211,6 +217,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1250,
     price: 1230,
+    rating: 6,
     category: 'cakes',
   },
   {
@@ -231,6 +238,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1400,
     price: 1200,
+    rating: 6,
     category: 'cakes',
   },
   {
@@ -251,6 +259,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1100,
     price: 1080,
+    rating: 6,
     category: 'cakes',
   },
   {
@@ -271,6 +280,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1400,
     price: 1140,
+    rating: 7,
     category: 'cakes',
   },
   {
@@ -291,6 +301,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1000,
     price: 1100,
+    rating: 10,
     category: 'cakes',
   },
   {
@@ -310,6 +321,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1300,
     price: 1170,
+    rating: 9,
     category: 'cakes',
   },
   {
@@ -330,6 +342,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1400,
     price: 1200,
+    rating: 8,
     category: 'cakes',
   },
   {
@@ -350,6 +363,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1400,
     price: 1245,
+    rating: 9,
     category: 'cakes',
   },
   {
@@ -370,6 +384,7 @@ export const cakesData = [
     quantity: 1,
     weight: 800,
     price: 880,
+    rating: 7,
     category: 'cakes',
   },
   {
@@ -390,6 +405,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1200,
     price: 1100,
+    rating: 10,
     category: 'cakes',
   },
   {
@@ -410,6 +426,7 @@ export const cakesData = [
     quantity: 1,
     weight: 800,
     price: 890,
+    rating: 6,
     category: 'cakes',
   },
   {
@@ -430,6 +447,7 @@ export const cakesData = [
     quantity: 1,
     weight: 700,
     price: 1060,
+    rating: 8,
     category: 'cakes',
   },
   {
@@ -450,6 +468,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1200,
     price: 1120,
+    rating: 7,
     category: 'cakes',
   },
   {
@@ -470,6 +489,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1400,
     price: 1200,
+    rating: 5,
     category: 'cakes',
   },
   {
@@ -490,6 +510,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1100,
     price: 1110,
+    rating: 8,
     category: 'cakes',
   },
   {
@@ -499,8 +520,7 @@ export const cakesData = [
     image_normal: BananoviyM,
     image_large: BananoviyL,
     title: 'Банановый',
-    description:
-      'Бисквитный торт из свежих бананов, сметаны и молочных сливок',
+    description: 'Бисквитный торт из свежих бананов, сметаны и молочных сливок',
     ingredients:
       'Мука пшеничная, сметана 20%, яйцо куриное, сахар, сливки молочные 33%, бананы, сахарная пудра, гель кондитерский нейтральный, крахмал кукурузный, какао порошок, масло сливочное 82%, глазурь белая',
     protein: 6.4,
@@ -510,9 +530,10 @@ export const cakesData = [
     quantity: 1,
     weight: 1400,
     price: 1170,
+    rating: 4,
     category: 'cakes',
   },
-    {
+  {
     id: 22,
     route: 'limonniy',
     image_small: LimonniyS,
@@ -530,6 +551,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1400,
     price: 1100,
+    rating: 5,
     category: 'cakes',
   },
   {
@@ -550,6 +572,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1200,
     price: 1080,
+    rating: 7,
     category: 'cakes',
   },
   {
@@ -570,6 +593,7 @@ export const cakesData = [
     quantity: 1,
     weight: 1200,
     price: 1120,
+    rating: 10,
     category: 'cakes',
   },
 ];

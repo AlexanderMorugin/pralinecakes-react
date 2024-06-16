@@ -29,7 +29,7 @@ const ProductCard: FC<IProductCard> = ({
       </article>
       <p className={styles.productCard__price}>
         {quantity && (
-          <span className={styles.productCard__span}>от </span>
+          <span className={styles.productCard__span}>от</span>
         )}
         {price} р
       </p>
