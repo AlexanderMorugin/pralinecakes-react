@@ -1,14 +1,29 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
+
+import { ProductCard } from '../../../entities';
+import useResize from '../../../shared/hooks/useResize';
+import { pastryData } from '../../../mockData/pastry-data';
+import { Pagination } from '../../../features';
 
 import styles from './all-pastry.module.scss';
-import { ProductCard } from '../../../entities';
-import { pastryData } from '../../../mockData/pastry-data';
 
 const AllPastry: FC = () => {
+  const { isScreenMd } = useResize();
+
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const itemsPerPage = 8;
+  const lastItemsIndex = currentPage * itemsPerPage;
+  const firstItemsIndex = lastItemsIndex - itemsPerPage;
+  const currentItems = pastryData.slice(firstItemsIndex, lastItemsIndex);
+  const pageQuantity = pastryData.length / itemsPerPage;
+  const lastPage = currentPage >= pageQuantity;
+
+  const data = isScreenMd ? currentItems : pastryData;
+
   return (
     <section className={styles.allCakes}>
       <ul className={styles.allCakes__container}>
-        {pastryData.map((cake) => (
+        {data.map((cake) => (
           <li key={cake.id}>
             <ProductCard
               route={cake.route}
@@ -21,6 +36,15 @@ const AllPastry: FC = () => {
           </li>
         ))}
       </ul>
+      {isScreenMd && (
+        <Pagination
+          totalItems={pastryData.length}
+          itemsPerPage={itemsPerPage}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+          lastPage={lastPage}
+        />
+      )}
     </section>
   );
 };

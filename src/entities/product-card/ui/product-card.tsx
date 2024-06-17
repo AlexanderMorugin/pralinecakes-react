@@ -9,7 +9,7 @@ interface IProductCard {
   title?: string;
   description?: string;
   price?: number;
-  quantity?: number;
+  quantity?: number | null;
 }
 
 const ProductCard: FC<IProductCard> = ({
