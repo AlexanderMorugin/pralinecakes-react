@@ -11,6 +11,7 @@ import ProductExpiration from './product-expiration';
 import PriorityCard from './priority-card';
 import ProductPrices from './product-prices';
 import HitSign from './hit-sign';
+import ProductDefrost from './product-defrost';
 
 export {
   Logo,
@@ -26,4 +27,5 @@ export {
   ProductExpiration,
   PriorityCard,
   HitSign,
+  ProductDefrost,
 };

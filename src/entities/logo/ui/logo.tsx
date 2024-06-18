@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import IconCake from '../../../assets/images/logo/LOGO_3.png';
+import IconCake from '../../../assets/images/logo/logo.png';
 import Routes from '../../../shared/config/routes/routes';
 
 import styles from './logo.module.scss';

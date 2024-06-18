@@ -3,6 +3,7 @@ import { FC } from 'react';
 import PageHeading from '../../page-heading';
 import { ArticleWrapper, HelmetMeta } from '../../../components';
 import {
+  ProductDefrost,
   ProductDescribe,
   ProductExpiration,
   ProductNutritions,
@@ -96,7 +97,10 @@ const Product: FC<IProduct> = ({
         </ArticleWrapper>
       </div>
 
-      <ProductExpiration />
+      <div className={styles.product__grid}>
+        <ProductExpiration />
+        <ProductDefrost />
+      </div>
 
       {cake && (
         <HelmetMeta
