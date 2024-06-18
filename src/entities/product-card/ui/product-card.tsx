@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './product-card.module.scss';
+import HitSign from '../../hit-sign';
 
 interface IProductCard {
   route?: string;
@@ -10,6 +11,7 @@ interface IProductCard {
   description?: string;
   price?: number;
   quantity?: number | null;
+  rating?: number;
 }
 
 const ProductCard: FC<IProductCard> = ({
@@ -19,6 +21,7 @@ const ProductCard: FC<IProductCard> = ({
   description,
   price,
   quantity,
+  rating,
 }) => {
   return (
     <Link to={route || '#'} className={styles.productCard}>
@@ -28,11 +31,10 @@ const ProductCard: FC<IProductCard> = ({
         <p className={styles.productCard__description}>{description}</p>
       </article>
       <p className={styles.productCard__price}>
-        {quantity && (
-          <span className={styles.productCard__span}>от</span>
-        )}
+        {quantity && <span className={styles.productCard__span}>от</span>}
         {price} р
       </p>
+      {rating === 10 && <HitSign />}
     </Link>
   );
 };

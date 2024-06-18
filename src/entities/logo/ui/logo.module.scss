@@ -3,15 +3,18 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   width: fit-content;
   text-decoration: none;
 
-  @include media.respond-to('large') {
-    gap: 10px;
-  }
+  // @include media.respond-to('large') {
+  //   gap: 10px;
+  // }
 
   &__icon {
+    // width: 100%;
+    // max-width: 200px;
+
     width: 44px;
     transition: 0.5s;
 
@@ -21,6 +24,9 @@
   }
 
   &__iconFooter {
+    // width: 100%;
+    // max-width: 200px;
+
     width: 34px;
     transition: 0.5s;
 

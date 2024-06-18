@@ -6,12 +6,6 @@
   align-items: center;
   gap: 5px;
 
-  &__icon {
-    width: 20px;
-    opacity: 0;
-    transition: 0.3s;
-  }
-
   &__link {
     display: flex;
     justify-content: center;
@@ -22,7 +16,8 @@
     font: var(--font-s-medium);
     color: var(--light-secondary);
     text-decoration: none;
-    padding: 4px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     transition: 0.3s;
 
     &:hover {
@@ -30,8 +25,15 @@
       color: var(--light-primary);
     }
 
-    &:hover .headerNavBar__icon {
-      opacity: 1;
+    &_active {
+      background: var(--light-secondary);
+      color: var(--border-secondary);
+      border: 1px solid transparent;
+      cursor: auto;
+
+      &:hover {
+        color: var(--border-secondary);
+      }
     }
 
     @include media.respond-to('large') {

@@ -36,14 +36,6 @@ const Header: FC = () => {
       endTouchX = e.changedTouches[0].pageX;
       endTouchY = e.changedTouches[0].pageY;
 
-      // появление меню свайпом слева направо
-      // if (
-      //   startTouchX < 100 &&
-      //   Math.abs(endTouchY - startTouchY) < 40 &&
-      //   endTouchX > startTouchX
-      // )
-      //   setMenuActive(true);
-
       // убирание меню свайпом справа налево
       if (
         startTouchX < 440 &&

@@ -1,28 +1,24 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { navBarData } from '../../../mockData/nav-bar-data';
-// import { useResize } from '../../../shared/hooks/useResize';
 
 import styles from './header-nav-bar.module.scss';
 
 const HeaderNavBar: FC = () => {
-  // const { isScreenLg } = useResize();
+  const setActive = ({ isActive }: { isActive: boolean }): string =>
+    isActive
+      ? `${styles.headerNavBar__link} ${styles.headerNavBar__link_active}`
+      : `${styles.headerNavBar__link}`;
+
   return (
     <nav>
       <ul className={styles.headerNavBar}>
         {navBarData.map((item, index) => (
           <li key={index}>
-            <Link to={item.route} className={styles.headerNavBar__link}>
-              {/* {isScreenLg && (
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className={styles.headerNavBar__icon}
-                />
-              )} */}
+            <NavLink to={item.route} className={setActive}>
               {item.title}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>

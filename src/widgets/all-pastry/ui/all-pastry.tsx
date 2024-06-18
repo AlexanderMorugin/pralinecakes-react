@@ -10,15 +10,18 @@ import styles from './all-pastry.module.scss';
 const AllPastry: FC = () => {
   const { isScreenMd } = useResize();
 
+  // const pastryDataByRating = [...pastryData].sort((a, b) => (a.rating) - (b.rating))
+  const pastryDataByPrice = [...pastryData].sort((a, b) => (a.price) - (b.price))
+
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 8;
   const lastItemsIndex = currentPage * itemsPerPage;
   const firstItemsIndex = lastItemsIndex - itemsPerPage;
-  const currentItems = pastryData.slice(firstItemsIndex, lastItemsIndex);
-  const pageQuantity = pastryData.length / itemsPerPage;
+  const currentItems = pastryDataByPrice.slice(firstItemsIndex, lastItemsIndex);
+  const pageQuantity = pastryDataByPrice.length / itemsPerPage;
   const lastPage = currentPage >= pageQuantity;
 
-  const data = isScreenMd ? currentItems : pastryData;
+  const data = isScreenMd ? currentItems : pastryDataByPrice;
 
   return (
     <section className={styles.allCakes}>
@@ -32,6 +35,7 @@ const AllPastry: FC = () => {
               description={cake.description}
               price={cake.price}
               quantity={cake.quantity_b}
+              rating={cake.rating}
             />
           </li>
         ))}
