@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Breadcrumbs, PageHeading } from '../../widgets';
+import { Breadcrumbs, Delivery, PageHeading } from '../../widgets';
 import {
   META_DELIVERY_DESCRIPTION,
   META_DELIVERY_TITLE,
@@ -21,6 +21,7 @@ const DeliveryPage: FC = () => {
         <Breadcrumbs links={breadcrumbs} />
         <MainWrapper>
           <PageHeading title={PAGE_DELIVERY_TITLE} />
+          <Delivery />
         </MainWrapper>
       </PageWrapper>
 

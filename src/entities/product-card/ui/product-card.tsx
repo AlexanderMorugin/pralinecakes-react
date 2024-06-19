@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './product-card.module.scss';
 import HitSign from '../../hit-sign';
+
+import styles from './product-card.module.scss';
 
 interface IProductCard {
   route?: string;

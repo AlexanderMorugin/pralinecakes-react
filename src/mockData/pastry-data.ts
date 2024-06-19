@@ -169,7 +169,7 @@ export const pastryData = [
     price: 80,
     price_b: 104,
     rating: 10,
-    category: 'pastry',
+    category: 'фруктовое, ягодное, песочное, кремовое',
   },
   {
     id: 1,
@@ -181,7 +181,7 @@ export const pastryData = [
     description:
       'Песочная корзиночка, покрытая черным шоколадом в сочетании с заварным кремом и начинкой из клубники',
     ingredients:
-      'Мука пшеничная, масло сливочное, сахар, клубника с/м, сливки 33%, разрыхлитель',
+      'Мука пшеничная, масло сливочное, сахар, клубника с/м, крем заварной, сливки 33%, разрыхлитель',
     protein: 3.1,
     fat: 8.2,
     carbohydrates: 33.2,
@@ -193,7 +193,7 @@ export const pastryData = [
     price: 80,
     price_b: 104,
     rating: 10,
-    category: 'pastry',
+    category: 'ягодное, песочное, кремовое',
   },
   {
     id: 2,
@@ -217,7 +217,7 @@ export const pastryData = [
     price: 80,
     price_b: 104,
     rating: 10,
-    category: 'pastry',
+    category: 'ягодное, песочное, кремовое',
   },
   {
     id: 3,
@@ -241,7 +241,7 @@ export const pastryData = [
     price: 80,
     price_b: 104,
     rating: 10,
-    category: 'pastry',
+    category: 'ягодное, песочное, кремовое',
   },
   {
     id: 4,
@@ -264,7 +264,7 @@ export const pastryData = [
     price: 49,
     price_b: 70,
     rating: 7,
-    category: 'pastry',
+    category: 'ягодное, песочное, кремовое',
   },
   {
     id: 5,
@@ -288,7 +288,7 @@ export const pastryData = [
     price: 77,
     price_b: 100,
     rating: 7,
-    category: 'pastry',
+    category: 'штрудель, фруктовое, ореховое',
   },
   {
     id: 6,
@@ -312,7 +312,7 @@ export const pastryData = [
     price: 82,
     price_b: 103,
     rating: 5,
-    category: 'pastry',
+    category: 'штрудель, маковое, ореховое',
   },
   {
     id: 7,
@@ -336,7 +336,7 @@ export const pastryData = [
     price: 82,
     price_b: 104,
     rating: 8,
-    category: 'pastry',
+    category: 'штрудель, ягодное, ореховое',
   },
   {
     id: 8,
@@ -359,7 +359,7 @@ export const pastryData = [
     price: 70,
     price_b: null,
     rating: 10,
-    category: 'pastry',
+    category: 'шоколадное, ореховое, кремовое',
   },
   {
     id: 9,
@@ -383,7 +383,7 @@ export const pastryData = [
     price: 86,
     price_b: null,
     rating: 10,
-    category: 'pastry',
+    category: 'шоколадное, бисквитное',
   },
   {
     id: 10,
@@ -406,7 +406,7 @@ export const pastryData = [
     price: 105,
     price_b: null,
     rating: 10,
-    category: 'pastry',
+    category: 'ягодное, йогуртовое, суфле, сырное',
   },
   {
     id: 11,
@@ -429,7 +429,7 @@ export const pastryData = [
     price: 100,
     price_b: null,
     rating: 5,
-    category: 'pastry',
+    category: 'ягодное, фруктовое, суфле',
   },
   {
     id: 12,
@@ -453,7 +453,7 @@ export const pastryData = [
     price: 83,
     price_b: null,
     rating: 6,
-    category: 'pastry',
+    category: 'шоколадное, суфле',
   },
   {
     id: 13,
@@ -476,7 +476,7 @@ export const pastryData = [
     price: 88,
     price_b: null,
     rating: 4,
-    category: 'pastry',
+    category: 'медовое, ореховое, кремовое',
   },
   {
     id: 14,
@@ -500,7 +500,7 @@ export const pastryData = [
     price: 57,
     price_b: null,
     rating: 10,
-    category: 'pastry',
+    category: 'ореховое, кремовое',
   },
   {
     id: 15,
@@ -524,7 +524,7 @@ export const pastryData = [
     price: 28,
     price_b: 52,
     rating: 10,
-    category: 'pastry',
+    category: 'ореховое, бисквитное',
   },
   {
     id: 16,
@@ -536,7 +536,7 @@ export const pastryData = [
     description:
       'Шоколадный бисквит и карамельный мусс придадут нотку настроения в чаепитие',
     ingredients:
-      'Сливки33%, сахар, мука пшеничная ,яйцо куриное, какао алкализованный, шоколад молочный 34%, желатин, шарики вафельные',
+      'Сливки 33%, сахар, мука пшеничная, яйцо куриное, какао алкализованный, шоколад молочный 34%, желатин, шарики вафельные',
     protein: 2.7,
     fat: 12,
     carbohydrates: 52,
@@ -548,7 +548,7 @@ export const pastryData = [
     price: 96,
     price_b: null,
     rating: 5,
-    category: 'pastry',
+    category: 'суфле, шоколадное, бисквитное',
   },
   {
     id: 17,
@@ -572,7 +572,7 @@ export const pastryData = [
     price: 83,
     price_b: 104,
     rating: 5,
-    category: 'pastry',
+    category: 'суфле, ягодное',
   },
   {
     id: 18,
@@ -596,7 +596,7 @@ export const pastryData = [
     price: 80,
     price_b: 96,
     rating: 4,
-    category: 'pastry',
+    category: 'суфле, фруктовое',
   },
   {
     id: 19,
@@ -620,7 +620,7 @@ export const pastryData = [
     price: 82,
     price_b: 103,
     rating: 10,
-    category: 'pastry',
+    category: 'суфле, шоколадное',
   },
   {
     id: 20,
@@ -644,7 +644,7 @@ export const pastryData = [
     price: 83,
     price_b: 102,
     rating: 3,
-    category: 'pastry',
+    category: 'суфле, йогуртовое, сырное, фруктовое',
   },
   {
     id: 21,
@@ -667,7 +667,7 @@ export const pastryData = [
     price: 64,
     price_b: null,
     rating: 6,
-    category: 'pastry',
+    category: 'песочное, кремовое',
   },
   {
     id: 22,
@@ -691,7 +691,7 @@ export const pastryData = [
     price: 84,
     price_b: 98,
     rating: 8,
-    category: 'pastry',
+    category: 'сырное',
   },
   {
     id: 23,
@@ -715,7 +715,7 @@ export const pastryData = [
     price: 104,
     price_b: null,
     rating: 7,
-    category: 'pastry',
+    category: 'сырное, шоколадное',
   },
   {
     id: 24,
@@ -738,7 +738,7 @@ export const pastryData = [
     price: 99,
     price_b: null,
     rating: 6,
-    category: 'pastry',
+    category: 'сырное, фруктовое',
   },
   {
     id: 25,
@@ -762,7 +762,7 @@ export const pastryData = [
     price: 90,
     price_b: null,
     rating: 6,
-    category: 'pastry',
+    category: 'сырное, йогуртовое, ягодное',
   },
   {
     id: 26,
@@ -786,7 +786,7 @@ export const pastryData = [
     price: 94,
     price_b: null,
     rating: 6,
-    category: 'pastry',
+    category: 'сырное, йогуртовое, шоколадное',
   },
   {
     id: 27,
@@ -810,7 +810,7 @@ export const pastryData = [
     price: 78,
     price_b: 98,
     rating: 8,
-    category: 'pastry',
+    category: 'сырное, ореховое',
   },
   {
     id: 28,
@@ -834,7 +834,7 @@ export const pastryData = [
     price: 110,
     price_b: null,
     rating: 8,
-    category: 'pastry',
+    category: 'бисквитное, ореховое, фруктовое',
   },
   {
     id: 29,
@@ -858,7 +858,7 @@ export const pastryData = [
     price: 98,
     price_b: null,
     rating: 6,
-    category: 'pastry',
+    category: 'бисквитное, сырное, фруктовое, кремовое',
   },
   {
     id: 30,
@@ -882,7 +882,7 @@ export const pastryData = [
     price: 78,
     price_b: 98,
     rating: 5,
-    category: 'pastry',
+    category: 'песочное, ореховое',
   },
   {
     id: 31,
@@ -906,7 +906,7 @@ export const pastryData = [
     price: 82,
     price_b: 98,
     rating: 9,
-    category: 'pastry',
+    category: 'бисквитное, шоколадное',
   },
   {
     id: 32,
@@ -930,7 +930,7 @@ export const pastryData = [
     price: 82,
     price_b: 104,
     rating: 9,
-    category: 'pastry',
+    category: 'суфле, шоколадное',
   },
   {
     id: 33,
@@ -942,7 +942,7 @@ export const pastryData = [
     description:
       'Представляет собой довольно необычный десерт, состоящий из воздушного и мягкого бисквита красного цвета. Оригинальность данному изделию придает и белоснежный сливочный крем',
     ingredients:
-      'Сыр сливочный, сахар, мука, сливки молочные 33%, масло растительное, сахар, яйцо куриное, малина с/м, кефир, гель нейтральный, какао, соль, разрыхлитель',
+      'Сыр сливочный, сахар, мука, сливки 33%, масло растительное, сахар, яйцо куриное, малина с/м, кефир, гель нейтральный, какао, соль, разрыхлитель',
     protein: 4.4,
     fat: 17,
     carbohydrates: 28.5,
@@ -954,7 +954,7 @@ export const pastryData = [
     price: 77,
     price_b: 98,
     rating: 9,
-    category: 'pastry',
+    category: 'бисквитное, кремовое',
   },
   {
     id: 34,
@@ -978,7 +978,7 @@ export const pastryData = [
     price: 84,
     price_b: 103,
     rating: 10,
-    category: 'pastry',
+    category: 'бисквитное, кремовое, маковое, шоколадное',
   },
   {
     id: 35,
@@ -1002,7 +1002,7 @@ export const pastryData = [
     price: 87,
     price_b: null,
     rating: 3,
-    category: 'pastry',
+    category: 'бисквитное, маковое, ягодное',
   },
   {
     id: 36,
@@ -1026,7 +1026,7 @@ export const pastryData = [
     price: 80,
     price_b: 98,
     rating: 7,
-    category: 'pastry',
+    category: 'ореховое, кремовое',
   },
   {
     id: 37,
@@ -1050,7 +1050,7 @@ export const pastryData = [
     price: 72,
     price_b: 97,
     rating: 7,
-    category: 'pastry',
+    category: 'бисквитное, ореховое, кремовое',
   },
   {
     id: 38,
@@ -1073,7 +1073,7 @@ export const pastryData = [
     price: 94,
     price_b: null,
     rating: 8,
-    category: 'pastry',
+    category: 'ореховое, кремовое',
   },
   {
     id: 39,
@@ -1097,7 +1097,7 @@ export const pastryData = [
     price: 78,
     price_b: 104,
     rating: 9,
-    category: 'pastry',
+    category: 'слоенное, кремовое',
   },
   {
     id: 40,
@@ -1121,7 +1121,7 @@ export const pastryData = [
     price: 96,
     price_b: null,
     rating: 5,
-    category: 'pastry',
+    category: 'медовое, кремовое, бисквитное',
   },
   {
     id: 41,
@@ -1130,9 +1130,9 @@ export const pastryData = [
     image_normal: ChernichnoeM,
     image_large: ChernichnoeL,
     title: 'Черничное',
-    description: 'Шоколад белый ‚черника и сливки на песочной основе',
+    description: 'Шоколад белый‚ черника и сливки на песочной основе',
     ingredients:
-      'Сыр сливочный, черника с/м, сахарная пудра, сметана 20%, мука пшеничная, сливки молочные 33%, масло сливочное, миндальная мука, яйца куриные, желатин',
+      'Сыр сливочный, черника с/м, сахарная пудра, сметана 20%, мука пшеничная, сливки 33%, масло сливочное, миндальная мука, яйца куриные, желатин',
     protein: 6.5,
     fat: 14.9,
     carbohydrates: 30.2,
@@ -1144,7 +1144,7 @@ export const pastryData = [
     price: 103,
     price_b: null,
     rating: 7,
-    category: 'pastry',
+    category: 'суфле, ягодное, сырное',
   },
   {
     id: 42,
@@ -1168,7 +1168,7 @@ export const pastryData = [
     price: 70,
     price_b: 89,
     rating: 10,
-    category: 'pastry',
+    category: 'медовое, песочное, кремовое',
   },
   {
     id: 43,
@@ -1179,7 +1179,7 @@ export const pastryData = [
     title: 'Банановое',
     description: 'Бисквитный торт из свежих бананов, сметаны и молочных сливок',
     ingredients:
-      'Мука пшеничная, сметана 20%, яйцо куриное, сахар, сливки молочные 33%, бананы, сахарная пудра, гель кондитерский нейтральный, крахмал кукурузный, какао порошок, масло сливочное 82%, глазурь белая',
+      'Мука пшеничная, сметана 20%, яйцо куриное, сахар, сливки 33%, бананы, сахарная пудра, гель кондитерский нейтральный, крахмал кукурузный, какао порошок, масло сливочное 82%, глазурь белая',
     protein: 6.4,
     fat: 23.1,
     carbohydrates: 34.6,
@@ -1191,7 +1191,7 @@ export const pastryData = [
     price: 93,
     price_b: null,
     rating: 4,
-    category: 'pastry',
+    category: 'бисквитное, фруктовое, кремовое',
   },
   {
     id: 44,
@@ -1214,7 +1214,7 @@ export const pastryData = [
     price: 82,
     price_b: 102,
     rating: 9,
-    category: 'pastry',
+    category: 'ореховое, песочное',
   },
   {
     id: 45,
@@ -1238,7 +1238,7 @@ export const pastryData = [
     price: 80,
     price_b: 105,
     rating: 7,
-    category: 'pastry',
+    category: 'бисквитное, кремовое, сырное',
   },
   {
     id: 46,
@@ -1250,7 +1250,7 @@ export const pastryData = [
     description:
       'Слоенное тесто на основе сгущенного молока, пропитан кремом из сливочного сыра',
     ingredients:
-      'Мука пшеничная, сливки молочные 33%, сгущенное молоко, сахар, шоколад молочный, яйцо куриное, сыр творожный, фундук, сахарная пудра',
+      'Мука пшеничная, сливки 33%, сгущенное молоко, сахар, шоколад молочный, яйцо куриное, сыр творожный, фундук, сахарная пудра',
     protein: 5.1,
     fat: 20.2,
     carbohydrates: 41.1,
@@ -1262,7 +1262,7 @@ export const pastryData = [
     price: 97,
     price_b: null,
     rating: 7,
-    category: 'pastry',
+    category: 'бисквитное, кремовое, сырное, ореховое',
   },
   {
     id: 47,
@@ -1274,7 +1274,7 @@ export const pastryData = [
     description:
       'Классический рецепт бисквитного слоеного торта, где сметана добавляется в коржи и крем. Коржи на сметанной основе хорошо пропитываются и торт получается очень сочным, с насыщенным молочным вкусом',
     ingredients:
-      'Сметана 20%, мука пшеничная, сливки молочные 33%, масло сливочное, мед, сахар, яйцо куриное, грецкий орех, сода, ваниль',
+      'Сметана 20%, мука пшеничная, сливки 33%, масло сливочное, мед, сахар, яйцо куриное, грецкий орех, сода, ваниль',
     protein: 5.1,
     fat: 12.5,
     carbohydrates: 39.7,
@@ -1286,7 +1286,7 @@ export const pastryData = [
     price: 95,
     price_b: null,
     rating: 7,
-    category: 'pastry',
+    category: 'бисквитное, кремовое, ореховое',
   },
   {
     id: 48,
@@ -1309,6 +1309,6 @@ export const pastryData = [
     price: 52,
     price_b: null,
     rating: 10,
-    category: 'pastry',
+    category: 'кремовое, ореховое, ягодное, шоколадное',
   },
 ];
