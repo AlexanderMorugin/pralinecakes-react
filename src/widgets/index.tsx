@@ -9,6 +9,7 @@ import Product from './product';
 import PriorityBlock from './priority-block';
 import AllPastry from './all-pastry';
 import Delivery from './delivery';
+import Contacts from './contacts';
 
 export {
   Header,
@@ -22,4 +23,5 @@ export {
   Product,
   PriorityBlock,
   Delivery,
+  Contacts,
 };
