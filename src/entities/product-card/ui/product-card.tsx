@@ -5,19 +5,34 @@ import HitSign from '../../hit-sign';
 
 import styles from './product-card.module.scss';
 
-interface IProductCard {
+export interface IProductCard {
+  className?: string;
+  id?: number;
   route?: string;
-  image?: string;
+  image_small?: string;
+  image_normal?: string;
+  image_large?: string;
   title?: string;
   description?: string;
-  price?: number;
+  ingredients?: string;
+  protein?: number;
+  fat?: number;
+  carbohydrates?: number;
+  calories?: number;
   quantity?: number | null;
+  quantity_b?: number;
+  weight?: number;
+  weight_b?: number;
+  price?: number;
+  price_b?: number;
   rating?: number;
+  category?: string;
 }
 
 const ProductCard: FC<IProductCard> = ({
+  className,
   route,
-  image,
+  image_small,
   title,
   description,
   price,
@@ -25,8 +40,8 @@ const ProductCard: FC<IProductCard> = ({
   rating,
 }) => {
   return (
-    <Link to={route || '#'} className={styles.productCard}>
-      <img src={image} alt={title} className={styles.productCard__image} />
+    <Link to={route || '#'} className={`${className} ${styles.productCard}`}>
+      <img src={image_small} alt={title} className={styles.productCard__image} />
       <article className={styles.productCard__info}>
         <h3 className={styles.productCard__title}>{title}</h3>
         <p className={styles.productCard__description}>{description}</p>

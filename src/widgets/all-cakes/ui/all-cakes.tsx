@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 
-import { ProductCard } from '../../../entities';
+import { ProductBlock } from '../../../entities';
 import { Pagination } from '../../../features';
 import useResize from '../../../shared/hooks/useResize';
 import { cakesData } from '../../../mockData/cakes-data';
@@ -10,8 +10,7 @@ import styles from './all-cakes.module.scss';
 const AllCakes: FC = () => {
   const { isScreenMd } = useResize();
 
-  // const cakesDataByRating = [...cakesData].sort((a, b) => (b.rating) - (a.rating) )
-  const cakesDataByPrice = [...cakesData].sort((a, b) => (a.price) - (b.price))
+  const cakesDataByPrice = [...cakesData].sort((a, b) => a.price - b.price);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 8;
@@ -25,20 +24,7 @@ const AllCakes: FC = () => {
 
   return (
     <section className={styles.allCakes}>
-      <ul className={styles.allCakes__container}>
-        {data.map((cake) => (
-          <li key={cake.id}>
-            <ProductCard
-              route={cake.route}
-              image={cake.image_small}
-              title={cake.title}
-              description={cake.description}
-              price={cake.price}
-              rating={cake.rating}
-            />
-          </li>
-        ))}
-      </ul>
+      <ProductBlock data={data} />
       {isScreenMd && (
         <Pagination
           totalItems={cakesData.length}

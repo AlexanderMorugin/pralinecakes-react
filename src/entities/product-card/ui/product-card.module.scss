@@ -15,6 +15,7 @@
   overflow: hidden;
   cursor: pointer;
   transition: 0.3s;
+  user-select: none;
 
   @include media.respond-to('middle') {
     gap: 10px;

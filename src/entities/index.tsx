@@ -12,6 +12,10 @@ import PriorityCard from './priority-card';
 import ProductPrices from './product-prices';
 import HitSign from './hit-sign';
 import ProductDefrost from './product-defrost';
+import ProductBlock from './product-block';
+import ProductScroll from './product-scroll';
+import ProductHeading from './product-heading';
+import LinkButton from './link-button';
 
 export {
   Logo,
@@ -28,4 +32,8 @@ export {
   PriorityCard,
   HitSign,
   ProductDefrost,
+  ProductBlock,
+  ProductScroll,
+  ProductHeading,
+  LinkButton,
 };
