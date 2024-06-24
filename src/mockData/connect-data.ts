@@ -1,10 +1,10 @@
 import WhatsAppIcon from '../assets/icons/icon-whatsapp.svg';
 // import TelegramIcon from '../assets/icons/icon-telegram.svg';
 import PhoneIcon from '../assets/icons/icon-phone.svg';
-import EmailIcon from '../assets/icons/icon-email.svg';
+// import EmailIcon from '../assets/icons/icon-email.svg';
 import {
-  EMAIL,
-  EMAIL_LINK,
+  // EMAIL,
+  // EMAIL_LINK,
   PHONE_LINK,
   PHONE_NUMBER,
   // TELEGRAM_LINK,
@@ -12,13 +12,13 @@ import {
 } from '../shared/constants/constants';
 
 export const connectData = [
-  {
-    title: 'Почта',
-    icon: EmailIcon,
-    link: EMAIL_LINK,
-    text: EMAIL,
-    category: 'footer',
-  },
+  // {
+  //   title: 'Почта',
+  //   icon: EmailIcon,
+  //   link: EMAIL_LINK,
+  //   text: EMAIL,
+  //   category: 'footer',
+  // },
   {
     title: 'Телефон',
     icon: PhoneIcon,

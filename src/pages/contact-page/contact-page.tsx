@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Breadcrumbs, Contacts, PageHeading } from '../../widgets';
+import { Breadcrumbs, Carta, Contacts, PageHeading } from '../../widgets';
 import {
   META_CONTACTS_DESCRIPTION,
   META_CONTACTS_TITLE,
@@ -23,6 +23,7 @@ const ContactPage: FC = () => {
           <PageHeading title={PAGE_CONTACTS_TITLE} />
           <Contacts />
         </MainWrapper>
+        <Carta />
       </PageWrapper>
 
       <HelmetMeta

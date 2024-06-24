@@ -10,6 +10,7 @@ import PriorityBlock from './priority-block';
 import AllPastry from './all-pastry';
 import Delivery from './delivery';
 import Contacts from './contacts';
+import Carta from './carta';
 
 export {
   Header,
@@ -24,4 +25,5 @@ export {
   PriorityBlock,
   Delivery,
   Contacts,
+  Carta,
 };
