@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Image from '../../../assets/images/content-woman-working-couri.jpg';
 import ImageSquareOne from '../../../assets/images/background/back-square-one.png';
 import ImageSquareTwo from '../../../assets/images/background/back-square-two.png';
-import useResize from '../../../shared/hooks/useResize';
+import useResize from '../../../shared/hooks/use-resize';
 
 import styles from './delivery.module.scss';
 

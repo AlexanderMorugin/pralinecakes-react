@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 
 import { ProductBlock } from '../../../entities';
 import { Pagination } from '../../../features';
-import useResize from '../../../shared/hooks/useResize';
+import useResize from '../../../shared/hooks/use-resize';
 import { cakesData } from '../../../mockData/cakes-data';
 
 import styles from './all-cakes.module.scss';
@@ -20,11 +20,11 @@ const AllCakes: FC = () => {
   const pageQuantity = cakesDataByPrice.length / itemsPerPage;
   const lastPage = currentPage >= pageQuantity;
 
-  const data = isScreenMd ? currentItems : cakesDataByPrice;
+  const dataCakes = isScreenMd ? currentItems : cakesDataByPrice;
 
   return (
     <section className={styles.allCakes}>
-      <ProductBlock data={data} />
+      <ProductBlock dataCakes={dataCakes} isCake={true} isPastry={false} />
       {isScreenMd && (
         <Pagination
           totalItems={cakesData.length}

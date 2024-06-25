@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import useResize from '../../../shared/hooks/useResize';
+import useResize from '../../../shared/hooks/use-resize';
 import { Scroll } from '../../../features';
 import { PriorityCard } from '../../../entities';
 import { priorityData } from '../../../mockData/priority-data';

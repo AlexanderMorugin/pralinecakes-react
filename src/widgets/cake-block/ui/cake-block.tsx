@@ -1,35 +1,35 @@
 import { FC } from 'react';
 
-import useResize from '../../../shared/hooks/useResize';
-import { cakesData } from '../../../mockData/cakes-data';
+import useResize from '../../../shared/hooks/use-resize';
+import useCakeArray from '../../../shared/hooks/use-cake-array';
 import { ProductBlock, ProductScroll } from '../../../entities';
-
-import styles from './cake-block.module.scss';
 import Routes from '../../../shared/config/routes/routes';
 
-const CakeBlock: FC = () => {
-  const { isScreenLg } = useResize();
+import styles from './cake-block.module.scss';
 
-  const cakeDesktopData = [...cakesData]
-    .sort((a, b) => a.rating - b.rating)
-    .slice(0, 4);
-  const cakeMobileData = [...cakesData]
-    .sort((a, b) => a.rating - b.rating)
-    .slice(0, 8);
+const CakeBlock: FC = () => {
+  const { isScreenLg, isScreenMd } = useResize();
+  const { fourCakeData, threeCakeData, eightCakeData } = useCakeArray();
+
+  const cakeDesktopData = isScreenLg ? fourCakeData : threeCakeData;
 
   return (
     <section className={styles.cakeBlock}>
-      {isScreenLg ? (
+      {isScreenMd ? (
         <ProductBlock
-          data={cakeDesktopData}
-          route={Routes.CAKES}
+          dataCakes={cakeDesktopData}
+          routeCakes={Routes.CAKES}
           isLink={true}
+          isCake={true}
+          isPastry={false}
         />
       ) : (
         <ProductScroll
-          data={cakeMobileData}
-          route={Routes.CAKES}
+          dataCakes={eightCakeData}
+          routeCakes={Routes.CAKES}
           isLink={true}
+          isCake={true}
+          isPastry={false}
         />
       )}
     </section>

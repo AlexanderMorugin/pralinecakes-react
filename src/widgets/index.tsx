@@ -3,7 +3,6 @@ import Footer from './footer';
 import PageHeading from './page-heading';
 import Breadcrumbs from './bread-crumbs';
 import AboutUs from './about-us';
-import Products from './products';
 import AllCakes from './all-cakes';
 import Product from './product';
 import PriorityBlock from './priority-block';
@@ -12,6 +11,7 @@ import Delivery from './delivery';
 import Contacts from './contacts';
 import Carta from './carta';
 import CakeBlock from './cake-block';
+import PastryBlock from './pastry-block';
 
 export {
   Header,
@@ -19,7 +19,6 @@ export {
   PageHeading,
   Breadcrumbs,
   AboutUs,
-  Products,
   AllCakes,
   AllPastry,
   Product,
@@ -28,4 +27,5 @@ export {
   Contacts,
   Carta,
   CakeBlock,
+  PastryBlock,
 };

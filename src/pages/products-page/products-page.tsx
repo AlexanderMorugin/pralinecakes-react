@@ -1,7 +1,10 @@
 import { FC } from 'react';
 
-import { Breadcrumbs, CakeBlock, PageHeading, 
-  // Products 
+import {
+  Breadcrumbs,
+  CakeBlock,
+  PageHeading,
+  PastryBlock,
 } from '../../widgets';
 import {
   META_PRODUCTS_DESCRIPTION,
@@ -23,8 +26,8 @@ const ProductsPage: FC = () => {
         <Breadcrumbs links={breadcrumbs} />
         <MainWrapper>
           <PageHeading title={PAGE_PRODUCTS_TITLE} />
+          <PastryBlock />
           <CakeBlock />
-          {/* <Products /> Пока этот компонент нигде не используется*/}
         </MainWrapper>
       </PageWrapper>
 

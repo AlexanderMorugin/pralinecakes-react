@@ -19,12 +19,12 @@ export interface IProductCard {
   fat?: number;
   carbohydrates?: number;
   calories?: number;
-  quantity?: number | null;
-  quantity_b?: number;
+  quantity?: number;
+  quantity_b?: number | null;
   weight?: number;
-  weight_b?: number;
+  weight_b?: number | null;
   price?: number;
-  price_b?: number;
+  price_b?: number | null;
   rating?: number;
   category?: string;
 }

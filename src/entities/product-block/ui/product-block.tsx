@@ -3,6 +3,8 @@ import { FC } from 'react';
 import {
   PAGE_CAKES_LINK,
   PAGE_CAKES_TITLE,
+  PAGE_PASTRY_LINK,
+  PAGE_PASTRY_TITLE,
 } from '../../../shared/constants/constants';
 import { IProductCard } from '../../product-card/ui/product-card';
 import ProductCard from '../../product-card';
@@ -11,34 +13,77 @@ import ProductHeading from '../../product-heading';
 import styles from './product-block.module.scss';
 
 interface IProductBlock {
-  data?: IProductCard[];
-  route?: string;
+  dataPastry?: IProductCard[];
+  dataCakes?: IProductCard[];
+  routePastry?: string;
+  routeCakes?: string;
   isLink?: boolean;
+  isCake?: boolean;
+  isPastry?: boolean;
 }
 
-const ProductBlock: FC<IProductBlock> = ({ data, route, isLink }) => {
+const ProductBlock: FC<IProductBlock> = ({
+  dataPastry,
+  dataCakes,
+  routePastry,
+  routeCakes,
+  isLink,
+  isCake,
+  isPastry,
+}) => {
   return (
     <div className={styles.productBlock}>
-      <ProductHeading
-        title={PAGE_CAKES_TITLE}
-        subtitle={PAGE_CAKES_LINK}
-        route={route}
-        isLink={isLink}
-      />
-      <ul className={styles.productBlock__container}>
-        {data?.map((cake) => (
-          <li key={cake.id}>
-            <ProductCard
-              route={`/products/cakes/${cake.route}`}
-              image_small={cake.image_small}
-              title={cake.title}
-              description={cake.description}
-              price={cake.price}
-              rating={cake.rating}
-            />
-          </li>
-        ))}
-      </ul>
+      {isCake && (
+        <ProductHeading
+          title={PAGE_CAKES_TITLE}
+          subtitle={PAGE_CAKES_LINK}
+          route={routeCakes}
+          isLink={isLink}
+        />
+      )}
+
+      {isPastry && (
+        <ProductHeading
+          title={PAGE_PASTRY_TITLE}
+          subtitle={PAGE_PASTRY_LINK}
+          route={routePastry}
+          isLink={isLink}
+        />
+      )}
+
+      {isCake && (
+        <ul className={styles.productBlock__container}>
+          {dataCakes?.map((cake) => (
+            <li key={cake.id}>
+              <ProductCard
+                route={`/products/cakes/${cake.route}`}
+                image_small={cake.image_small}
+                title={cake.title}
+                description={cake.description}
+                price={cake.price}
+                rating={cake.rating}
+              />
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {isPastry && (
+        <ul className={styles.productBlock__container}>
+          {dataPastry?.map((cake) => (
+            <li key={cake.id}>
+              <ProductCard
+                route={`/products/pastry/${cake.route}`}
+                image_small={cake.image_small}
+                title={cake.title}
+                description={cake.description}
+                price={cake.price}
+                rating={cake.rating}
+              />
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };

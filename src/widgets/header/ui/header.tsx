@@ -7,7 +7,7 @@ import {
   HeaderNavBar,
   Logo,
 } from '../../../entities';
-import useResize from '../../../shared/hooks/useResize';
+import useResize from '../../../shared/hooks/use-resize';
 import { HeaderMobileMenu } from '../../../features';
 import { connectData } from '../../../mockData/connect-data';
 

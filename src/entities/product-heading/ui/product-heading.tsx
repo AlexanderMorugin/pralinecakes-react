@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
 import ArrowIcon from '../../../assets/icons/icon-arrow.svg';
-import useResize from '../../../shared/hooks/useResize';
+import useResize from '../../../shared/hooks/use-resize';
 
 import styles from './product-heading.module.scss';
 
@@ -19,13 +19,13 @@ const ProductHeading: FC<IProductHeading> = ({
   route,
   isLink = false,
 }) => {
-  const { isScreenLg } = useResize();
+  const { isScreenMd } = useResize();
 
   return (
     isLink && (
       <article className={styles.productHeading}>
         <h3 className={styles.productHeading__title}>{title}</h3>
-        {isScreenLg && (
+        {isScreenMd && (
           <Link to={route || '#'} className={styles.productHeading__link}>
             {subtitle}
             <img

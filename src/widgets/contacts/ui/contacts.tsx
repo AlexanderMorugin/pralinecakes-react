@@ -12,7 +12,7 @@ import {
   WHATSAPP_LINK,
   WORK_HOURS,
 } from '../../../shared/constants/constants';
-import useResize from '../../../shared/hooks/useResize';
+import useResize from '../../../shared/hooks/use-resize';
 
 import styles from './contacts.module.scss';
 
