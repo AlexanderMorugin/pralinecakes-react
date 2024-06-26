@@ -3,6 +3,7 @@ import { FC } from 'react';
 import PageHeading from '../../page-heading';
 import { ArticleWrapper, HelmetMeta } from '../../../components';
 import {
+  CategoryBlock,
   ProductDefrost,
   ProductDescribe,
   ProductExpiration,
@@ -58,7 +59,10 @@ const Product: FC<IProduct> = ({
   weight_b,
   price,
   price_b,
+  category,
 }) => {
+
+
   return (
     <section className={styles.product}>
       {cake && <PageHeading title={`Торт "${title}"`} />}
@@ -101,6 +105,11 @@ const Product: FC<IProduct> = ({
         <ProductExpiration />
         <ProductDefrost />
       </div>
+
+      <CategoryBlock category={category} />
+
+
+
 
       {cake && (
         <HelmetMeta

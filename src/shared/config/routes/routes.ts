@@ -8,18 +8,12 @@ enum Routes {
   NEWS = '/news',
   PRODUCTS = '/products',
   RECIPES = '/recipes',
-  
+
   CAKES = '/products/cakes',
+  ONE_CAKE = '/products/cakes/:route',
+
   PASTRY = '/products/pastry',
-
-  CAKE = '/products/cakes/:route',
   ONE_PASTRY = '/products/pastry/:route',
-
-
-
-
-
-
 }
 
 export default Routes;

@@ -67,7 +67,7 @@ const AppRouter = createBrowserRouter([
         element: <NewsPage />,
       },
       {
-        path: Routes.CAKE,
+        path: Routes.ONE_CAKE,
         element: <CakePage data={cakesData} />,
       },
       {
