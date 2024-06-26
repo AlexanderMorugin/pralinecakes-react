@@ -2,9 +2,9 @@ import { FC } from 'react';
 import { Outlet } from 'react-router';
 
 import { Footer, Header } from '../../widgets';
+import { ScrollToTop } from '../../components';
 
 import styles from './root-page.module.scss';
-import { ScrollToTop } from '../../components';
 
 const RootPage: FC = () => {
   return (

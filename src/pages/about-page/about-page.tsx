@@ -5,12 +5,13 @@ import {
   META_ABOUT_DESCRIPTION,
   META_ABOUT_TITLE,
   PAGE_ABOUT_TITLE,
+  PAGE_MAIN,
 } from '../../shared/constants/constants';
 import { HelmetMeta, MainWrapper, PageWrapper } from '../../components';
 import Routes from '../../shared/config/routes/routes';
 
 const breadcrumbs = [
-  { heading: 'Главная', route: Routes.HOME },
+  { heading: PAGE_MAIN, route: Routes.HOME },
   { heading: PAGE_ABOUT_TITLE, route: '' },
 ];
 

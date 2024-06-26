@@ -4,13 +4,14 @@ import { Breadcrumbs, PageHeading } from '../../widgets';
 import {
   META_NEWS_DESCRIPTION,
   META_NEWS_TITLE,
+  PAGE_MAIN,
   PAGE_NEWS_TITLE,
 } from '../../shared/constants/constants';
 import { HelmetMeta, MainWrapper, PageWrapper } from '../../components';
 import Routes from '../../shared/config/routes/routes';
 
 const breadcrumbs = [
-  { heading: 'Главная', route: Routes.HOME },
+  { heading: PAGE_MAIN, route: Routes.HOME },
   { heading: PAGE_NEWS_TITLE, route: '' },
 ];
 

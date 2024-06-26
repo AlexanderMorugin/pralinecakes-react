@@ -5,6 +5,7 @@ import { MainWrapper, PageWrapper } from '../../components';
 import { Breadcrumbs, PriorityBlock, Product } from '../../widgets';
 import Routes from '../../shared/config/routes/routes';
 import {
+  PAGE_MAIN,
   PAGE_PASTRY_TITLE,
   PAGE_PRODUCTS_TITLE,
 } from '../../shared/constants/constants';
@@ -20,7 +21,7 @@ const PastryPage: FC<ICakePage> = ({ data }) => {
   const pastryTitle = pastry.map((item) => item.title);
 
   const breadcrumbs = [
-    { heading: 'Главная', route: Routes.HOME },
+    { heading: PAGE_MAIN, route: Routes.HOME },
     { heading: PAGE_PRODUCTS_TITLE, route: Routes.PRODUCTS },
     { heading: PAGE_PASTRY_TITLE, route: Routes.PASTRY },
     { heading: pastryTitle, route: '' },
@@ -31,11 +32,8 @@ const PastryPage: FC<ICakePage> = ({ data }) => {
       <Breadcrumbs links={breadcrumbs} />
       <MainWrapper>
         {pastry.map((item) => (
-          <Product key={item.id} {...item} 
-          pastry={true}
-          />
+          <Product key={item.id} {...item} pastry={true} />
         ))}
-
         <PriorityBlock />
       </MainWrapper>
     </PageWrapper>

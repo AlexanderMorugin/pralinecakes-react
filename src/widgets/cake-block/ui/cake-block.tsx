@@ -1,7 +1,8 @@
 import { FC } from 'react';
 
+import { cakesData } from '../../../mockData/cakes-data';
 import useResize from '../../../shared/hooks/use-resize';
-import useCakeArray from '../../../shared/hooks/use-cake-array';
+import useShuffleArray from '../../../shared/hooks/use-shuffle-array';
 import { ProductBlock, ProductScroll } from '../../../entities';
 import Routes from '../../../shared/config/routes/routes';
 
@@ -9,9 +10,10 @@ import styles from './cake-block.module.scss';
 
 const CakeBlock: FC = () => {
   const { isScreenLg, isScreenMd } = useResize();
-  const { fourCakeData, threeCakeData, eightCakeData } = useCakeArray();
+  const { threeItemsData, fourItemsData, eightItemsData } =
+    useShuffleArray(cakesData);
 
-  const cakeDesktopData = isScreenLg ? fourCakeData : threeCakeData;
+  const cakeDesktopData = isScreenLg ? fourItemsData : threeItemsData;
 
   return (
     <section className={styles.cakeBlock}>
@@ -25,7 +27,7 @@ const CakeBlock: FC = () => {
         />
       ) : (
         <ProductScroll
-          dataCakes={eightCakeData}
+          dataCakes={eightItemsData}
           routeCakes={Routes.CAKES}
           isLink={true}
           isCake={true}

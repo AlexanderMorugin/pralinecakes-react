@@ -30,6 +30,9 @@ export const PHONE_SECOND_LINK = `tel:${PHONE_NUMBER_SECOND}`;
 // подзаголовок для всех страниц
 export const PAGE_SUBTITLE = 'десерты для кафе, баров, пекарен, театров';
 
+// хлебная крошка
+export const PAGE_MAIN = 'Главная';
+
 // заголовки и мета теги страниц
 export const PAGE_MAIN_TITLE = 'Кондитерская Пралине';
 export const META_MAIN_TITLE = 'Московская кондитерская Пралине. Готовим вкусные десерты, торты и пирожные. Быстрая доставка или самовывоз.';

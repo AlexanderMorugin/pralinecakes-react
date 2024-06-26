@@ -97,7 +97,7 @@ export const cakesData = [
     price: 740,
     price_b: null,
     rating: 4,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 1,
@@ -121,7 +121,7 @@ export const cakesData = [
     price: 925,
     price_b: null,
     rating: 7,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 2,
@@ -145,7 +145,7 @@ export const cakesData = [
     price: 1040,
     price_b: null,
     rating: 6,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 3,
@@ -169,7 +169,7 @@ export const cakesData = [
     price: 990,
     price_b: null,
     rating: 10,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 4,
@@ -193,7 +193,7 @@ export const cakesData = [
     price: 1030,
     price_b: null,
     rating: 7,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 5,
@@ -216,7 +216,7 @@ export const cakesData = [
     price: 830,
     price_b: null,
     rating: 4,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 6,
@@ -239,7 +239,7 @@ export const cakesData = [
     price: 1230,
     price_b: null,
     rating: 6,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 7,
@@ -263,7 +263,7 @@ export const cakesData = [
     price: 1200,
     price_b: null,
     rating: 6,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 8,
@@ -287,7 +287,7 @@ export const cakesData = [
     price: 1080,
     price_b: null,
     rating: 6,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 9,
@@ -311,7 +311,7 @@ export const cakesData = [
     price: 1140,
     price_b: null,
     rating: 7,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 10,
@@ -335,7 +335,7 @@ export const cakesData = [
     price: 1100,
     price_b: null,
     rating: 10,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 11,
@@ -358,7 +358,7 @@ export const cakesData = [
     price: 1170,
     price_b: null,
     rating: 9,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 12,
@@ -382,7 +382,7 @@ export const cakesData = [
     price: 1200,
     price_b: null,
     rating: 8,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 13,
@@ -406,7 +406,7 @@ export const cakesData = [
     price: 1245,
     price_b: null,
     rating: 9,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 14,
@@ -430,7 +430,7 @@ export const cakesData = [
     price: 880,
     price_b: null,
     rating: 7,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 15,
@@ -454,7 +454,7 @@ export const cakesData = [
     price: 1100,
     price_b: null,
     rating: 10,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 16,
@@ -478,7 +478,7 @@ export const cakesData = [
     price: 890,
     price_b: null,
     rating: 6,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 17,
@@ -502,7 +502,7 @@ export const cakesData = [
     price: 1060,
     price_b: null,
     rating: 8,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 18,
@@ -526,7 +526,7 @@ export const cakesData = [
     price: 1120,
     price_b: null,
     rating: 7,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 19,
@@ -550,7 +550,7 @@ export const cakesData = [
     price: 1200,
     price_b: null,
     rating: 5,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 20,
@@ -574,7 +574,7 @@ export const cakesData = [
     price: 1110,
     price_b: null,
     rating: 8,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 21,
@@ -597,7 +597,7 @@ export const cakesData = [
     price: 1170,
     price_b: null,
     rating: 4,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 22,
@@ -621,7 +621,7 @@ export const cakesData = [
     price: 1100,
     price_b: null,
     rating: 5,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 23,
@@ -645,7 +645,7 @@ export const cakesData = [
     price: 1080,
     price_b: null,
     rating: 7,
-    category: 'cakes',
+    category: ['cakes'],
   },
   {
     id: 24,
@@ -669,6 +669,6 @@ export const cakesData = [
     price: 1120,
     price_b: null,
     rating: 10,
-    category: 'cakes',
+    category: ['cakes'],
   },
 ];

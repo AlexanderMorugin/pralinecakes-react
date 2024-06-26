@@ -169,7 +169,7 @@ export const pastryData = [
     price: 80,
     price_b: 104,
     rating: 10,
-    category: 'фруктовое, ягодное, песочное, кремовое',
+    category: ['фруктовое', 'ягодное', 'песочное', 'кремовое'],
   },
   {
     id: 1,
@@ -193,7 +193,7 @@ export const pastryData = [
     price: 80,
     price_b: 104,
     rating: 10,
-    category: 'ягодное, песочное, кремовое',
+    category: ['ягодное', 'песочное', 'кремовое'],
   },
   {
     id: 2,
@@ -217,7 +217,7 @@ export const pastryData = [
     price: 80,
     price_b: 104,
     rating: 10,
-    category: 'ягодное, песочное, кремовое',
+    category: ['ягодное', 'песочное', 'кремовое'],
   },
   {
     id: 3,
@@ -241,7 +241,7 @@ export const pastryData = [
     price: 80,
     price_b: 104,
     rating: 10,
-    category: 'ягодное, песочное, кремовое',
+    category: ['ягодное', 'песочное', 'кремовое'],
   },
   {
     id: 4,
@@ -264,7 +264,7 @@ export const pastryData = [
     price: 49,
     price_b: 70,
     rating: 7,
-    category: 'ягодное, песочное, кремовое',
+    category: ['ягодное', 'песочное', 'кремовое'],
   },
   {
     id: 5,
@@ -288,7 +288,7 @@ export const pastryData = [
     price: 77,
     price_b: 100,
     rating: 7,
-    category: 'штрудель, фруктовое, ореховое',
+    category: ['штрудель', 'фруктовое', 'ореховое'],
   },
   {
     id: 6,
@@ -312,7 +312,7 @@ export const pastryData = [
     price: 82,
     price_b: 103,
     rating: 5,
-    category: 'штрудель, маковое, ореховое',
+    category: ['штрудель', 'маковое', 'ореховое'],
   },
   {
     id: 7,
@@ -336,7 +336,7 @@ export const pastryData = [
     price: 82,
     price_b: 104,
     rating: 8,
-    category: 'штрудель, ягодное, ореховое',
+    category: ['штрудель', 'ягодное', 'ореховое'],
   },
   {
     id: 8,
@@ -359,7 +359,7 @@ export const pastryData = [
     price: 70,
     price_b: null,
     rating: 10,
-    category: 'шоколадное, ореховое, кремовое',
+    category: ['шоколадное', 'ореховое', 'кремовое'],
   },
   {
     id: 9,
@@ -383,7 +383,7 @@ export const pastryData = [
     price: 86,
     price_b: null,
     rating: 10,
-    category: 'шоколадное, бисквитное',
+    category: ['шоколадное', 'бисквитное'],
   },
   {
     id: 10,
@@ -406,7 +406,7 @@ export const pastryData = [
     price: 105,
     price_b: null,
     rating: 10,
-    category: 'ягодное, йогуртовое, суфле, сырное',
+    category: ['ягодное', 'йогуртовое', 'суфле', 'сырное'],
   },
   {
     id: 11,
@@ -429,7 +429,7 @@ export const pastryData = [
     price: 100,
     price_b: null,
     rating: 5,
-    category: 'ягодное, фруктовое, суфле',
+    category: ['ягодное', 'фруктовое', 'суфле'],
   },
   {
     id: 12,
@@ -453,7 +453,7 @@ export const pastryData = [
     price: 83,
     price_b: null,
     rating: 6,
-    category: 'шоколадное, суфле',
+    category: ['шоколадное', 'суфле'],
   },
   {
     id: 13,
@@ -476,7 +476,7 @@ export const pastryData = [
     price: 88,
     price_b: null,
     rating: 4,
-    category: 'медовое, ореховое, кремовое',
+    category: ['медовое', 'ореховое', 'кремовое'],
   },
   {
     id: 14,
@@ -500,7 +500,7 @@ export const pastryData = [
     price: 57,
     price_b: null,
     rating: 10,
-    category: 'ореховое, кремовое',
+    category: ['ореховое', 'кремовое'],
   },
   {
     id: 15,
@@ -524,7 +524,7 @@ export const pastryData = [
     price: 28,
     price_b: 52,
     rating: 10,
-    category: 'ореховое, бисквитное',
+    category: ['ореховое', 'бисквитное'],
   },
   {
     id: 16,
@@ -548,7 +548,7 @@ export const pastryData = [
     price: 96,
     price_b: null,
     rating: 5,
-    category: 'суфле, шоколадное, бисквитное',
+    category: ['суфле', 'шоколадное', 'бисквитное'],
   },
   {
     id: 17,
@@ -572,7 +572,7 @@ export const pastryData = [
     price: 83,
     price_b: 104,
     rating: 5,
-    category: 'суфле, ягодное',
+    category: ['суфле', 'ягодное'],
   },
   {
     id: 18,
@@ -596,7 +596,7 @@ export const pastryData = [
     price: 80,
     price_b: 96,
     rating: 4,
-    category: 'суфле, фруктовое',
+    category: ['суфле', 'фруктовое'],
   },
   {
     id: 19,
@@ -620,7 +620,7 @@ export const pastryData = [
     price: 82,
     price_b: 103,
     rating: 10,
-    category: 'суфле, шоколадное',
+    category: ['суфле', 'шоколадное'],
   },
   {
     id: 20,
@@ -644,7 +644,7 @@ export const pastryData = [
     price: 83,
     price_b: 102,
     rating: 3,
-    category: 'суфле, йогуртовое, сырное, фруктовое',
+    category: ['суфле', 'йогуртовое', 'сырное', 'фруктовое'],
   },
   {
     id: 21,
@@ -667,7 +667,7 @@ export const pastryData = [
     price: 64,
     price_b: null,
     rating: 6,
-    category: 'песочное, кремовое',
+    category: ['песочное', 'кремовое'],
   },
   {
     id: 22,
@@ -691,7 +691,7 @@ export const pastryData = [
     price: 84,
     price_b: 98,
     rating: 8,
-    category: 'сырное',
+    category: ['сырное'],
   },
   {
     id: 23,
@@ -715,7 +715,7 @@ export const pastryData = [
     price: 104,
     price_b: null,
     rating: 7,
-    category: 'сырное, шоколадное',
+    category: ['сырное', 'шоколадное'],
   },
   {
     id: 24,
@@ -738,7 +738,7 @@ export const pastryData = [
     price: 99,
     price_b: null,
     rating: 6,
-    category: 'сырное, фруктовое',
+    category: ['сырное', 'фруктовое'],
   },
   {
     id: 25,
@@ -762,7 +762,7 @@ export const pastryData = [
     price: 90,
     price_b: null,
     rating: 6,
-    category: 'сырное, йогуртовое, ягодное',
+    category: ['сырное', 'йогуртовое', 'ягодное'],
   },
   {
     id: 26,
@@ -786,7 +786,7 @@ export const pastryData = [
     price: 94,
     price_b: null,
     rating: 6,
-    category: 'сырное, йогуртовое, шоколадное',
+    category: ['сырное', 'йогуртовое', 'шоколадное'],
   },
   {
     id: 27,
@@ -810,7 +810,7 @@ export const pastryData = [
     price: 78,
     price_b: 98,
     rating: 8,
-    category: 'сырное, ореховое',
+    category: ['сырное', 'ореховое'],
   },
   {
     id: 28,
@@ -834,7 +834,7 @@ export const pastryData = [
     price: 110,
     price_b: null,
     rating: 8,
-    category: 'бисквитное, ореховое, фруктовое',
+    category: ['бисквитное', 'ореховое', 'фруктовое'],
   },
   {
     id: 29,
@@ -858,7 +858,7 @@ export const pastryData = [
     price: 98,
     price_b: null,
     rating: 6,
-    category: 'бисквитное, сырное, фруктовое, кремовое',
+    category: ['бисквитное', 'сырное', 'фруктовое', 'кремовое'],
   },
   {
     id: 30,
@@ -882,7 +882,7 @@ export const pastryData = [
     price: 78,
     price_b: 98,
     rating: 5,
-    category: 'песочное, ореховое',
+    category: ['песочное', 'ореховое'],
   },
   {
     id: 31,
@@ -906,7 +906,7 @@ export const pastryData = [
     price: 82,
     price_b: 98,
     rating: 9,
-    category: 'бисквитное, шоколадное',
+    category: ['бисквитное', 'шоколадное'],
   },
   {
     id: 32,
@@ -930,7 +930,7 @@ export const pastryData = [
     price: 82,
     price_b: 104,
     rating: 9,
-    category: 'суфле, шоколадное',
+    category: ['суфле', 'шоколадное'],
   },
   {
     id: 33,
@@ -954,7 +954,7 @@ export const pastryData = [
     price: 77,
     price_b: 98,
     rating: 9,
-    category: 'бисквитное, кремовое',
+    category: ['бисквитное', 'кремовое'],
   },
   {
     id: 34,
@@ -978,7 +978,7 @@ export const pastryData = [
     price: 84,
     price_b: 103,
     rating: 10,
-    category: 'бисквитное, кремовое, маковое, шоколадное',
+    category: ['бисквитное', 'кремовое', 'маковое', 'шоколадное'],
   },
   {
     id: 35,
@@ -1002,7 +1002,7 @@ export const pastryData = [
     price: 87,
     price_b: null,
     rating: 3,
-    category: 'бисквитное, маковое, ягодное',
+    category: ['бисквитное', 'маковое', 'ягодное'],
   },
   {
     id: 36,
@@ -1026,7 +1026,7 @@ export const pastryData = [
     price: 80,
     price_b: 98,
     rating: 7,
-    category: 'ореховое, кремовое',
+    category: ['ореховое', 'кремовое'],
   },
   {
     id: 37,
@@ -1050,7 +1050,7 @@ export const pastryData = [
     price: 72,
     price_b: 97,
     rating: 7,
-    category: 'бисквитное, ореховое, кремовое',
+    category: ['бисквитное', 'ореховое', 'кремовое'],
   },
   {
     id: 38,
@@ -1073,7 +1073,7 @@ export const pastryData = [
     price: 94,
     price_b: null,
     rating: 8,
-    category: 'ореховое, кремовое',
+    category: ['ореховое', 'кремовое'],
   },
   {
     id: 39,
@@ -1097,7 +1097,7 @@ export const pastryData = [
     price: 78,
     price_b: 104,
     rating: 9,
-    category: 'слоенное, кремовое',
+    category: ['слоенное', 'кремовое'],
   },
   {
     id: 40,
@@ -1121,7 +1121,7 @@ export const pastryData = [
     price: 96,
     price_b: null,
     rating: 5,
-    category: 'медовое, кремовое, бисквитное',
+    category: ['медовое', 'кремовое', 'бисквитное'],
   },
   {
     id: 41,
@@ -1144,7 +1144,7 @@ export const pastryData = [
     price: 103,
     price_b: null,
     rating: 7,
-    category: 'суфле, ягодное, сырное',
+    category: ['суфле', 'ягодное', 'сырное'],
   },
   {
     id: 42,
@@ -1168,7 +1168,7 @@ export const pastryData = [
     price: 70,
     price_b: 89,
     rating: 10,
-    category: 'медовое, песочное, кремовое',
+    category: ['медовое', 'песочное', 'кремовое'],
   },
   {
     id: 43,
@@ -1191,7 +1191,7 @@ export const pastryData = [
     price: 93,
     price_b: null,
     rating: 4,
-    category: 'бисквитное, фруктовое, кремовое',
+    category: ['бисквитное', 'фруктовое', 'кремовое'],
   },
   {
     id: 44,
@@ -1214,7 +1214,7 @@ export const pastryData = [
     price: 82,
     price_b: 102,
     rating: 9,
-    category: 'ореховое, песочное',
+    category: ['ореховое', 'песочное'],
   },
   {
     id: 45,
@@ -1238,7 +1238,7 @@ export const pastryData = [
     price: 80,
     price_b: 105,
     rating: 7,
-    category: 'бисквитное, кремовое, сырное',
+    category: ['бисквитное', 'кремовое', 'сырное'],
   },
   {
     id: 46,
@@ -1262,7 +1262,7 @@ export const pastryData = [
     price: 97,
     price_b: null,
     rating: 7,
-    category: 'бисквитное, кремовое, сырное, ореховое',
+    category: ['бисквитное', 'кремовое', 'сырное', 'ореховое'],
   },
   {
     id: 47,
@@ -1286,7 +1286,7 @@ export const pastryData = [
     price: 95,
     price_b: null,
     rating: 7,
-    category: 'бисквитное, кремовое, ореховое',
+    category: ['бисквитное', 'кремовое', 'ореховое'],
   },
   {
     id: 48,
@@ -1309,6 +1309,6 @@ export const pastryData = [
     price: 52,
     price_b: null,
     rating: 10,
-    category: 'кремовое, ореховое, ягодное, шоколадное',
+    category: ['кремовое', 'ореховое', 'ягодное', 'шоколадное'],
   },
 ];
