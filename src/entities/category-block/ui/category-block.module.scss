@@ -1,0 +1,29 @@
+.categoryBlock {
+  padding-top: 20px;
+  border: 1px solid red;
+
+  &__title {
+    font: var(--font-s-medium);
+    color: var(--text-thirdary);
+    padding-left: 10px;
+    // padding-bottom: 10px;
+  }
+
+  &__list {
+    display: flex;
+    // justify-content: space-between;
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  &__button {
+    display: flex;
+    // width: 100%;
+    width: 260px;
+    min-height: 100px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    
+    border: 1px solid red;
+  }
+}

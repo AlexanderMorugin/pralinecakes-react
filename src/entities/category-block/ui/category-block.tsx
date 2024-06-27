@@ -1,39 +1,140 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
+import Routes from '../../../shared/config/routes/routes';
+import {
+  CATEGORY_BERRY,
+  CATEGORY_BISQUIT,
+  CATEGORY_CHEESE,
+  CATEGORY_CHOCOLATE,
+  CATEGORY_CREAM,
+  CATEGORY_FRUIT,
+  CATEGORY_HONEY,
+  CATEGORY_NUT,
+  CATEGORY_POPPY,
+  CATEGORY_PUFF,
+  CATEGORY_SAND,
+  CATEGORY_STRUDEL,
+  CATEGORY_SUFLE,
+  CATEGORY_YOGURT,
+} from '../../../shared/constants/constants';
+
+import styles from './category-block.module.scss';
+
+type TCategory = {
+  name: string;
+  route: string;
+};
+
 interface ICategoryBlock {
-  category: string[];
+  category: TCategory[];
 }
 
 const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
-  const categoryItem = category.map((item: string) => item);
-  console.log(categoryItem);
+  const categoryItem = category.map((item) => item);
 
-  const honey = categoryItem.includes('медовое');
-  const nut = categoryItem.includes('ореховое');
-  const bisquit = categoryItem.includes('бисквитное');
-  //  const honey = categoryItem.includes('медовое') && <h1>Медовые пирожные</h1>
-  //       {categoryItem.includes('ореховое') && <h1>Ореховые пирожные</h1>}
-  //       {categoryItem.includes('бисквитное') && <h1>Бисквитные пирожные</h1>}
+  const chocolateItem = categoryItem.filter(
+    (item) => item.name === CATEGORY_CHOCOLATE
+  );
+  const honeyItem = categoryItem.filter((item) => item.name === CATEGORY_HONEY);
+  const strudelItem = categoryItem.filter(
+    (item) => item.name === CATEGORY_STRUDEL
+  );
+  const fruitItem = categoryItem.filter((item) => item.name === CATEGORY_FRUIT);
+  const berryItem = categoryItem.filter((item) => item.name === CATEGORY_BERRY);
+  const sandItem = categoryItem.filter((item) => item.name === CATEGORY_SAND);
+  const puffItem = categoryItem.filter((item) => item.name === CATEGORY_PUFF);
+  const bisquitItem = categoryItem.filter(
+    (item) => item.name === CATEGORY_BISQUIT
+  );
+  const poppyItem = categoryItem.filter((item) => item.name === CATEGORY_POPPY);
+  const nutItem = categoryItem.filter((item) => item.name === CATEGORY_NUT);
+  const creamItem = categoryItem.filter((item) => item.name === CATEGORY_CREAM);
+  const yogurtItem = categoryItem.filter(
+    (item) => item.name === CATEGORY_YOGURT
+  );
+  const sufleItem = categoryItem.filter((item) => item.name === CATEGORY_SUFLE);
+  const cheeseItem = categoryItem.filter(
+    (item) => item.name === CATEGORY_CHEESE
+  );
 
   return (
-    <ul>
-      {honey && (
-        <li>
-          <Link to={'/'}>Медовые пирожные</Link>
-        </li>
-      )}
-      {nut && (
-        <li>
-          <Link to={'/delivery'}>Ореховые пирожные</Link>
-        </li>
-      )}
-      {bisquit && (
-        <li>
-          <Link to={'/contacts'}>Бисквитные пирожные</Link>
-        </li>
-      )}
-    </ul>
+    <div className={styles.categoryBlock}>
+      <h3 className={styles.categoryBlock__title}>Смотрите другие пирожные</h3>
+      <ul className={styles.categoryBlock__list}>
+        {chocolateItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+
+        {honeyItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {strudelItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {fruitItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {berryItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {sandItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {puffItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {bisquitItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {poppyItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {nutItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {creamItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {yogurtItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {sufleItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+        {cheeseItem.map((item) => (
+          <li key={item.route}>
+            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

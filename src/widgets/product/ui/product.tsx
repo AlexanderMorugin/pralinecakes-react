@@ -63,6 +63,7 @@ const Product: FC<IProduct> = ({
 }) => {
 
 
+
   return (
     <section className={styles.product}>
       {cake && <PageHeading title={`Торт "${title}"`} />}
