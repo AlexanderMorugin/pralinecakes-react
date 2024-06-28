@@ -17,6 +17,7 @@ import ProductScroll from './product-scroll';
 import ProductHeading from './product-heading';
 import LinkButton from './link-button';
 import CategoryBlock from './category-block';
+import CategoryButton from './category-button';
 
 export {
   Logo,
@@ -38,4 +39,5 @@ export {
   ProductHeading,
   LinkButton,
   CategoryBlock,
+  CategoryButton,
 };

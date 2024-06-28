@@ -12,6 +12,7 @@ import Contacts from './contacts';
 import Carta from './carta';
 import CakeBlock from './cake-block';
 import PastryBlock from './pastry-block';
+import AllCategories from './all-categories';
 
 export {
   Header,
@@ -28,4 +29,5 @@ export {
   Carta,
   CakeBlock,
   PastryBlock,
+  AllCategories,
 };

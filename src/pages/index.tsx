@@ -11,8 +11,8 @@ import AllPastryPage from './all-pastry-page/all-pastry-page';
 import AllCakesPage from './all-cakes-page/all-cakes-page';
 import CakePage from './cake-page/cake-page';
 import PastryPage from './pastry-page/pastry-page';
-import CategoriesPage from './categories-page/categories-page';
 import CategoryPage from './category-page/category-page';
+import AllCategoriesPage from './all-categories-page/all-categories-page';
 
 export {
   MainPage,
@@ -28,6 +28,6 @@ export {
   AllPastryPage,
   CakePage,
   PastryPage,
-  CategoriesPage,
-  CategoryPage
+  AllCategoriesPage,
+  CategoryPage,
 };

@@ -107,7 +107,7 @@ const Product: FC<IProduct> = ({
         <ProductDefrost />
       </div>
 
-      <CategoryBlock category={category} />
+      {pastry && <CategoryBlock category={category} />}
 
 
 

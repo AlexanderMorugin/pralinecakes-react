@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
 
 import Routes from '../../../shared/config/routes/routes';
 import {
@@ -17,13 +16,18 @@ import {
   CATEGORY_STRUDEL,
   CATEGORY_SUFLE,
   CATEGORY_YOGURT,
+  PAGE_CATEGORIES_LINK,
 } from '../../../shared/constants/constants';
+import LinkButton from '../../link-button';
+import CategoryButton from '../../category-button';
 
 import styles from './category-block.module.scss';
+import { Scroll } from '../../../features';
 
 type TCategory = {
   name: string;
   route: string;
+  image: string;
 };
 
 interface ICategoryBlock {
@@ -60,80 +64,159 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
 
   return (
     <div className={styles.categoryBlock}>
-      <h3 className={styles.categoryBlock__title}>Смотрите другие пирожные</h3>
-      <ul className={styles.categoryBlock__list}>
-        {chocolateItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-
-        {honeyItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {strudelItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {fruitItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {berryItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {sandItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {puffItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {bisquitItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {poppyItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {nutItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {creamItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {yogurtItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {sufleItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-        {cheeseItem.map((item) => (
-          <li key={item.route}>
-            <Link to={`${Routes.CATEGORIES}/${item.route}`} className={styles.categoryBlock__button}>{item.name}</Link>
-          </li>
-        ))}
-      </ul>
+      {/* <div className={styles.categoryBlock__titleBox}> */}
+        <h3 className={styles.categoryBlock__title}>
+          Пирожные похожих категорий
+        </h3>
+        {/* <div className={styles.categoryBlock__figure}></div> */}
+      {/* </div> */}
+      <Scroll>
+        {chocolateItem &&
+          chocolateItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {honeyItem &&
+          honeyItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {strudelItem &&
+          strudelItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {fruitItem &&
+          fruitItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {berryItem &&
+          berryItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {sandItem &&
+          sandItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {puffItem &&
+          puffItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {bisquitItem &&
+          bisquitItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {poppyItem &&
+          poppyItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {nutItem &&
+          nutItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {creamItem &&
+          creamItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {yogurtItem &&
+          yogurtItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {sufleItem &&
+          sufleItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        {cheeseItem &&
+          cheeseItem.map((item) => (
+            <li key={item.route}>
+              <CategoryButton
+                route={`${Routes.CATEGORIES}/${item.route}`}
+                name={item.name}
+                image={item.image}
+              />
+            </li>
+          ))}
+        <LinkButton
+          route={Routes.CATEGORIES}
+          text={PAGE_CATEGORIES_LINK}
+          className={styles.categoryBlock__linkButton}
+        />
+      </Scroll>
     </div>
   );
 };

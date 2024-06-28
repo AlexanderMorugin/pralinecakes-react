@@ -87,6 +87,13 @@ export const META_PASTRY_TITLE = 'Пирожные кондитерской Пр
 export const META_PASTRY_DESCRIPTION =
   'Вкусные пирожные приготовленные руками для наших покупателей.';
 
+export const PAGE_CATEGORIES_TITLE = 'Категории';
+export const PAGE_CATEGORIES_LINK = 'все категории';
+// export const PAGE_PASTRY_LINK = 'все пирожные';
+// export const META_PASTRY_TITLE = 'Пирожные кондитерской Пралине';
+// export const META_PASTRY_DESCRIPTION =
+//   'Вкусные пирожные приготовленные руками для наших покупателей.';
+
 // упаковка
 export const CAKE_PACK = 'Цветная картонная коробка с окошком';
 export const PASTRY_PACK = 'Картонная коробка';
@@ -94,7 +101,7 @@ export const PASTRY_PACK = 'Картонная коробка';
 // наименования категорий
 export const CATEGORY_CHOCOLATE = 'шоколадные';
 export const CATEGORY_HONEY = 'медовые';
-export const CATEGORY_STRUDEL = 'штрудель';
+export const CATEGORY_STRUDEL = 'штрудели';
 export const CATEGORY_FRUIT = 'фруктовые';
 export const CATEGORY_BERRY = 'ягодные';
 export const CATEGORY_SAND = 'из песочного теста';

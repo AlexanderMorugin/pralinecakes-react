@@ -8,11 +8,12 @@ import styles from './link-button.module.scss';
 interface ILinkButton {
   route: string;
   text: string;
+  className?: string;
 }
 
-const LinkButton: FC<ILinkButton> = ({ route, text }) => {
+const LinkButton: FC<ILinkButton> = ({ route, text, className }) => {
   return (
-    <li className={styles.linkButton}>
+    <li className={`${className} ${styles.linkButton}`}>
       <Link to={route} className={styles.linkButton__link}>
         <div className={styles.linkButton__arrowBox}>
           <img
