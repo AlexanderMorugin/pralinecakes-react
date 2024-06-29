@@ -1,34 +1,38 @@
 import { FC, useState } from 'react';
 
+import { IProduct } from '../../product/ui/product';
+
+import styles from './category.module.scss';
 import { ProductBlock } from '../../../entities';
 import { Pagination } from '../../../features';
 import useResize from '../../../shared/hooks/use-resize';
-import { cakesData } from '../../../mockData/cakes-data';
+import useShuffle from '../../../shared/hooks/use-shuffle';
 
-import styles from './all-cakes.module.scss';
+interface ICategory {
+  data: IProduct[];
+}
 
-const AllCakes: FC = () => {
+const Category: FC<ICategory> = ({ data }) => {
   const { isScreenMd } = useResize();
-
-  const cakesDataByPrice = [...cakesData].sort((a, b) => a.price - b.price);
+  const shuffledData = useShuffle(data);
 
   // пагинация
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 8;
   const lastItemsIndex = currentPage * itemsPerPage;
   const firstItemsIndex = lastItemsIndex - itemsPerPage;
-  const currentItems = cakesDataByPrice.slice(firstItemsIndex, lastItemsIndex);
-  const pageQuantity = cakesDataByPrice.length / itemsPerPage;
+  const currentItems = shuffledData.slice(firstItemsIndex, lastItemsIndex);
+  const pageQuantity = shuffledData.length / itemsPerPage;
   const lastPage = currentPage >= pageQuantity;
 
-  const dataCakes = isScreenMd ? currentItems : cakesDataByPrice;
+  const dataPastry = isScreenMd ? currentItems : shuffledData;
 
   return (
-    <section className={styles.allCakes}>
-      <ProductBlock dataCakes={dataCakes} isCake={true} isPastry={false} />
-      {isScreenMd && (
+    <section className={styles.category}>
+      <ProductBlock dataPastry={dataPastry} isCake={false} isPastry={true} />
+      {data.length >= 5 && isScreenMd && (
         <Pagination
-          totalItems={cakesData.length}
+          totalItems={data.length}
           itemsPerPage={itemsPerPage}
           setCurrentPage={setCurrentPage}
           currentPage={currentPage}
@@ -39,4 +43,4 @@ const AllCakes: FC = () => {
   );
 };
 
-export default AllCakes;
+export default Category;

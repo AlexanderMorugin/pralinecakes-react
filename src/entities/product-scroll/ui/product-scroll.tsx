@@ -50,6 +50,7 @@ const ProductScroll: FC<IProductScroll> = ({
           subtitle={PAGE_PASTRY_LINK}
           route={routePastry}
           isLink={isLink}
+          isPastry={isPastry}
         />
       )}
 

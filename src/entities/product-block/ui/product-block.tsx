@@ -39,6 +39,7 @@ const ProductBlock: FC<IProductBlock> = ({
           subtitle={PAGE_CAKES_LINK}
           route={routeCakes}
           isLink={isLink}
+          // isPastry={isPastry}
         />
       )}
 
@@ -48,6 +49,8 @@ const ProductBlock: FC<IProductBlock> = ({
           subtitle={PAGE_PASTRY_LINK}
           route={routePastry}
           isLink={isLink}
+          // isCake={isCake}
+          isPastry={isPastry}
         />
       )}
 
