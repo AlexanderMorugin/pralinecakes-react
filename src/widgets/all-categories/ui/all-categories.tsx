@@ -1,9 +1,10 @@
 import { FC } from 'react';
 
-import styles from './all-categories.module.scss';
 import { categoryData } from '../../../mockData/category-data';
-import { Link } from 'react-router-dom';
 import Routes from '../../../shared/config/routes/routes';
+import { CategoryButton } from '../../../entities';
+
+import styles from './all-categories.module.scss';
 
 const AllCategories: FC = () => {
   return (
@@ -11,17 +12,12 @@ const AllCategories: FC = () => {
       <ul className={styles.allCategories__list}>
         {categoryData.map((item) => (
           <li key={item.name}>
-            <Link
-              to={`${Routes.CATEGORIES}/${item.route}`}
+            <CategoryButton
+              route={`${Routes.CATEGORIES}/${item.route}`}
+              name={item.name}
+              image={item.image}
               className={styles.allCategories__button}
-            >
-              <span className={styles.allCategories__name}>{item.name}</span>
-              <img
-                src={item.image}
-                alt={item.name}
-                className={styles.allCategories__image}
-              />
-            </Link>
+            />
           </li>
         ))}
       </ul>

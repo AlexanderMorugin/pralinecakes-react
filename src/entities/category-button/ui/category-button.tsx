@@ -7,11 +7,12 @@ interface ICategoryButton {
   route: string;
   name: string;
   image: string;
+  className?: string;
 }
 
-const CategoryButton: FC<ICategoryButton> = ({ route, name, image }) => {
+const CategoryButton: FC<ICategoryButton> = ({ route, name, image, className }) => {
   return (
-    <Link to={route} className={styles.categoryButton}>
+    <Link to={route} className={`${className} ${styles.categoryButton}`}>
       <span className={styles.name}>{name}</span>
       <img
         src={image}

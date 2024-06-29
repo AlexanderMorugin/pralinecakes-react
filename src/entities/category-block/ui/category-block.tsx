@@ -1,28 +1,13 @@
 import { FC } from 'react';
 
 import Routes from '../../../shared/config/routes/routes';
-import {
-  CATEGORY_BERRY,
-  CATEGORY_BISQUIT,
-  CATEGORY_CHEESE,
-  CATEGORY_CHOCOLATE,
-  CATEGORY_CREAM,
-  CATEGORY_FRUIT,
-  CATEGORY_HONEY,
-  CATEGORY_NUT,
-  CATEGORY_POPPY,
-  CATEGORY_PUFF,
-  CATEGORY_SAND,
-  CATEGORY_STRUDEL,
-  CATEGORY_SUFLE,
-  CATEGORY_YOGURT,
-  PAGE_CATEGORIES_LINK,
-} from '../../../shared/constants/constants';
+import { PAGE_CATEGORIES_LINK } from '../../../shared/constants/constants';
 import LinkButton from '../../link-button';
 import CategoryButton from '../../category-button';
+import { Scroll } from '../../../features';
+import useCategoryItem from '../../../shared/hooks/use-category-item';
 
 import styles from './category-block.module.scss';
-import { Scroll } from '../../../features';
 
 type TCategory = {
   name: string;
@@ -36,40 +21,29 @@ interface ICategoryBlock {
 
 const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
   const categoryItem = category.map((item) => item);
-
-  const chocolateItem = categoryItem.filter(
-    (item) => item.name === CATEGORY_CHOCOLATE
-  );
-  const honeyItem = categoryItem.filter((item) => item.name === CATEGORY_HONEY);
-  const strudelItem = categoryItem.filter(
-    (item) => item.name === CATEGORY_STRUDEL
-  );
-  const fruitItem = categoryItem.filter((item) => item.name === CATEGORY_FRUIT);
-  const berryItem = categoryItem.filter((item) => item.name === CATEGORY_BERRY);
-  const sandItem = categoryItem.filter((item) => item.name === CATEGORY_SAND);
-  const puffItem = categoryItem.filter((item) => item.name === CATEGORY_PUFF);
-  const bisquitItem = categoryItem.filter(
-    (item) => item.name === CATEGORY_BISQUIT
-  );
-  const poppyItem = categoryItem.filter((item) => item.name === CATEGORY_POPPY);
-  const nutItem = categoryItem.filter((item) => item.name === CATEGORY_NUT);
-  const creamItem = categoryItem.filter((item) => item.name === CATEGORY_CREAM);
-  const yogurtItem = categoryItem.filter(
-    (item) => item.name === CATEGORY_YOGURT
-  );
-  const sufleItem = categoryItem.filter((item) => item.name === CATEGORY_SUFLE);
-  const cheeseItem = categoryItem.filter(
-    (item) => item.name === CATEGORY_CHEESE
-  );
+  const {
+    chocolateItem,
+    honeyItem,
+    strudelItem,
+    fruitItem,
+    berryItem,
+    sandItem,
+    puffItem,
+    bisquitItem,
+    poppyItem,
+    nutItem,
+    creamItem,
+    yogurtItem,
+    sufleItem,
+    cheeseItem,
+  } = useCategoryItem(categoryItem);
 
   return (
     <div className={styles.categoryBlock}>
-      {/* <div className={styles.categoryBlock__titleBox}> */}
-        <h3 className={styles.categoryBlock__title}>
-          Пирожные похожих категорий
-        </h3>
-        {/* <div className={styles.categoryBlock__figure}></div> */}
-      {/* </div> */}
+      <h3 className={styles.categoryBlock__title}>
+        Пирожные похожих категорий
+      </h3>
+
       <Scroll>
         {chocolateItem &&
           chocolateItem.map((item) => (

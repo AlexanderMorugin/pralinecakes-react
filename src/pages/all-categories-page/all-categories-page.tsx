@@ -1,13 +1,10 @@
 import { FC } from 'react';
 
-import { MainWrapper, PageWrapper } from '../../components';
+import { HelmetMeta, MainWrapper, PageWrapper } from '../../components';
+import { AllCategories, Breadcrumbs, PageHeading } from '../../widgets';
 import {
-  AllCategories,
-  Breadcrumbs,
-  PageHeading,
-  PriorityBlock,
-} from '../../widgets';
-import {
+  META_CATEGORIES_DESCRIPTION,
+  META_CATEGORIES_TITLE,
   PAGE_CATEGORIES_TITLE,
   PAGE_MAIN,
   PAGE_PRODUCTS_TITLE,
@@ -22,15 +19,21 @@ const AllCategoriesPage: FC = () => {
   ];
 
   return (
-    <PageWrapper>
-      <Breadcrumbs links={breadcrumbs} />
-      <MainWrapper>
-        <PageHeading title={PAGE_CATEGORIES_TITLE} />
-        <AllCategories />
+    <>
+      <PageWrapper>
+        <Breadcrumbs links={breadcrumbs} />
+        <MainWrapper>
+          <PageHeading title={PAGE_CATEGORIES_TITLE} />
+          <AllCategories />
+        </MainWrapper>
+      </PageWrapper>
 
-        <PriorityBlock />
-      </MainWrapper>
-    </PageWrapper>
+      <HelmetMeta
+        title={META_CATEGORIES_TITLE}
+        description={META_CATEGORIES_DESCRIPTION}
+        route={`${Routes.BASE_URL}${Routes.CATEGORIES}`}
+      />
+    </>
   );
 };
 

@@ -51,9 +51,9 @@ export const categoryData = [
   { name: CATEGORY_STRUDEL, route: TYPE_STRUDEL, image: StrudelImage },
   { name: CATEGORY_FRUIT, route: TYPE_FRUIT, image: FruitImage },
   { name: CATEGORY_BERRY, route: TYPE_BERRY, image: BerryImage },
+  { name: CATEGORY_BISQUIT, route: TYPE_BISQUIT, image: BisquitImage },
   { name: CATEGORY_SAND, route: TYPE_SAND, image: SandImage },
   { name: CATEGORY_PUFF, route: TYPE_PUFF, image: PuffImage },
-  { name: CATEGORY_BISQUIT, route: TYPE_BISQUIT, image: BisquitImage },
   { name: CATEGORY_POPPY, route: TYPE_POPPY, image: PoppyImage },
   { name: CATEGORY_NUT, route: TYPE_NUT, image: NutImage },
   { name: CATEGORY_CREAM, route: TYPE_CREAM, image: CreamImage },
@@ -88,13 +88,13 @@ export const berry = {
   route: TYPE_BERRY,
   image: BerryImage,
 };
-export const sand = { name: CATEGORY_SAND, route: TYPE_SAND, image: SandImage };
-export const puff = { name: CATEGORY_PUFF, route: TYPE_PUFF, image: PuffImage };
 export const bisquit = {
   name: CATEGORY_BISQUIT,
   route: TYPE_BISQUIT,
   image: BisquitImage,
 };
+export const sand = { name: CATEGORY_SAND, route: TYPE_SAND, image: SandImage };
+export const puff = { name: CATEGORY_PUFF, route: TYPE_PUFF, image: PuffImage };
 export const poppy = {
   name: CATEGORY_POPPY,
   route: TYPE_POPPY,

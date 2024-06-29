@@ -26,51 +26,13 @@
   }
 
   &__title {
-    // position: relative;
     font: var(--font-s-medium);
     color: var(--text-thirdary);
-    // color: var(--green-primary);
     padding-left: 10px;
     padding-bottom: 10px;
-    // z-index: var(--z-index-two);
   }
-
-  // &__figure {
-  //   position: absolute;
-  //   right: -15px;
-  //   bottom: 5px;
-  //   width: 70px;
-  //   height: 18px;
-  //   background: var(--brown-primary);
-  // }
 
   &__linkButton {
     max-width: 200px;
   }
-  // &__container {
-  //   display: flex;
-  //   // justify-items:auto;
-  //   // justify-content: space-between;
-  //   // gap: 20px;
-  //   width: 100%;
-  //   // max-width: 1000px;
-  //   // width: fit-content;
-
-
-  //   // border: 1px solid red;
-  // }
-
-  // &__list {
-  //   width: fit-content;
-  //   // display: flex;
-  //   // justify-content: space-between;
-  //   // gap: 20px;
-  //   // width: 100%;
-  //   // max-width: 1000px;
-  //   // padding-top: 10px;
-
-  //   // border: 1px solid red;
-  // }
-
- 
 }
