@@ -23,6 +23,7 @@ export interface IProduct {
   image_large: string;
   title: string;
   description: string;
+  condition: string;
   ingredients: string;
   protein: number;
   fat: number;
@@ -48,6 +49,7 @@ const Product: FC<IProduct> = ({
   image_normal,
   // image_large,
   description,
+  condition,
   ingredients,
   protein,
   fat,
@@ -74,6 +76,7 @@ const Product: FC<IProduct> = ({
           <div className={styles.product__description}>
             <span className={styles.product__span}>Описание</span>
             <p>{description}</p>
+            <p className={styles.product__condition}>{condition}</p>
           </div>
 
           <ProductDescribe
