@@ -6,10 +6,6 @@
   font: var(--font-xs-regular);
   color: var(--light-primary);
 
-  @include media.respond-to('large') {
-    font: var(--font-xxs-regular);
-  }
-
   @include media.respond-to('middle') {
     align-items: center;
   }

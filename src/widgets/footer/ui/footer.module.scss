@@ -23,8 +23,12 @@
     }
 
     @include media.respond-to('middle') {
-      grid-template-columns: 1fr;
-      grid-template-areas: 'information' 'address' 'logoBox';
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        'information catalog'
+        'address address'
+        'logoBox logoBox';
+      gap: 10px;
       padding-top: var(--padding-vertical-mobile);
       padding-bottom: var(--padding-vertical-mobile);
       padding-left: var(--padding-horizontal-mobile);
@@ -56,10 +60,6 @@
 
   &__catalog {
     grid-area: catalog;
-
-    @include media.respond-to('large') {
-      display: none;
-    }
   }
 
   &__cooperation {

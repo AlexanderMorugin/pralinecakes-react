@@ -38,11 +38,7 @@
     }
 
     &_footer {
-      font: var(--font-xs-bold);
-
-      @include media.respond-to('large') {
-        font: var(--font-xxs-bold);
-      }
+      font: var(--font-s-bold);
     }
   }
 

@@ -33,7 +33,7 @@ const Delivery: FC = () => {
 
           <article className={styles.delivery__article}>
             <h3 className={styles.delivery__title}>Довезем в лучшем виде!</h3>
-            <p>
+            <p className={styles.delivery__text}>
               Вся продукция доставляется в замороженом виде, а наши автомобили
               оборудованы специальными морозильными камерами. Мы соблюдаем
               температурный режим транспортировки и несем полную гарантию
@@ -60,7 +60,7 @@ const Delivery: FC = () => {
 
           <article className={styles.delivery__article}>
             <h3 className={styles.delivery__title}>До куда хватит горючки?</h3>
-            <p>
+            <p className={styles.delivery__text}>
               Доставляем пирожные и торты по Москве и ближайшие пригородные
               районы. Привезем десерты бесплатно, бережно, качественно и
               вовремя! Условия доставки для более дальних клиентов оговариваются
@@ -87,7 +87,7 @@ const Delivery: FC = () => {
 
           <article className={styles.delivery__article}>
             <h3 className={styles.delivery__title}>Берем недорого!</h3>
-            <p>
+            <p className={styles.delivery__text}>
               Доставка осуществляется на следующий день после заказа, но только
               в будние дни и при сумме свыше 7000 рублей. Не стесняйтесь,
               заказывайте побольше, замороженные десерты хранятся долго!
@@ -113,7 +113,7 @@ const Delivery: FC = () => {
 
           <article className={styles.delivery__article}>
             <h3 className={styles.delivery__title}>Отдадим в хорошие руки!</h3>
-            <p>
+            <p className={styles.delivery__text}>
               Если десерты требуются срочно или в день заказа - их можно забрать
               самовывозом. Сумма заказа в этом случае значения не имеет, но
               имейте ввиду, что самовывоз возможен в часы работы кондитерской.
