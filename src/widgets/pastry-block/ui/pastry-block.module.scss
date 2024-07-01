@@ -6,10 +6,6 @@
   margin: 0 auto;
   padding-left: var(--padding-horizontal-desktop);
   padding-right: var(--padding-horizontal-desktop);
-  // padding-top: 30px;
-  // padding-bottom: 30px;
-
-  // border: 1px solid red;
 
   @include media.respond-to('middle') {
     padding-left: var(--padding-horizontal-mobile);

@@ -1,15 +1,16 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 
-import { IProduct } from '../../product/ui/product';
-
-import styles from './category.module.scss';
 import { ProductBlock } from '../../../entities';
 import { Pagination } from '../../../features';
 import useResize from '../../../shared/hooks/use-resize';
 import useShuffle from '../../../shared/hooks/use-shuffle';
+import { ProductProps } from '../../../shared/types/types';
+import usePagination from '../../../shared/hooks/use-pagination';
+
+import styles from './category.module.scss';
 
 interface ICategory {
-  data: IProduct[];
+  data: ProductProps[];
 }
 
 const Category: FC<ICategory> = ({ data }) => {
@@ -17,13 +18,8 @@ const Category: FC<ICategory> = ({ data }) => {
   const shuffledData = useShuffle(data);
 
   // пагинация
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 8;
-  const lastItemsIndex = currentPage * itemsPerPage;
-  const firstItemsIndex = lastItemsIndex - itemsPerPage;
-  const currentItems = shuffledData.slice(firstItemsIndex, lastItemsIndex);
-  const pageQuantity = shuffledData.length / itemsPerPage;
-  const lastPage = currentPage >= pageQuantity;
+  const { currentPage, setCurrentPage, itemsPerPage, currentItems, lastPage } =
+    usePagination(shuffledData);
 
   const dataPastry = isScreenMd ? currentItems : shuffledData;
 

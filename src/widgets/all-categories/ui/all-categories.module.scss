@@ -7,8 +7,6 @@
   padding-left: var(--padding-horizontal-desktop);
   padding-right: var(--padding-horizontal-desktop);
 
-  // border: 1px solid red;
-
   @include media.respond-to('middle') {
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);

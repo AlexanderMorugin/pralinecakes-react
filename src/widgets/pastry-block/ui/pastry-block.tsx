@@ -29,7 +29,6 @@ const PastryBlock: FC = () => {
         <ProductScroll
           dataPastry={eightItemsData}
           routePastry={Routes.PASTRY}
-          isLink={true}
           isPastry={true}
           isCake={false}
         />

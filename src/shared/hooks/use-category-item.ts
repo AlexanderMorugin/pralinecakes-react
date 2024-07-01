@@ -14,8 +14,9 @@ import {
   CATEGORY_SUFLE,
   CATEGORY_YOGURT,
 } from '../constants/constants';
+import { CategoryProps } from '../types/types';
 
-const useCategoryItem = (array) => {
+const useCategoryItem = (array: CategoryProps[]) => {
   const chocolateItem = array.filter(
     (item) => item.name === CATEGORY_CHOCOLATE
   );
@@ -32,22 +33,22 @@ const useCategoryItem = (array) => {
   const yogurtItem = array.filter((item) => item.name === CATEGORY_YOGURT);
   const sufleItem = array.filter((item) => item.name === CATEGORY_SUFLE);
   const cheeseItem = array.filter((item) => item.name === CATEGORY_CHEESE);
-  
+
   return {
-    chocolateItem: chocolateItem,
-    honeyItem: honeyItem,
-    strudelItem: strudelItem,
-    fruitItem: fruitItem,
-    berryItem: berryItem,
-    sandItem: sandItem,
-    puffItem: puffItem,
-    bisquitItem: bisquitItem,
-    poppyItem: poppyItem,
-    nutItem: nutItem,
-    creamItem: creamItem,
-    yogurtItem: yogurtItem,
-    sufleItem: sufleItem,
-    cheeseItem: cheeseItem,
+    chocolateItem,
+    honeyItem,
+    strudelItem,
+    fruitItem,
+    berryItem,
+    sandItem,
+    puffItem,
+    bisquitItem,
+    poppyItem,
+    nutItem,
+    creamItem,
+    yogurtItem,
+    sufleItem,
+    cheeseItem,
   };
 };
 

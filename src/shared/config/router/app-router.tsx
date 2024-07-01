@@ -18,8 +18,6 @@ import {
   CategoryPage,
   AllCategoriesPage,
 } from '../../../pages';
-import { cakesData } from '../../../mockData/cakes-data';
-import { pastryData } from '../../../mockData/pastry-data';
 
 const AppRouter = createBrowserRouter([
   {
@@ -70,11 +68,11 @@ const AppRouter = createBrowserRouter([
       },
       {
         path: Routes.ONE_CAKE,
-        element: <CakePage data={cakesData} />,
+        element: <CakePage />,
       },
       {
         path: Routes.ONE_PASTRY,
-        element: <PastryPage data={pastryData} />,
+        element: <PastryPage />,
       },
       {
         path: Routes.CATEGORIES,

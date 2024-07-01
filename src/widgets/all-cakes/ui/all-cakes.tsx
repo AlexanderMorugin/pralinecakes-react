@@ -1,8 +1,9 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 
 import { ProductBlock } from '../../../entities';
 import { Pagination } from '../../../features';
 import useResize from '../../../shared/hooks/use-resize';
+import usePagination from '../../../shared/hooks/use-pagination';
 import { cakesData } from '../../../mockData/cakes-data';
 
 import styles from './all-cakes.module.scss';
@@ -13,13 +14,8 @@ const AllCakes: FC = () => {
   const cakesDataByPrice = [...cakesData].sort((a, b) => a.price - b.price);
 
   // пагинация
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 8;
-  const lastItemsIndex = currentPage * itemsPerPage;
-  const firstItemsIndex = lastItemsIndex - itemsPerPage;
-  const currentItems = cakesDataByPrice.slice(firstItemsIndex, lastItemsIndex);
-  const pageQuantity = cakesDataByPrice.length / itemsPerPage;
-  const lastPage = currentPage >= pageQuantity;
+  const { currentPage, setCurrentPage, itemsPerPage, currentItems, lastPage } =
+    usePagination(cakesDataByPrice);
 
   const dataCakes = isScreenMd ? currentItems : cakesDataByPrice;
 

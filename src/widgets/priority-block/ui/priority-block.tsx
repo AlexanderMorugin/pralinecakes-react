@@ -26,9 +26,7 @@ const PriorityBlock: FC = () => {
           ))}
         </ul>
       ) : (
-        <Scroll 
-        // withManualGrip={true}
-        >
+        <Scroll>
           {priorityData.map((item, index) => (
             <li key={index}>
               <PriorityCard

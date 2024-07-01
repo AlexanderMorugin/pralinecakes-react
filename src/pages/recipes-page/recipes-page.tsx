@@ -1,7 +1,5 @@
 import { FC } from 'react';
 
-import image from '../../assets/images/petit-foires-scaled-500x500.jpg';
-
 import { Breadcrumbs, PageHeading } from '../../widgets';
 import {
   META_RECIPES_DESCRIPTION,
@@ -24,7 +22,6 @@ const RecipesPage: FC = () => {
         <Breadcrumbs links={breadcrumbs} />
         <MainWrapper>
           <PageHeading title={PAGE_RECIPES_TITLE} />
-          <img src={image} alt='image' />
         </MainWrapper>
       </PageWrapper>
 

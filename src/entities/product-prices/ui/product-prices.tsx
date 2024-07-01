@@ -4,11 +4,11 @@ import styles from './product-prices.module.scss';
 
 interface IProductPrices {
   quantity: number;
-  quantity_b: number;
+  quantity_b?: number;
   weight: number;
-  weight_b: number;
+  weight_b?: number;
   price: number;
-  price_b: number;
+  price_b?: number;
 }
 
 const ProductPrices: FC<IProductPrices> = ({
@@ -54,7 +54,7 @@ const ProductPrices: FC<IProductPrices> = ({
           <span className={styles.productPrices__price}>
             {price * quantity} р
           </span>
-          {price_b && (
+          {price_b && quantity_b && (
             <span className={styles.productPrices__price}>
               {price_b * quantity_b} р
             </span>

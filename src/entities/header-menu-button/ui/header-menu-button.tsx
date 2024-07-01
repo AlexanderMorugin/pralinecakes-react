@@ -5,13 +5,13 @@ import styles from './header-menu-button.module.scss';
 interface IHeaderMenuButton {
   setMenuActive: (menuActive: boolean) => void;
   menuActive: boolean;
-  onBlur?: () => void
+  onBlur?: () => void;
 }
 
 const HeaderMenuButton: FC<IHeaderMenuButton> = ({
   setMenuActive,
   menuActive,
-  onBlur
+  onBlur,
 }) => {
   return (
     <button

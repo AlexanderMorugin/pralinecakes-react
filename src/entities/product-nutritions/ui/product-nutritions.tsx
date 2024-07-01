@@ -33,16 +33,12 @@ const ProductNutritions: FC<IProductNutritions> = ({
         </div>
 
         <div className={styles.productNutritions__nutrition}>
-          <span className={styles.productNutritions__span}>
-            Углеводы
-          </span>
+          <span className={styles.productNutritions__span}>Углеводы</span>
           <span>{carbohydrates} гр</span>
         </div>
 
         <div className={styles.productNutritions__nutrition}>
-          <span className={styles.productNutritions__span}>
-            Калории
-          </span>
+          <span className={styles.productNutritions__span}>Калории</span>
           <span>{calories} ккал</span>
         </div>
       </div>

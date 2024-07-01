@@ -6,20 +6,20 @@ import {
   PAGE_PASTRY_LINK,
   PAGE_PASTRY_TITLE,
 } from '../../../shared/constants/constants';
-import { IProductCard } from '../../product-card/ui/product-card';
+import { ProductProps } from '../../../shared/types/types';
 import ProductCard from '../../product-card';
 import ProductHeading from '../../product-heading';
 
 import styles from './product-block.module.scss';
 
 interface IProductBlock {
-  dataPastry?: IProductCard[];
-  dataCakes?: IProductCard[];
+  dataPastry?: ProductProps[];
+  dataCakes?: ProductProps[];
   routePastry?: string;
   routeCakes?: string;
   isLink?: boolean;
-  isCake?: boolean;
-  isPastry?: boolean;
+  isCake: boolean;
+  isPastry: boolean;
 }
 
 const ProductBlock: FC<IProductBlock> = ({
@@ -37,9 +37,10 @@ const ProductBlock: FC<IProductBlock> = ({
         <ProductHeading
           title={PAGE_CAKES_TITLE}
           subtitle={PAGE_CAKES_LINK}
-          route={routeCakes}
+          route={routeCakes || '#'}
           isLink={isLink}
-          // isPastry={isPastry}
+          isCake={isCake}
+          isPastry={isPastry}
         />
       )}
 
@@ -47,9 +48,9 @@ const ProductBlock: FC<IProductBlock> = ({
         <ProductHeading
           title={PAGE_PASTRY_TITLE}
           subtitle={PAGE_PASTRY_LINK}
-          route={routePastry}
+          route={routePastry || '#'}
           isLink={isLink}
-          // isCake={isCake}
+          isCake={isCake}
           isPastry={isPastry}
         />
       )}

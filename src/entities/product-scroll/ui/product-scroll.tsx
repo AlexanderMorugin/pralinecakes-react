@@ -4,24 +4,24 @@ import { Scroll } from '../../../features';
 import ProductCard from '../../product-card';
 import LinkButton from '../../link-button';
 import ProductHeading from '../../product-heading';
-import { IProductCard } from '../../product-card/ui/product-card';
-
-import styles from './product-scroll.module.scss';
 import {
   PAGE_CAKES_LINK,
   PAGE_CAKES_TITLE,
   PAGE_PASTRY_LINK,
   PAGE_PASTRY_TITLE,
 } from '../../../shared/constants/constants';
+import { ProductProps } from '../../../shared/types/types';
+
+import styles from './product-scroll.module.scss';
 
 interface IProductScroll {
-  dataPastry?: IProductCard[];
-  dataCakes?: IProductCard[];
+  dataPastry?: ProductProps[];
+  dataCakes?: ProductProps[];
   routePastry?: string;
   routeCakes?: string;
   isLink?: boolean;
-  isCake?: boolean;
-  isPastry?: boolean;
+  isCake: boolean;
+  isPastry: boolean;
 }
 
 const ProductScroll: FC<IProductScroll> = ({
@@ -39,8 +39,10 @@ const ProductScroll: FC<IProductScroll> = ({
         <ProductHeading
           title={PAGE_CAKES_TITLE}
           subtitle={PAGE_CAKES_LINK}
-          route={routeCakes}
+          route={routeCakes || '#'}
           isLink={isLink}
+          isCake={isCake}
+          isPastry={isPastry}
         />
       )}
 
@@ -48,8 +50,9 @@ const ProductScroll: FC<IProductScroll> = ({
         <ProductHeading
           title={PAGE_PASTRY_TITLE}
           subtitle={PAGE_PASTRY_LINK}
-          route={routePastry}
+          route={routePastry || '#'}
           isLink={isLink}
+          isCake={isCake}
           isPastry={isPastry}
         />
       )}

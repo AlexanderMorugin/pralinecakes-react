@@ -6,8 +6,6 @@
   align-items: center;
   width: 100%;
 
-  // border: 1px solid red;
-
   &__titleBox {
     display: flex;
     justify-content: space-between;
@@ -43,12 +41,10 @@
     transition: 0.3s;
 
     &:hover {
-      // opacity: 0.6;
       background: var(--accent-secondary);
     }
 
     @include media.respond-to('middle') {
-      
       margin-right: 10px;
     }
   }

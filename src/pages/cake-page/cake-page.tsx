@@ -9,15 +9,11 @@ import {
   PAGE_MAIN,
   PAGE_PRODUCTS_TITLE,
 } from '../../shared/constants/constants';
-import { IProduct } from '../../widgets/product/ui/product';
+import { cakesData } from '../../mockData/cakes-data';
 
-interface ICakePage {
-  data: IProduct[];
-}
-
-const CakePage: FC<ICakePage> = ({ data }) => {
+const CakePage: FC = () => {
   const { route } = useParams();
-  const cake = data.filter((item) => item.route === route);
+  const cake = cakesData.filter((item) => item.route === route);
   const cakeTitle = cake.map((item) => item.title);
 
   const breadcrumbs = [
@@ -32,7 +28,7 @@ const CakePage: FC<ICakePage> = ({ data }) => {
       <Breadcrumbs links={breadcrumbs} />
       <MainWrapper>
         {cake.map((item) => (
-          <Product key={item.id} {...item} cake={true} />
+          <Product key={item.id} {...item} isCake={true} />
         ))}
         <PriorityBlock />
       </MainWrapper>

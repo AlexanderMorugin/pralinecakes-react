@@ -7,15 +7,10 @@
   font: var(--font-xs-regular);
   color: var(--text-thirdary);
   padding: 10px;
-  // padding-top: var(--padding-vertical-desktop);
-
-  // border: 1px solid red;
 
   @include media.respond-to('middle') {
     padding-top: var(--padding-vertical-desktop);
     padding-bottom: var(--padding-vertical-desktop);
-    // padding-left: var(--padding-horizontal-mobile);
-    // padding-right: var(--padding-horizontal-mobile);
   }
 
   &__heading {
@@ -25,12 +20,10 @@
 
   &__icon {
     width: 22px;
-    // transform: rotate(13deg);
   }
 
   &__title {
     font: var(--font-s-medium);
-    // padding-left: 10px;
   }
 
   &__accent {
@@ -39,19 +32,8 @@
 
   &__text {
     display: flex;
-    // flex-wrap: wrap;
     flex-direction: column;
-    // gap: 20px;
-    // column-gap: 20px;
-    // row-gap: 0;
-    // border-left: 1px solid var(--border-primary);
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
-
-    // @include media.respond-to('middle') {
-    //   // flex-direction: column;
-    //   // gap: 0;
-    //   // border-left: 0;
-    // }
   }
 }

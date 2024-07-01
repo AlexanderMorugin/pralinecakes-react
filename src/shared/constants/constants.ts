@@ -89,7 +89,8 @@ export const META_PASTRY_DESCRIPTION =
 
 export const PAGE_CATEGORIES_TITLE = 'Категории';
 export const PAGE_CATEGORIES_LINK = 'все категории';
-export const META_CATEGORIES_TITLE = 'Категории пирожных в кондитерской Пралине';
+export const META_CATEGORIES_TITLE =
+  'Категории пирожных в кондитерской Пралине';
 export const META_CATEGORIES_DESCRIPTION =
   'Пирожные распределены по категориям.';
 

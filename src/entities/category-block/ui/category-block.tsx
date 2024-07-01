@@ -6,21 +6,16 @@ import LinkButton from '../../link-button';
 import CategoryButton from '../../category-button';
 import { Scroll } from '../../../features';
 import useCategoryItem from '../../../shared/hooks/use-category-item';
+import { CategoryProps } from '../../../shared/types/types';
 
 import styles from './category-block.module.scss';
 
-type TCategory = {
-  name: string;
-  route: string;
-  image: string;
-};
-
 interface ICategoryBlock {
-  category: TCategory[];
+  category?: CategoryProps[];
 }
 
 const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
-  const categoryItem = category.map((item) => item);
+  const categoryItem = category!.map((item) => item);
   const {
     chocolateItem,
     honeyItem,
@@ -46,7 +41,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
 
       <Scroll>
         {chocolateItem &&
-          chocolateItem.map((item) => (
+          chocolateItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -56,7 +51,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {honeyItem &&
-          honeyItem.map((item) => (
+          honeyItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -66,7 +61,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {strudelItem &&
-          strudelItem.map((item) => (
+          strudelItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -76,7 +71,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {fruitItem &&
-          fruitItem.map((item) => (
+          fruitItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -86,7 +81,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {berryItem &&
-          berryItem.map((item) => (
+          berryItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -96,7 +91,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {sandItem &&
-          sandItem.map((item) => (
+          sandItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -106,7 +101,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {puffItem &&
-          puffItem.map((item) => (
+          puffItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -116,7 +111,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {bisquitItem &&
-          bisquitItem.map((item) => (
+          bisquitItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -126,7 +121,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {poppyItem &&
-          poppyItem.map((item) => (
+          poppyItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -136,7 +131,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {nutItem &&
-          nutItem.map((item) => (
+          nutItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -146,7 +141,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {creamItem &&
-          creamItem.map((item) => (
+          creamItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -156,7 +151,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {yogurtItem &&
-          yogurtItem.map((item) => (
+          yogurtItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -166,7 +161,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {sufleItem &&
-          sufleItem.map((item) => (
+          sufleItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}
@@ -176,7 +171,7 @@ const CategoryBlock: FC<ICategoryBlock> = ({ category }) => {
             </li>
           ))}
         {cheeseItem &&
-          cheeseItem.map((item) => (
+          cheeseItem.map((item: CategoryProps) => (
             <li key={item.route}>
               <CategoryButton
                 route={`${Routes.CATEGORIES}/${item.route}`}

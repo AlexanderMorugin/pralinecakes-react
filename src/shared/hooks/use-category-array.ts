@@ -14,64 +14,67 @@ import {
   CATEGORY_SUFLE,
   CATEGORY_YOGURT,
 } from '../constants/constants';
+import { CategoryProps } from '../types/types';
 
-const useCategoryArray = (array) => {
+const useCategoryArray = (array: CategoryProps[]) => {
   const honeyArray = array.filter((item) =>
-    item.category.includes(CATEGORY_HONEY)
+    item.category?.includes(CATEGORY_HONEY)
   );
   const chocolateArray = array.filter((item) =>
-    item.category.includes(CATEGORY_CHOCOLATE)
+    item.category?.includes(CATEGORY_CHOCOLATE)
   );
   const strudelArray = array.filter((item) =>
-    item.category.includes(CATEGORY_STRUDEL)
+    item.category?.includes(CATEGORY_STRUDEL)
   );
   const fruitArray = array.filter((item) =>
-    item.category.includes(CATEGORY_FRUIT)
+    item.category?.includes(CATEGORY_FRUIT)
   );
   const berryArray = array.filter((item) =>
-    item.category.includes(CATEGORY_BERRY)
+    item.category?.includes(CATEGORY_BERRY)
   );
   const shortbreadArray = array.filter((item) =>
-    item.category.includes(CATEGORY_SAND)
+    item.category?.includes(CATEGORY_SAND)
   );
   const biscuitArray = array.filter((item) =>
-    item.category.includes(CATEGORY_BISQUIT)
+    item.category?.includes(CATEGORY_BISQUIT)
   );
   const poppyArray = array.filter((item) =>
-    item.category.includes(CATEGORY_POPPY)
+    item.category?.includes(CATEGORY_POPPY)
   );
-  const nutArray = array.filter((item) => item.category.includes(CATEGORY_NUT));
+  const nutArray = array.filter((item) =>
+    item.category?.includes(CATEGORY_NUT)
+  );
   const creamArray = array.filter((item) =>
-    item.category.includes(CATEGORY_CREAM)
+    item.category?.includes(CATEGORY_CREAM)
   );
   const yogurtArray = array.filter((item) =>
-    item.category.includes(CATEGORY_YOGURT)
+    item.category?.includes(CATEGORY_YOGURT)
   );
   const sufleArray = array.filter((item) =>
-    item.category.includes(CATEGORY_SUFLE)
+    item.category?.includes(CATEGORY_SUFLE)
   );
   const cheeseArray = array.filter((item) =>
-    item.category.includes(CATEGORY_CHEESE)
+    item.category?.includes(CATEGORY_CHEESE)
   );
   const puffArray = array.filter((item) =>
-    item.category.includes(CATEGORY_PUFF)
+    item.category?.includes(CATEGORY_PUFF)
   );
 
   return {
-    honeyArray: honeyArray,
-    chocolateArray: chocolateArray,
-    strudelArray: strudelArray,
-    fruitArray: fruitArray,
-    berryArray: berryArray,
-    shortbreadArray: shortbreadArray,
-    biscuitArray: biscuitArray,
-    poppyArray: poppyArray,
-    nutArray: nutArray,
-    creamArray: creamArray,
-    yogurtArray: yogurtArray,
-    sufleArray: sufleArray,
-    cheeseArray: cheeseArray,
-    puffArray: puffArray,
+    honeyArray,
+    chocolateArray,
+    strudelArray,
+    fruitArray,
+    berryArray,
+    shortbreadArray,
+    biscuitArray,
+    poppyArray,
+    nutArray,
+    creamArray,
+    yogurtArray,
+    sufleArray,
+    cheeseArray,
+    puffArray,
   };
 };
 

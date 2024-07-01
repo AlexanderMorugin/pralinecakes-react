@@ -7,26 +7,13 @@ import styles from './product-card.module.scss';
 
 export interface IProductCard {
   className?: string;
-  id?: number;
-  route?: string;
-  image_small?: string;
-  image_normal?: string;
-  image_large?: string;
-  title?: string;
-  description?: string;
-  ingredients?: string;
-  protein?: number;
-  fat?: number;
-  carbohydrates?: number;
-  calories?: number;
+  route: string;
+  image_small: string;
+  title: string;
+  description: string;
+  price: number;
   quantity?: number;
-  quantity_b?: number | null;
-  weight?: number;
-  weight_b?: number | null;
-  price?: number;
-  price_b?: number | null;
-  rating?: number;
-  category?: string;
+  rating: number;
 }
 
 const ProductCard: FC<IProductCard> = ({
@@ -40,8 +27,12 @@ const ProductCard: FC<IProductCard> = ({
   rating,
 }) => {
   return (
-    <Link to={route || '#'} className={`${className} ${styles.productCard}`}>
-      <img src={image_small} alt={title} className={styles.productCard__image} />
+    <Link to={route} className={`${className} ${styles.productCard}`}>
+      <img
+        src={image_small}
+        alt={title}
+        className={styles.productCard__image}
+      />
       <article className={styles.productCard__info}>
         <h3 className={styles.productCard__title}>{title}</h3>
         <p className={styles.productCard__description}>{description}</p>

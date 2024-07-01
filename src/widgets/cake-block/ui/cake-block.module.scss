@@ -7,13 +7,9 @@
   padding-left: var(--padding-horizontal-desktop);
   padding-right: var(--padding-horizontal-desktop);
   padding-top: 30px;
-  // padding-bottom: 30px;
 
   @include media.respond-to('middle') {
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
   }
 }
-
-
-

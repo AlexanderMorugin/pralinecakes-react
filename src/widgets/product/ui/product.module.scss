@@ -37,7 +37,7 @@
 
   &__description {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--border-primary);
   }
@@ -45,38 +45,23 @@
   &__span {
     font: var(--font-xs-medium);
     color: var(--brown-thirdary);
-    // color: var(--border-primary);
-    // color: var(--text-secondary);
     letter-spacing: 0.8px;
-    // text-transform: uppercase;
-// text-align: right;
   }
 
   &__condition {
     padding-top: 15px;
   }
 
-  // &__spanPrice {
-  //   font: var(--font-xs-medium);
-  //   color: var(--text-thirdary); 
-  // }
-
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding-top: var(--padding-vertical-desktop);
-    // padding-left: var(--padding-horizontal-desktop);
-    // padding-right: var(--padding-horizontal-desktop);
-    // border: 1px solid red;
 
     @include media.respond-to('middle') {
       grid-template-columns: 1fr;
       gap: 0;
       padding-top: 0;
-      // padding-top: var(--padding-vertical-mobile);
-      // padding-left: 0;
-      // padding-right: 0;
     }
   }
 }

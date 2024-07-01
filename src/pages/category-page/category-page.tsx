@@ -17,7 +17,9 @@ const CategoryPage: FC = () => {
 
   const category = categoryData.filter((item) => item.route === route);
   const categoryName = category.map((item) => item.name);
-  const currentArray = pastryData.filter((item) => item.type?.includes(route));
+  const currentArray = pastryData.filter((item) =>
+    item.type.includes(route || '#')
+  );
 
   const breadcrumbs = [
     { heading: PAGE_MAIN, route: Routes.HOME },
@@ -32,7 +34,7 @@ const CategoryPage: FC = () => {
         <Breadcrumbs links={breadcrumbs} />
         <MainWrapper>
           <PageHeading title={`Пирожные ${categoryName}`} />
-          <Category data={currentArray} isCake={false} isPastry={true} />
+          <Category data={currentArray} />
         </MainWrapper>
       </PageWrapper>
 

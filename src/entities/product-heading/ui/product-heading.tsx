@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 
 import ArrowIcon from '../../../assets/icons/icon-arrow.svg';
 import useResize from '../../../shared/hooks/use-resize';
-
-import styles from './product-heading.module.scss';
 import Routes from '../../../shared/config/routes/routes';
 
+import styles from './product-heading.module.scss';
+
 interface IProductHeading {
-  title?: string;
-  subtitle?: string;
-  route?: string;
+  title: string;
+  subtitle: string;
+  route: string;
   isLink?: boolean;
-  isPastry?: boolean;
+  isCake: boolean;
+  isPastry: boolean;
 }
 
 const ProductHeading: FC<IProductHeading> = ({
@@ -20,7 +21,7 @@ const ProductHeading: FC<IProductHeading> = ({
   subtitle,
   route,
   isLink = false,
-  // isCake,
+  isCake,
   isPastry,
 }) => {
   const { isScreenMd } = useResize();
@@ -30,7 +31,7 @@ const ProductHeading: FC<IProductHeading> = ({
       <article className={styles.productHeading}>
         <div className={styles.productHeading__titleBox}>
           <h3 className={styles.productHeading__title}>{title}</h3>
-          {isPastry && (
+          {isPastry && !isCake && (
             <Link
               to={Routes.CATEGORIES}
               className={styles.productHeading__category}
@@ -41,7 +42,7 @@ const ProductHeading: FC<IProductHeading> = ({
         </div>
 
         {isScreenMd && (
-          <Link to={route || '#'} className={styles.productHeading__link}>
+          <Link to={route} className={styles.productHeading__link}>
             {subtitle}
             <img
               src={ArrowIcon}
