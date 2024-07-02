@@ -1,9 +1,8 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
 
-import { AddressBlock, Logo } from '../../../entities';
-import { FooterWrapper } from '../../../components';
-import { navBarData } from '../../../mockData/nav-bar-data';
+import { footerInfoData } from '../../../mockData/footer-info-data';
+import { footerCatalogData } from '../../../mockData/footer-catalog-data';
+import { AddressBlock, FooterNav, Logo } from '../../../entities';
 
 import styles from './footer.module.scss';
 
@@ -17,38 +16,17 @@ const Footer: FC = () => {
           <p>Создание и поддержка сайта ООО «Пралинэ»</p>
         </div>
 
-        <FooterWrapper
+        <FooterNav
           title='Информация'
+          array={footerInfoData}
           className={styles.footer__information}
-        >
-          {navBarData.map((item, index) => (
-            <li key={index}>
-              <Link to={item.route} className={styles.footer__link}>
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className={styles.footer__navIcon}
-                />
-                <span>{item.title}</span>
-              </Link>
-            </li>
-          ))}
-        </FooterWrapper>
+        />
 
-        <FooterWrapper title='Каталог' className={styles.footer__catalog}>
-          <li className={styles.footer__link}>
-            Здесь будут ссылки на виды продукции
-          </li>
-        </FooterWrapper>
-
-        <FooterWrapper
-          title='Для бизнеса'
-          className={styles.footer__cooperation}
-        >
-          <li className={styles.footer__link}>
-            Здесь будут ссылки о сотрудничестве
-          </li>
-        </FooterWrapper>
+        <FooterNav
+          title='Каталог'
+          array={footerCatalogData}
+          className={styles.footer__catalog}
+        />
 
         <AddressBlock footer={true} className={styles.footer__address} />
       </div>

@@ -3,12 +3,12 @@
 .footer {
   display: flex;
   justify-content: center;
-  background: var(--dark-secondary);
+  background: var(--dark-thirdary);
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: 'logoBox information catalog cooperation address';
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'logoBox information catalog address';
     gap: 20px;
     width: 100%;
     max-width: var(--width-xl);
@@ -16,11 +16,6 @@
     padding-bottom: var(--padding-vertical-desktop);
     padding-left: var(--padding-horizontal-desktop);
     padding-right: var(--padding-horizontal-desktop);
-
-    @include media.respond-to('large') {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: 'logoBox information address';
-    }
 
     @include media.respond-to('middle') {
       grid-template-columns: repeat(2, 1fr);
@@ -62,34 +57,7 @@
     grid-area: catalog;
   }
 
-  &__cooperation {
-    grid-area: cooperation;
-
-    @include media.respond-to('large') {
-      display: none;
-    }
-  }
-
   &__address {
     grid-area: address;
-  }
-
-  &__link {
-    display: flex;
-    gap: 15px;
-    font: var(--font-xs-regular);
-    color: var(--light-secondary);
-    text-decoration: none;
-    padding: 10px;
-    opacity: 0.8;
-    transition: 0.3s;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  &__navIcon {
-    width: 20px;
   }
 }

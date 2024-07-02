@@ -29,6 +29,7 @@ const CakeBlock: FC = () => {
         <ProductScroll
           dataCakes={eightItemsData}
           routeCakes={Routes.CAKES}
+          isLink={true}
           isCake={true}
           isPastry={false}
         />
