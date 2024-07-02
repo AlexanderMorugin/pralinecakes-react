@@ -6,7 +6,6 @@
   align-items: center;
   gap: 13px;
   width: 100%;
-  max-width: 260px;
   height: 74px;
   background: linear-gradient(
     45deg,
@@ -25,6 +24,14 @@
 
   &__image {
     width: 52px;
+
+    @include media.respond-to('large') {
+      width: 36px;
+    }
+
+    @include media.respond-to('middle') {
+      width: 52px;
+    }
   }
 
   &__title {

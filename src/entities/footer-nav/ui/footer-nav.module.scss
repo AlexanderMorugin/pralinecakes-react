@@ -1,18 +1,15 @@
-@use '../../../shared/styles/mixins' as media;
-
 .footerNav {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 6px;
 
   &__title {
     font: var(--font-xs-medium);
     color: var(--light-secondary);
     text-transform: uppercase;
     letter-spacing: 1.1px;
-    padding-left: 10px;
-    opacity: 0.8;
+    padding-left: 45px;
+    opacity: 0.6;
   }
 
   &__link {
@@ -22,11 +19,10 @@
     color: var(--light-secondary);
     text-decoration: none;
     padding: 10px;
-    opacity: 0.8;
     transition: 0.3s;
 
     &:hover {
-      opacity: 1;
+      color: var(--accent-primary);
     }
   }
 

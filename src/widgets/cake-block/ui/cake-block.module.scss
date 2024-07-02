@@ -11,5 +11,6 @@
   @include media.respond-to('middle') {
     padding-left: var(--padding-horizontal-mobile);
     padding-right: var(--padding-horizontal-mobile);
+    padding-top: 0;
   }
 }

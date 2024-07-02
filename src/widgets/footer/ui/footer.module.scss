@@ -38,7 +38,6 @@
     gap: 20px;
     font: var(--font-xs-regular);
     color: var(--light-secondary);
-    opacity: 0.8;
 
     @include media.respond-to('middle') {
       flex-direction: row;
@@ -46,6 +45,14 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 10px;
+    }
+  }
+
+  &__logoText {
+    opacity: 0.8;
+
+    @include media.respond-to('middle') {
+      opacity: 0.6;
     }
   }
 

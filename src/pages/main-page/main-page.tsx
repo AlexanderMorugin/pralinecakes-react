@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Breadcrumbs, PageHeading, PriorityBlock } from '../../widgets';
+import { Breadcrumbs, CakeBlock, DeliveryBlock, PageHeading, PastryBlock } from '../../widgets';
 import {
   META_MAIN_DESCRIPTION,
   META_MAIN_TITLE,
@@ -19,7 +19,10 @@ const MainPage: FC = () => {
         <Breadcrumbs links={breadcrumbs} />
         <MainWrapper>
           <PageHeading title={PAGE_MAIN_TITLE} />
-          <PriorityBlock />
+          <PastryBlock />
+          <CakeBlock />
+          <DeliveryBlock />
+          {/* <PriorityBlock /> */}
         </MainWrapper>
       </PageWrapper>
 

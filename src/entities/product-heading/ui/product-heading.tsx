@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import ArrowIcon from '../../../assets/icons/icon-arrow.svg';
 import useResize from '../../../shared/hooks/use-resize';
 import Routes from '../../../shared/config/routes/routes';
 
 import styles from './product-heading.module.scss';
+import LinkTextArrow from '../../link-text-arrow';
 
 interface IProductHeading {
   title: string;
@@ -41,16 +41,7 @@ const ProductHeading: FC<IProductHeading> = ({
           )}
         </div>
 
-        {isScreenMd && (
-          <Link to={route} className={styles.productHeading__link}>
-            {subtitle}
-            <img
-              src={ArrowIcon}
-              alt='Стрелка'
-              className={styles.productHeading__arrow}
-            />
-          </Link>
-        )}
+        {isScreenMd && <LinkTextArrow route={route} subtitle={subtitle} />}
       </article>
     )
   );

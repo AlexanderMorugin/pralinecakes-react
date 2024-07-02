@@ -6,6 +6,11 @@
   font: var(--font-xs-regular);
   color: var(--light-primary);
 
+  @include media.respond-to('large') {
+    gap: 10px;
+    font: var(--font-xxs-regular);
+  }
+
   @include media.respond-to('middle') {
     align-items: center;
   }
@@ -19,6 +24,8 @@
 
     @include media.respond-to('middle') {
       align-items: center;
+      font: var(--font-xs-regular);
+      opacity: 0.6;
     }
   }
 }

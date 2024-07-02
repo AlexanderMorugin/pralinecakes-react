@@ -12,8 +12,8 @@ const Footer: FC = () => {
       <div className={styles.footer__container}>
         <div className={styles.footer__logoBox}>
           <Logo footer={true} />
-          <p>2024 © ООО «Пралинэ»</p>
-          <p>Создание и поддержка сайта ООО «Пралинэ»</p>
+          <p className={styles.footer__logoText}>2024 © ООО «Пралинэ»</p>
+          <p className={styles.footer__logoText}>Создание и поддержка сайта ООО «Пралинэ»</p>
         </div>
 
         <FooterNav

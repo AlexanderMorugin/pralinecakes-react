@@ -1,6 +1,6 @@
 // ширина экрана
 export const SCREEN_S = 360;
-export const SCREEN_M = 768;
+export const SCREEN_M = 769;
 export const SCREEN_L = 1024;
 export const SCREEN_XL = 1400;
 
@@ -25,7 +25,6 @@ export const WHATSAPP_LINK = `//wa.me/${79771388264}`;
 export const TELEGRAM_LINK = `//t.me/${79771388264}`;
 export const PHONE_LINK = `tel:${PHONE_NUMBER}`;
 export const PHONE_SECOND_LINK = `tel:${PHONE_NUMBER_SECOND}`;
-// export const EMAIL_LINK = EMAIL;
 
 // подзаголовок для всех страниц
 export const PAGE_SUBTITLE = 'десерты для кафе, баров, пекарен, театров';

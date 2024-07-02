@@ -19,6 +19,7 @@ import LinkButton from './link-button';
 import CategoryBlock from './category-block';
 import CategoryButton from './category-button';
 import FooterNav from './footer-nav';
+import LinkTextArrow from './link-text-arrow';
 
 export {
   Logo,
@@ -42,4 +43,5 @@ export {
   CategoryBlock,
   CategoryButton,
   FooterNav,
+  LinkTextArrow,
 };
