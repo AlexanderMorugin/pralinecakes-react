@@ -15,7 +15,8 @@ import PastryBlock from './pastry-block';
 import AllCategories from './all-categories';
 import Category from './category';
 import DeliveryBlock from './delivery-block';
-import AboutBlock from './about-block';
+import HeadingBlock from './heading-block';
+import Cooperation from './cooperation';
 
 export {
   Header,
@@ -35,5 +36,6 @@ export {
   AllCategories,
   Category,
   DeliveryBlock,
-  AboutBlock,
+  HeadingBlock,
+  Cooperation,
 };

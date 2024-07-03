@@ -1,13 +1,12 @@
 import { FC } from 'react';
 
-import Image from '../../../assets/images/delivery/delivery.jpg';
-
-import styles from './delivery-block.module.scss';
-
+import Image from '../../../assets/images/delivery/img-delivery.jpg';
 import { PAGE_DELIVERY_TITLE } from '../../../shared/constants/constants';
 import useResize from '../../../shared/hooks/use-resize';
 import { LinkTextArrow } from '../../../entities';
 import Routes from '../../../shared/config/routes/routes';
+
+import styles from './delivery-block.module.scss';
 
 const DeliveryBlock: FC = () => {
   const { isScreenMd } = useResize();

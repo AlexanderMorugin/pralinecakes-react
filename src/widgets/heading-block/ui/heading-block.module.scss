@@ -1,13 +1,12 @@
 @use '../../../shared/styles/mixins' as media;
 
-.aboutBlock {
+.headingBlock {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   height: 400px;
-  // margin-top: 30px;
 
   @include media.respond-to('large') {
     height: 300px;
@@ -22,11 +21,20 @@
     top: 0;
     left: 0;
     width: 100%;
-    // height: 600px;
     object-fit: cover;
 
     @include media.respond-to('middle') {
       height: 300px;
+    }
+
+    &_isPage {
+      top: -36px;
+      height: 600px;
+
+      @include media.respond-to('middle') {
+        top: -26px;
+        height: 300px;
+      }
     }
   }
 }

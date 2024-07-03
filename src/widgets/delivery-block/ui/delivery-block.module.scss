@@ -10,7 +10,7 @@
   margin-top: 30px;
 
   @include media.respond-to('middle') {
-    height: 200px;
+    height: 260px;
   }
 
   &__image {
@@ -22,7 +22,7 @@
     object-fit: cover;
 
     @include media.respond-to('middle') {
-      height: 200px;
+      height: 260px;
     }
   }
 
@@ -52,7 +52,7 @@
 
     @include media.respond-to('middle') {
       gap: 10px;
-      width: 60%;
+      width: 65%;
       border-radius: 15px;
       padding: 10px;
     }

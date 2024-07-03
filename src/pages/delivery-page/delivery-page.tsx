@@ -1,13 +1,21 @@
 import { FC } from 'react';
 
-import { Breadcrumbs, Delivery, PageHeading } from '../../widgets';
+import DeliveryImage from '../../assets/images/delivery/img-delivery.jpg';
+import {
+  Breadcrumbs,
+  Delivery,
+  HeadingBlock,
+  PageHeading,
+} from '../../widgets';
 import {
   META_DELIVERY_DESCRIPTION,
   META_DELIVERY_TITLE,
   PAGE_DELIVERY_TITLE,
   PAGE_MAIN,
 } from '../../shared/constants/constants';
-import { HelmetMeta, MainWrapper, PageWrapper } from '../../components';
+import { HelmetMeta, MainWrapper, 
+  // PageWrapper 
+} from '../../components';
 import Routes from '../../shared/config/routes/routes';
 
 const breadcrumbs = [
@@ -18,13 +26,14 @@ const breadcrumbs = [
 const DeliveryPage: FC = () => {
   return (
     <>
-      <PageWrapper>
+      {/* <PageWrapper> */}
+      <MainWrapper>
         <Breadcrumbs links={breadcrumbs} />
-        <MainWrapper>
-          <PageHeading title={PAGE_DELIVERY_TITLE} />
-          <Delivery />
-        </MainWrapper>
-      </PageWrapper>
+        <HeadingBlock image={DeliveryImage} isPage={true} />
+        <PageHeading title={PAGE_DELIVERY_TITLE} isPage={true} />
+        <Delivery />
+      </MainWrapper>
+      {/* </PageWrapper> */}
 
       <HelmetMeta
         title={META_DELIVERY_TITLE}

@@ -1,13 +1,18 @@
 import { FC } from 'react';
 
-import { Breadcrumbs, PageHeading } from '../../widgets';
+import CooperationImage from '../../assets/images/cooperation/img-cooperation.jpg';
+import { Breadcrumbs, Cooperation, HeadingBlock, PageHeading } from '../../widgets';
 import {
   META_COOPERATION_DESCRIPTION,
   META_COOPERATION_TITLE,
   PAGE_COOPERATION_TITLE,
   PAGE_MAIN,
 } from '../../shared/constants/constants';
-import { HelmetMeta, MainWrapper, PageWrapper } from '../../components';
+import {
+  HelmetMeta,
+  MainWrapper,
+  // PageWrapper
+} from '../../components';
 import Routes from '../../shared/config/routes/routes';
 
 const breadcrumbs = [
@@ -18,12 +23,14 @@ const breadcrumbs = [
 const CooperationPage: FC = () => {
   return (
     <>
-      <PageWrapper>
+      {/* <PageWrapper> */}
+      <MainWrapper>
         <Breadcrumbs links={breadcrumbs} />
-        <MainWrapper>
-          <PageHeading title={PAGE_COOPERATION_TITLE} />
-        </MainWrapper>
-      </PageWrapper>
+        <HeadingBlock image={CooperationImage} isPage={true} />
+        <PageHeading title={PAGE_COOPERATION_TITLE} isPage={true} />
+        <Cooperation />
+      </MainWrapper>
+      {/* </PageWrapper> */}
 
       <HelmetMeta
         title={META_COOPERATION_TITLE}

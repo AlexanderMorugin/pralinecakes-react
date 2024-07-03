@@ -5,7 +5,7 @@ import styles from './article-wrapper.module.scss';
 const ArticleWrapper: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className={styles.articleWrapper}>
-      <div className={styles.articleWrapper__container}>{children}</div>
+      <article className={styles.articleWrapper__container}>{children}</article>
     </div>
   );
 };

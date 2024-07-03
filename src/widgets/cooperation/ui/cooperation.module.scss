@@ -1,6 +1,6 @@
 @use '../../../shared/styles/mixins' as media;
 
-.aboutUs {
+.cooperation {
   width: 100%;
   max-width: var(--width-xl);
   margin: 0 auto;
@@ -11,9 +11,5 @@
   @include media.respond-to('middle') {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  &__text {
-    text-shadow: #fff 1px 0 5px;
   }
 }
