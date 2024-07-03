@@ -1,6 +1,8 @@
 import { FC } from 'react';
 
-import Image from '../../../assets/images/about-us/cafe-praline-1-1200x779.jpg';
+// import Image from '../../../assets/images/about-us/cafe-praline-1-1200x779.jpg';
+// import Image from '../../../assets/images/about-us/about-2.jpg';
+import Image from '../../../assets/images/about-us/about-3.jpg';
 import { ArticleWrapper } from '../../../components';
 
 import styles from './about-us.module.scss';
