@@ -13,7 +13,20 @@ const Footer: FC = () => {
         <div className={styles.footer__logoBox}>
           <Logo footer={true} />
           <p className={styles.footer__logoText}>2024 © ООО «Пралинэ»</p>
-          <p className={styles.footer__logoText}>Создание и поддержка сайта ООО «Пралинэ»</p>
+          <p className={styles.footer__logoText}>
+            Фото с людьми взяты с ресурса&nbsp;
+            <a
+              href='https://freepik.com'
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.footer__logoLink}
+            >
+              freepik.com
+            </a>
+          </p>
+          <p className={styles.footer__logoText}>
+            Создание и поддержка сайта ООО «Пралинэ»
+          </p>
         </div>
 
         <FooterNav

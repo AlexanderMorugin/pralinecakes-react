@@ -1,6 +1,9 @@
 @use '../../../shared/styles/mixins' as media;
 
 .cooperation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 100%;
   max-width: var(--width-xl);
   margin: 0 auto;
@@ -11,5 +14,14 @@
   @include media.respond-to('middle') {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  &__articleWrapper {
+    border: 1px solid var(--border-primary);
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      var(--bg-primary),
+      var(--brown-primary)
+    );
   }
 }

@@ -1,11 +1,15 @@
-import { FC, PropsWithChildren } from 'react';
+import { FC, ReactNode } from 'react';
 
 import styles from './article-wrapper.module.scss';
 
-const ArticleWrapper: FC<PropsWithChildren> = ({ children }) => {
+interface IArticleWrapper {
+  className?: string;
+  children: ReactNode;
+}
+const ArticleWrapper: FC<IArticleWrapper> = ({ className, children }) => {
   return (
     <div className={styles.articleWrapper}>
-      <article className={styles.articleWrapper__container}>{children}</article>
+      <article className={`${className} ${styles.articleWrapper__container}`}>{children}</article>
     </div>
   );
 };

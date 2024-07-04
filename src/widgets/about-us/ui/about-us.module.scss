@@ -1,6 +1,9 @@
 @use '../../../shared/styles/mixins' as media;
 
 .aboutUs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 100%;
   max-width: var(--width-xl);
   margin: 0 auto;
@@ -13,7 +16,12 @@
     padding-right: 0;
   }
 
-  &__text {
-    text-shadow: #fff 1px 0 5px;
+  &__articleWrapper {
+    border: 1px solid var(--border-primary);
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      var(--bg-primary),
+      var(--brown-primary)
+    );
   }
 }

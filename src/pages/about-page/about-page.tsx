@@ -8,11 +8,7 @@ import {
   PAGE_ABOUT_TITLE,
   PAGE_MAIN,
 } from '../../shared/constants/constants';
-import {
-  HelmetMeta,
-  MainWrapper,
-  // PageWrapper
-} from '../../components';
+import { HelmetMeta, MainWrapper } from '../../components';
 import Routes from '../../shared/config/routes/routes';
 
 const breadcrumbs = [
@@ -23,14 +19,12 @@ const breadcrumbs = [
 const AboutPage: FC = () => {
   return (
     <>
-      {/* <PageWrapper> */}
       <MainWrapper>
         <Breadcrumbs links={breadcrumbs} />
         <HeadingBlock image={AboutImage} isPage={true} />
         <PageHeading title={PAGE_ABOUT_TITLE} isPage={true} />
         <AboutUs />
       </MainWrapper>
-      {/* </PageWrapper> */}
 
       <HelmetMeta
         title={META_ABOUT_TITLE}
