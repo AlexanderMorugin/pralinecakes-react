@@ -6,7 +6,7 @@
   left: 0;
   transform: translateX(-100%);
   transition: 0.5s;
-  z-index: var(--z-index-five);
+  z-index: var(--z-index-three);
 
   &_active {
     transform: translateX(0);

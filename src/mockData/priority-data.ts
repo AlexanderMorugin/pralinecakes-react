@@ -29,7 +29,7 @@ export const priorityData = [
   {
     title: 'Совместное процветание',
     image: cafeIcon,
-    route: Routes.ABOUT, // роута пока нет
+    route: Routes.COOPERATION,
   },
   // {
   //   title: 'Гарантия качества',

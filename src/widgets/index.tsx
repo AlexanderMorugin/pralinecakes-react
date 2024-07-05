@@ -18,6 +18,7 @@ import DeliveryBlock from './delivery-block';
 import HeadingBlock from './heading-block';
 import Cooperation from './cooperation';
 import AboutUsBlock from './about-us-block';
+import CooperationBlock from './cooperation-block';
 
 export {
   Header,
@@ -40,4 +41,5 @@ export {
   HeadingBlock,
   Cooperation,
   AboutUsBlock,
+  CooperationBlock,
 };

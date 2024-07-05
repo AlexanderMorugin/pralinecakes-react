@@ -6,11 +6,9 @@
   align-items: center;
   width: 100%;
   background: var(--bg-primary);
-  padding-bottom: var(--padding-vertical-desktop);
 
   @include media.respond-to('middle') {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    padding-bottom: var(--padding-vertical-mobile);
   }
 }

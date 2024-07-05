@@ -4,6 +4,7 @@ import MainImage from '../../assets/images/main/img-main.jpg';
 import {
   AboutUsBlock,
   CakeBlock,
+  CooperationBlock,
   DeliveryBlock,
   HeadingBlock,
   PageHeading,
@@ -26,6 +27,7 @@ const MainPage: FC = () => {
         <PastryBlock />
         <AboutUsBlock />
         <CakeBlock />
+        <CooperationBlock />
         <DeliveryBlock />
       </MainWrapper>
 

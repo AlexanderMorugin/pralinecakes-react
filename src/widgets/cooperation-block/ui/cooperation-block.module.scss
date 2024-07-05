@@ -1,14 +1,14 @@
 @use '../../../shared/styles/mixins' as media;
 
-.aboutUsBlock {
+.cooperationBlock {
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
-    var(--link-thirdary) 20%,
+    var(--green-primary) 80%,
     rgba(255, 255, 255, 0) 100%
   );
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
   z-index: var(--z-index-two);
 
   @include media.respond-to('middle') {
