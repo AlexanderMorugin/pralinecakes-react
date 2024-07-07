@@ -13,9 +13,7 @@ import {
   PAGE_DELIVERY_TITLE,
   PAGE_MAIN,
 } from '../../shared/constants/constants';
-import { HelmetMeta, MainWrapper, 
-  // PageWrapper 
-} from '../../components';
+import { HelmetMeta, MainWrapper } from '../../components';
 import Routes from '../../shared/config/routes/routes';
 
 const breadcrumbs = [
@@ -26,19 +24,18 @@ const breadcrumbs = [
 const DeliveryPage: FC = () => {
   return (
     <>
-      {/* <PageWrapper> */}
       <MainWrapper>
         <Breadcrumbs links={breadcrumbs} />
         <HeadingBlock image={DeliveryImage} isPage={true} />
         <PageHeading title={PAGE_DELIVERY_TITLE} isPage={true} />
         <Delivery />
       </MainWrapper>
-      {/* </PageWrapper> */}
 
       <HelmetMeta
         title={META_DELIVERY_TITLE}
         description={META_DELIVERY_DESCRIPTION}
         route={`${Routes.BASE_URL}${Routes.DELIVERY}`}
+        image='https://pralinecakes.ru/assets/pastry-muraveinik-s.jpeg'
       />
     </>
   );

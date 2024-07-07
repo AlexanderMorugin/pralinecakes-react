@@ -57,7 +57,7 @@ export const META_COOPERATION_DESCRIPTION =
 export const PAGE_DELIVERY_TITLE = 'Доставка';
 export const META_DELIVERY_TITLE = 'Доставка от кондитерской Пралине';
 export const META_DELIVERY_DESCRIPTION =
-  '<Бесплатно доставляем пирожные и торты по Москве и ближайшие пригородные районы.';
+  'Бесплатно доставляем пирожные и торты по Москве и ближайшие пригородные районы.';
 
 export const PAGE_NEWS_TITLE = 'Новости';
 export const META_NEWS_TITLE = 'Новости кондитерской Пралине';
