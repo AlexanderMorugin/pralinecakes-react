@@ -13,6 +13,7 @@ import CakePage from './cake-page/cake-page';
 import PastryPage from './pastry-page/pastry-page';
 import CategoryPage from './category-page/category-page';
 import AllCategoriesPage from './all-categories-page/all-categories-page';
+import NotFoundPage from './not-found-page/not-found-page';
 
 export {
   MainPage,
@@ -30,4 +31,5 @@ export {
   PastryPage,
   AllCategoriesPage,
   CategoryPage,
+  NotFoundPage,
 };

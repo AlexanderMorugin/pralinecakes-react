@@ -24,19 +24,19 @@ const breadcrumbs = [
 const DeliveryPage: FC = () => {
   return (
     <>
+      <HelmetMeta
+        title={META_DELIVERY_TITLE}
+        description={META_DELIVERY_DESCRIPTION}
+        route={`${Routes.BASE_URL}${Routes.DELIVERY}`}
+        image='https://pralinecakes.ru/assets/pastry-raspberry-basket-s-Cdcrj6XF.jpeg'
+      />
+      
       <MainWrapper>
         <Breadcrumbs links={breadcrumbs} />
         <HeadingBlock image={DeliveryImage} isPage={true} />
         <PageHeading title={PAGE_DELIVERY_TITLE} isPage={true} />
         <Delivery />
       </MainWrapper>
-
-      <HelmetMeta
-        title={META_DELIVERY_TITLE}
-        description={META_DELIVERY_DESCRIPTION}
-        route={`${Routes.BASE_URL}${Routes.DELIVERY}`}
-        image='https://pralinecakes.ru/assets/pastry-muraveinik-s.jpeg'
-      />
     </>
   );
 };

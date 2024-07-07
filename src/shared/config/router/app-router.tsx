@@ -17,13 +17,14 @@ import {
   PastryPage,
   CategoryPage,
   AllCategoriesPage,
+  NotFoundPage,
 } from '../../../pages';
 
 const AppRouter = createBrowserRouter([
   {
     path: Routes.HOME,
     element: <RootPage />,
-    // errorElement: <ErrorPage />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         path: '',

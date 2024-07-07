@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+<h1 align="center">Пет проект "pralinecakes-react"</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Проект действующего сайта https://pralinecakes.ru/
 
-Currently, two official plugins are available:
+## О проекте ##
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Проект разработан на библиотеке компонентов с помощью Vite, React, TypeScript
 
-## Expanding the ESLint configuration
+Веб приложение **Кондитерская Пралине** представляет собой приложение для кондитерской Пралине, которое является простым многостраничным сайтом.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Сайт рабочий, размещен на хостинге. Имеет некоторые слайдеры.
 
-- Configure the top-level `parserOptions` property like this:
+Проект структурирован согласно методологии БЭМ Flat. Все интерактивные элементы обладают состоянием наведения или фокуса. В проекте используется локально подключенный шрифт 'Inter'.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Приложение адаптировано для различных разрешений экрана и браузеров.
+
+В проекте не используется Redux и REST API. Все построено на моковых данных.
+
+Планы на будущее - переделать проект на Next.js, для того чтобы сделать SEO оптимизацию. Также сделать модальные окна, добавить другие слайдеры и перейти с моковых данных на JSON файлы, размещенных на сервере. Подтягиваться данные будут через REST API и Redux. Если этого будет недостаточно, для нормального SEO продвижения сайта, добавлю серверную часть приложения, написаного на Nest.js и через докер размещу в облаке хостинга два приложения frontend и backend части. Но для такого простого сайта, фактически "визитки" - это скорее всего будет чрезмерно
+
+## Используемые технологии и решения ##
+- Typescript в качестве основного языка проекта
+- React Router для перемещения между страницами
+- Файлы стилей имеют расширение SCSS
+- React Helmet для присвоения разных мета тегов разным страницам
+
+## Как запустить проект: ##
+Клонирование репозитория
+```
+git clone https://github.com/AlexanderMorugin/pralinecakes-react.git
+```
+Установка зависимостей
+```
+npm i
+```
+Запуск проекта
+```
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+--------
+Александр Моругин\
+июль 2024г

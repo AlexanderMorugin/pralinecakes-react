@@ -19,6 +19,7 @@ import HeadingBlock from './heading-block';
 import Cooperation from './cooperation';
 import AboutUsBlock from './about-us-block';
 import CooperationBlock from './cooperation-block';
+import NotFound from './not-found';
 
 export {
   Header,
@@ -42,4 +43,5 @@ export {
   Cooperation,
   AboutUsBlock,
   CooperationBlock,
+  NotFound,
 };
