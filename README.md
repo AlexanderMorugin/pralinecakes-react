@@ -1,6 +1,7 @@
 <h1 align="center">Пет проект "pralinecakes-react"</h1>
 
 Проект действующего сайта https://pralinecakes.ru/
+![Pralinecakes Demo](/pralinecakes.png)
 
 ## О проекте ##
 
